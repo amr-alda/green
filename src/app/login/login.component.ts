@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login3',
-  templateUrl: './login3.component.html',
-  styleUrls: ['./login3.component.scss'],
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss'],
 })
-export class Login3Component implements OnInit {
+export class LoginComponent implements OnInit {
 
   constructor(private router: Router) { }
 

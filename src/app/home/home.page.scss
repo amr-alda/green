@@ -1,3 +1,7 @@
+* {
+  font-family: 'Courier New', Courier, monospace
+}
+
 .wholePage{
   --background: url(../../assets/images/Background_mobile_green.png) 0 0/100% 100% no-repeat;
 }
@@ -9,7 +13,7 @@
 .progress-outer{
   // background: #fff;
   border-radius: 50px;
-  padding: 25px;
+  padding-bottom: 4%;
   // box-shadow: 0 0  10px rgba(209, 219, 231,0.7);
   margin: auto;
   width: 90%;
@@ -18,6 +22,7 @@
 @media (min-width: 800px) {
 	.progress-outer{ 
     width: 60%;
+    padding-bottom: 2%;
   }
 }
 
@@ -62,7 +67,6 @@
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  margin-top: 2%;
 }
 
 .card{
@@ -109,4 +113,10 @@
 
 .back:hover{
   cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .back{
+    margin-top: 8%;
+  }
 }

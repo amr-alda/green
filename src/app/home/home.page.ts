@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit{
 
   modul2_locked:boolean = true;
   modul3_locked:boolean = true;
@@ -30,29 +30,50 @@ export class HomePage {
   quest4_3:string = 'grey';
   quest4_4:string = 'grey';
 
+  formModal: any;
+
   constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    
+  }
 
   goToModul1():void{
     this.router.navigateByUrl('/modul1');
   }
 
   goToModul2():void{
-    this.router.navigateByUrl('/modul2');
+    if(this.modul2_locked==false)
+    {
+      this.router.navigateByUrl('/modul2');
+    }
   }
 
   goToModul3():void{
-    this.router.navigateByUrl('/modul3');
+    if(this.modul2_locked==false)
+    {
+      this.router.navigateByUrl('/modul3');
+    }
   }
 
   goToModul4():void{
-    this.router.navigateByUrl('/modul4');
+    if(this.modul2_locked==false)
+    {
+      this.router.navigateByUrl('/modul4');
+    }
   }
 
   goToFeedback():void{
     this.router.navigateByUrl('/feedback');
   }
   goToLogin():void{
-    this.router.navigateByUrl('/login3');
+    if(confirm("Sind sie sicher dass sie sich ausloggen wollen?")){
+      this.router.navigateByUrl('/login');
+    }
   }
 
+
+
+  
+ 
 }
