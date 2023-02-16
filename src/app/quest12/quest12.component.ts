@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-quest12',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Quest12Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
+
+  goToHome():void{
+    this.router.navigateByUrl('/home');
+  }
+
+  goToModul1():void{
+    this.router.navigateByUrl('/modul1');
+  }
 
 }
