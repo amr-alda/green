@@ -17,4 +17,20 @@ export class Modul2Component implements OnInit {
   goToHome():void{
     this.router.navigateByUrl('/home');
   }
+
+  goToQuest21():void{
+    this.router.navigateByUrl('/quest21');
+}
+
+goToQuest22():void{
+  this.router.navigateByUrl('/quest22');
+}
+
+goToQuest23():void{
+  this.router.navigateByUrl('/quest23');
+}
+
+goToQuest24():void{
+this.router.navigateByUrl('/quest24');
+}
 }
