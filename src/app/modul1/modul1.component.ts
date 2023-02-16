@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modul1',
@@ -6,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modul1.component.scss'],
 })
 export class Modul1Component implements OnInit {
+  quest1_1:string = 'grey' 
+  quest1_2:string = 'grey'
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
+
+  goToHome():void{
+    this.router.navigateByUrl('/home');
+  }
 
 }
