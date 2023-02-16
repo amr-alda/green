@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HomePage implements OnInit{
 
-  modul2_locked:boolean = true;
+  modul2_locked:boolean = false;
   modul3_locked:boolean = true;
   modul4_locked:boolean = true;
 
