@@ -7,10 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./modul1.component.scss'],
 })
 export class Modul1Component implements OnInit {
-  quest1_1: string = 'grey';
-  quest1_2: string = 'grey';
+  quest1_1: string = 'gold';
+  quest1_2: string = 'bronze';
 
-  quest12_locked: boolean = true;
+  quest12_locked: boolean = false;
 
   constructor(private router: Router) {}
 

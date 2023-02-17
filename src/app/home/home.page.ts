@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+
   modul2_locked: boolean = false;
   modul3_locked: boolean = true;
   modul4_locked: boolean = true;
-
+  
   quest1_1: string = 'gold';
   quest1_2: string = 'bronze';
 
