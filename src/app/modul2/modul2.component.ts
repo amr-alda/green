@@ -10,6 +10,10 @@ export class Modul2Component implements OnInit {
   quest1_1:string = 'grey' 
   quest1_2:string = 'grey'
 
+  quest22_locked:boolean = true;
+  quest23_locked:boolean = true;
+  quest24_locked:boolean = true;
+
   constructor(private router: Router) { }
 
   ngOnInit() {}

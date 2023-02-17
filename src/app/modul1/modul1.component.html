@@ -29,7 +29,6 @@
                   <div class="quest-height">
                     <p class="card-text">So ein Chaos!</p>
                   </div>
-                  
                   <img *ngIf="quest1_1==='grey'" class="medallie" src="./assets/images/Medallie-grey.png" alt="">
                   <img *ngIf="quest1_1==='bronze'" class="medallie" src="./assets/images/Medallie Bronze.png" alt="">
                   <img *ngIf="quest1_1==='silber'"  class="medallie" src="./assets/images/Medallie Silber.png" alt="">
@@ -45,11 +44,16 @@
                     <p class="card-text ">Kritischer Rationalismus</p>
                   </div>
 
-                  
+                  <span>
                   <img *ngIf="quest1_2==='grey'" class="medallie" src="./assets/images/Medallie-grey.png" alt="">
                   <img *ngIf="quest1_2==='bronze'" class="medallie" src="./assets/images/Medallie Bronze.png" alt="">
                   <img *ngIf="quest1_2==='silber'"  class="medallie" src="./assets/images/Medallie Silber.png" alt="">
                   <img *ngIf="quest1_2==='gold'" class="medallie" src="./assets/images/Medallie Gold.png" alt="">
+                </span>
+                
+                  <span>
+                    <img class="schloss" *ngIf="quest12_locked == true" src="../../assets/images/Schloss.png">
+                  </span>
                 </div>
               </div>
             </div>
