@@ -1,25 +1,38 @@
 <ion-content class="wholePage">
   <nav class="navbar">
     <div class="container-fluid">
-  
       <a class="navbar-brand">
-          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar" width="64" height="64" class="d-inline-block align-text-middle avatar">
-          <span class="username">Maximilian</span>
-      </a> 
-  
-      <a class="navbar-brand">
-        <img alt="Logo der Hochschule Worms" src="./assets/images/hswormslogo.png" width="60" height="64" class="inline-block">
+        <img
+          src="https://ionicframework.com/docs/img/demos/avatar.svg"
+          alt="Avatar"
+          width="64"
+          height="64"
+          class="d-inline-block align-text-middle avatar"
+        />
+        <span class="username">Maximilian</span>
       </a>
-    
-  
-      </div>
+
+      <a class="navbar-brand">
+        <img
+          alt="Logo der Hochschule Worms"
+          src="./assets/images/hswormslogo.png"
+          width="60"
+          height="64"
+          class="inline-block"
+        />
+      </a>
+    </div>
   </nav>
   <div class="">
     <div class="container">
-      <div class="col-sm-8 offset-sm-2 col-lg-12 offset-lg-3 col-xl-4 offset-xl-4 text-center">
+      <div
+        class="col-sm-8 offset-sm-2 col-lg-12 offset-lg-3 col-xl-4 offset-xl-4 text-center"
+      >
         <div class="box">
           <h3 class="text-light fw-bolder fs-4 mb-2">Modul 1</h3>
-          <p class="text-light fw-normal mb-2">Hier werden wissenschaftliche Grundlagen erarbeitet</p>
+          <p class="text-light fw-normal mb-2">
+            Hier werden wissenschaftliche Grundlagen erarbeitet
+          </p>
           <div class="box"></div>
           <div class="row">
             <div class="col">
@@ -29,10 +42,30 @@
                   <div class="quest-height">
                     <p class="card-text">So ein Chaos!</p>
                   </div>
-                  <img *ngIf="quest1_1==='grey'" class="medallie" src="./assets/images/Medallie-grey.png" alt="">
-                  <img *ngIf="quest1_1==='bronze'" class="medallie" src="./assets/images/Medallie Bronze.png" alt="">
-                  <img *ngIf="quest1_1==='silber'"  class="medallie" src="./assets/images/Medallie Silber.png" alt="">
-                  <img *ngIf="quest1_1==='gold'" class="medallie" src="./assets/images/Medallie Gold.png" alt="">
+                  <img
+                    *ngIf="quest1_1 === 'grey'"
+                    class="medallie"
+                    src="./assets/images/Medallie-grey.png"
+                    alt=""
+                  />
+                  <img
+                    *ngIf="quest1_1 === 'bronze'"
+                    class="medallie"
+                    src="./assets/images/Medallie Bronze.png"
+                    alt=""
+                  />
+                  <img
+                    *ngIf="quest1_1 === 'silber'"
+                    class="medallie"
+                    src="./assets/images/Medallie Silber.png"
+                    alt=""
+                  />
+                  <img
+                    *ngIf="quest1_1 === 'gold'"
+                    class="medallie"
+                    src="./assets/images/Medallie Gold.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -41,33 +74,61 @@
                 <div (click)="goToQuest12()" class="card-body padding-10">
                   <h5 class="card-title margin-top-0">Quest 1.2</h5>
                   <div class="quest-height">
-                    <p class="card-text ">Kritischer Rationalismus</p>
+                    <p class="card-text">Kritischer Rationalismus</p>
                   </div>
 
                   <span>
-                  <img *ngIf="quest1_2==='grey'" class="medallie" src="./assets/images/Medallie-grey.png" alt="">
-                  <img *ngIf="quest1_2==='bronze'" class="medallie" src="./assets/images/Medallie Bronze.png" alt="">
-                  <img *ngIf="quest1_2==='silber'"  class="medallie" src="./assets/images/Medallie Silber.png" alt="">
-                  <img *ngIf="quest1_2==='gold'" class="medallie" src="./assets/images/Medallie Gold.png" alt="">
-                </span>
-                
+                    <img
+                      *ngIf="quest1_2 === 'grey'"
+                      class="medallie"
+                      src="./assets/images/Medallie-grey.png"
+                      alt=""
+                    />
+                    <img
+                      *ngIf="quest1_2 === 'bronze'"
+                      class="medallie"
+                      src="./assets/images/Medallie Bronze.png"
+                      alt=""
+                    />
+                    <img
+                      *ngIf="quest1_2 === 'silber'"
+                      class="medallie"
+                      src="./assets/images/Medallie Silber.png"
+                      alt=""
+                    />
+                    <img
+                      *ngIf="quest1_2 === 'gold'"
+                      class="medallie"
+                      src="./assets/images/Medallie Gold.png"
+                      alt=""
+                    />
+                  </span>
+
                   <span>
-                    <img class="schloss" *ngIf="quest12_locked == true" src="../../assets/images/Schloss.png">
+                    <img
+                      class="schloss"
+                      *ngIf="quest12_locked == true"
+                      src="../../assets/images/Schloss.png"
+                    />
                   </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-          
-          
       </div>
-    </div>
-
-    <div (click)="goToHome()" class="homeButton">
-      <ion-icon name="home-outline"></ion-icon> 
     </div>
   </div>
 
-  
+  <div class="footer" style="display: inline-block">
+    <div class="backDiv" style="display: inline-block">
+      <ion-icon class="back" name="arrow-back-outline"></ion-icon>
+    </div>
+    <div (click)="goToHome()" class="homeButton" style="display: inline-block">
+      <ion-icon name="home-outline"></ion-icon>
+    </div>
+    <div class="fakeBackDiv" style="display: inline-block">
+      <ion-icon class="back" name="arrow-back-outline"></ion-icon>
+    </div>
+  </div>
 </ion-content>

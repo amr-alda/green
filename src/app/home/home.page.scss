@@ -1,16 +1,17 @@
 * {
-  font-family: 'Courier New', Courier, monospace
+  font-family: "Courier New", Courier, monospace;
 }
 
-.wholePage{
-  --background: url(../../assets/images/Background_mobile_green.png) 0 0/100% 100% no-repeat;
+.wholePage {
+  --background: url(../../assets/images/Background_mobile_green.png) 0 0/100%
+    100% no-repeat;
 }
 
-.avatar{
+.avatar {
   margin-right: 3%;
 }
 
-.progress-outer{
+.progress-outer {
   // background: #fff;
   border-radius: 50px;
   padding-bottom: 4%;
@@ -20,24 +21,24 @@
 }
 
 @media (min-width: 800px) {
-	.progress-outer{ 
+  .progress-outer {
     width: 60%;
     padding-bottom: 2%;
   }
 }
 
-.progress{
+.progress {
   height: 27px;
   margin: 0;
   overflow: visible;
   border-radius: 50px;
   background: red;
-  box-shadow: inset 0 10px  10px rgba(244, 245, 250,0.9);
+  box-shadow: inset 0 10px 10px rgba(244, 245, 250, 0.9);
 }
-.progress .progress-bar{
+.progress .progress-bar {
   border-radius: 50px;
 }
-.progress .progress-value{
+.progress .progress-value {
   position: relative;
   left: -45px;
   top: 4px;
@@ -46,77 +47,120 @@
   color: #fff;
   letter-spacing: 2px;
 }
-.progress-bar.active{
-  animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 2s;
+.progress-bar.active {
+  animation: reverse progress-bar-stripes 0.4s linear infinite,
+    animate-positive 2s;
 }
-@-webkit-keyframes animate-positive{
-  0% { width: 0%; }
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
 }
 @keyframes animate-positive {
-  0% { width: 0%; }
+  0% {
+    width: 0%;
+  }
 }
 
-.username{
+.username {
   color: white;
   font-weight: bold;
   font-size: 16px;
 }
 
-.parlamentarier{
+.parlamentarier {
   color: white;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
 }
 
-.card{
+.card {
   margin: auto;
 }
 
-.card:hover{
+.card:hover {
   cursor: pointer;
 }
 
-.card-header{
+.card-header {
   margin: auto;
   font-weight: bold;
 }
 
-.feedback{
+.feedback {
   margin-top: 5%;
 }
 
-.card-body{
+.card-body {
   margin-left: auto;
   margin-right: auto;
 }
 
-.card-title{
+.card-title {
   margin-top: 0;
 }
 
-.medallie{
+.medallie {
   width: 15%;
   margin-left: 2%;
 }
 
-.schloss{
+.schloss {
   width: 15%;
   float: right;
 }
 
-.back{
+.back {
   color: white;
   font-size: 40px;
   margin-left: 1%;
 }
 
-.back:hover{
+.back:hover {
   cursor: pointer;
 }
 
 @media (min-width: 800px) {
-  .back{
+  .back {
     margin-top: 8%;
   }
+}
+
+.homeButton {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  width: fit-content;
+  visibility: hidden;
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  bottom: 0;
+}
+
+.backDiv {
+  width: fit-content;
+  float: left;
+}
+
+.fakeBackDiv {
+  width: fit-content;
+  float: right;
+  visibility: hidden;
+}
+
+.back {
+  color: white;
+  font-size: 40px;
+}
+
+.back:hover {
+  cursor: pointer;
 }

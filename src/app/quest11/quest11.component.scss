@@ -1,29 +1,30 @@
 * {
-    font-family: 'Courier New', Courier, monospace
-  }
-  
-  .wholePage{
-    --background: url(../../assets/images/Background_mobile_green.png) 0 0/100% 100% no-repeat;
-  }
-  
-  .avatar{
-    margin-right: 3%;
-  }
+  font-family: "Courier New", Courier, monospace;
+}
 
-  .username{
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-  }
+.wholePage {
+  --background: url(../../assets/images/Background_mobile_green.png) 0 0/100%
+    100% no-repeat;
+}
 
-  .homeButton{
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    width: fit-content;
-  }
+.avatar {
+  margin-right: 3%;
+}
 
-.footer{
+.username {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.homeButton {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  width: fit-content;
+}
+
+.footer {
   width: 100vw;
   position: absolute;
   text-align: center;
@@ -33,26 +34,26 @@
   bottom: 0;
 }
 
-  .backDiv{
-    width: fit-content;
-    float: left;
-  }
+.backDiv {
+  width: fit-content;
+  float: left;
+}
 
-  .fakeBackDiv{
-    width: fit-content;
-    float: right;
-    visibility: hidden;
-  }
-  
-  .homeButton:hover{
-    cursor: pointer;
-  }
+.fakeBackDiv {
+  width: fit-content;
+  float: right;
+  visibility: hidden;
+}
 
-  .back{
-    color: white;
-    font-size: 40px;
-  }
-  
-  .back:hover{
-    cursor: pointer;
-  }
+.homeButton:hover {
+  cursor: pointer;
+}
+
+.back {
+  color: white;
+  font-size: 40px;
+}
+
+.back:hover {
+  cursor: pointer;
+}

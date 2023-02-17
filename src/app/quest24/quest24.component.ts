@@ -7,17 +7,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./quest24.component.scss'],
 })
 export class Quest24Component implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
-  goToHome():void{
+  goToHome(): void {
     this.router.navigateByUrl('/home');
   }
 
-  goToModul2():void{
+  goToModul2(): void {
     this.router.navigateByUrl('/modul2');
-}
-
+  }
 }

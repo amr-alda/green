@@ -7,34 +7,34 @@ import { Router } from '@angular/router';
   styleUrls: ['./modul2.component.scss'],
 })
 export class Modul2Component implements OnInit {
-  quest1_1:string = 'grey' 
-  quest1_2:string = 'grey'
+  quest1_1: string = 'grey';
+  quest1_2: string = 'grey';
 
-  quest22_locked:boolean = true;
-  quest23_locked:boolean = true;
-  quest24_locked:boolean = true;
+  quest22_locked: boolean = true;
+  quest23_locked: boolean = true;
+  quest24_locked: boolean = true;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
-  goToHome():void{
+  goToHome(): void {
     this.router.navigateByUrl('/home');
   }
 
-  goToQuest21():void{
+  goToQuest21(): void {
     this.router.navigateByUrl('/quest21');
-}
+  }
 
-goToQuest22():void{
-  this.router.navigateByUrl('/quest22');
-}
+  goToQuest22(): void {
+    this.router.navigateByUrl('/quest22');
+  }
 
-goToQuest23():void{
-  this.router.navigateByUrl('/quest23');
-}
+  goToQuest23(): void {
+    this.router.navigateByUrl('/quest23');
+  }
 
-goToQuest24():void{
-this.router.navigateByUrl('/quest24');
-}
+  goToQuest24(): void {
+    this.router.navigateByUrl('/quest24');
+  }
 }
