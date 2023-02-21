@@ -9,7 +9,7 @@
           height="64"
           class="d-inline-block align-text-middle avatar"
         />
-        <span class="username">Maximilian</span>
+        <span class="username">Marc</span>
       </a>
 
       <a class="navbar-brand">
@@ -43,267 +43,12 @@
     </div>
   </div>
 
-  <div
-    (click)="goToModul1()"
-    class="card text-bg-dark mb-3"
-    style="max-width: 18rem"
-  >
-    <div class="card-header">Modul 1</div>
-    <div class="card-body">
-      <h5 class="card-title">Fortschritt: 100%</h5>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest1_1 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest1_1 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest1_1 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest1_1 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest1_2 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest1_2 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest1_2 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest1_2 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-    </div>
-  </div>
-  <div
-    (click)="goToModul2()"
-    class="card text-bg-dark mb-3"
-    style="max-width: 18rem"
-  >
-    <div class="card-header">Modul 2</div>
-    <div class="card-body">
-      <h5 class="card-title">Fortschritt: 0%</h5>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest2_1 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_1 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_1 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_1== 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest2_2 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_2 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_2 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_2 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest2_3 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_3 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_3 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_3 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest2_4 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_4 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_4 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest2_4 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="schloss"
-          *ngIf="modul2_locked == true"
-          src="../assets/images/Schloss.png"
-        />
-      </span>
-    </div>
-  </div>
-  <div class="card text-bg-dark mb-3" style="max-width: 18rem">
-    <div class="card-header">Modul 3</div>
-    <div class="card-body">
-      <h5 class="card-title">Fortschritt: 0%</h5>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest3_1 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_1 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_1 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_1 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest3_2 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_2 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_2 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_2 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest3_3 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_3 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_3 == 'silber'"
-          src="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_3 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="medallie"
-          *ngIf="quest3_4 == 'grey'"
-          src="../assets/images/Medallie-grey.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_4 == 'bronze'"
-          src="../assets/images/Medallie Bronze.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_4 == 'silber'"
-          ssrc="../assets/images/Medallie Silber.png"
-        />
-        <img
-          class="medallie"
-          *ngIf="quest3_4 == 'gold'"
-          src="../assets/images/Medallie Gold.png"
-        />
-      </span>
-      <span>
-        <img
-          class="schloss"
-          *ngIf="modul3_locked == true"
-          src="../assets/images/Schloss.png"
-        />
-      </span>
-    </div>
-  </div>
-  <div class="card text-bg-dark mb-3" style="max-width: 18rem">
+
+
+
+
+
+  <div class="card modul4card text-bg-dark mb-3" style="max-width: 14rem">
     <div class="card-header">Modul 4</div>
     <div class="card-body">
       <h5 class="card-title">Fortschritt: 0%</h5>
@@ -404,6 +149,284 @@
       </span>
     </div>
   </div>
+
+
+
+
+
+  <div class="card modul3card text-bg-dark mb-3" style="max-width: 14rem">
+    <div class="card-header">Modul 3</div>
+    <div class="card-body">
+      <h5 class="card-title">Fortschritt: 0%</h5>
+      <span>
+        <img
+          class="medallie"
+          *ngIf="quest3_1 == 'grey'"
+          src="../assets/images/Medallie-grey.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_1 == 'bronze'"
+          src="../assets/images/Medallie Bronze.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_1 == 'silber'"
+          src="../assets/images/Medallie Silber.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_1 == 'gold'"
+          src="../assets/images/Medallie Gold.png"
+        />
+      </span>
+      <span>
+        <img
+          class="medallie"
+          *ngIf="quest3_2 == 'grey'"
+          src="../assets/images/Medallie-grey.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_2 == 'bronze'"
+          src="../assets/images/Medallie Bronze.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_2 == 'silber'"
+          src="../assets/images/Medallie Silber.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_2 == 'gold'"
+          src="../assets/images/Medallie Gold.png"
+        />
+      </span>
+      <span>
+        <img
+          class="medallie"
+          *ngIf="quest3_3 == 'grey'"
+          src="../assets/images/Medallie-grey.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_3 == 'bronze'"
+          src="../assets/images/Medallie Bronze.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_3 == 'silber'"
+          src="../assets/images/Medallie Silber.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_3 == 'gold'"
+          src="../assets/images/Medallie Gold.png"
+        />
+      </span>
+      <span>
+        <img
+          class="medallie"
+          *ngIf="quest3_4 == 'grey'"
+          src="../assets/images/Medallie-grey.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_4 == 'bronze'"
+          src="../assets/images/Medallie Bronze.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_4 == 'silber'"
+          ssrc="../assets/images/Medallie Silber.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest3_4 == 'gold'"
+          src="../assets/images/Medallie Gold.png"
+        />
+      </span>
+      <span>
+        <img
+          class="schloss"
+          *ngIf="modul3_locked == true"
+          src="../assets/images/Schloss.png"
+        />
+      </span>
+    </div>
+  </div>
+
+
+
+
+
+  <div
+  (click)="goToModul2()"
+  class="card modul2card text-bg-dark mb-3"
+  style="max-width: 14rem"
+>
+  <div class="card-header">Modul 2</div>
+  <div class="card-body">
+    <h5 class="card-title">Fortschritt: 0%</h5>
+    <span>
+      <img
+        class="medallie"
+        *ngIf="quest2_1 == 'grey'"
+        src="../assets/images/Medallie-grey.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_1 == 'bronze'"
+        src="../assets/images/Medallie Bronze.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_1 == 'silber'"
+        src="../assets/images/Medallie Silber.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_1== 'gold'"
+        src="../assets/images/Medallie Gold.png"
+      />
+    </span>
+    <span>
+      <img
+        class="medallie"
+        *ngIf="quest2_2 == 'grey'"
+        src="../assets/images/Medallie-grey.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_2 == 'bronze'"
+        src="../assets/images/Medallie Bronze.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_2 == 'silber'"
+        src="../assets/images/Medallie Silber.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_2 == 'gold'"
+        src="../assets/images/Medallie Gold.png"
+      />
+    </span>
+    <span>
+      <img
+        class="medallie"
+        *ngIf="quest2_3 == 'grey'"
+        src="../assets/images/Medallie-grey.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_3 == 'bronze'"
+        src="../assets/images/Medallie Bronze.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_3 == 'silber'"
+        src="../assets/images/Medallie Silber.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_3 == 'gold'"
+        src="../assets/images/Medallie Gold.png"
+      />
+    </span>
+    <span>
+      <img
+        class="medallie"
+        *ngIf="quest2_4 == 'grey'"
+        src="../assets/images/Medallie-grey.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_4 == 'bronze'"
+        src="../assets/images/Medallie Bronze.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_4 == 'silber'"
+        src="../assets/images/Medallie Silber.png"
+      />
+      <img
+        class="medallie"
+        *ngIf="quest2_4 == 'gold'"
+        src="../assets/images/Medallie Gold.png"
+      />
+    </span>
+    <span>
+      <img
+        class="schloss"
+        *ngIf="modul2_locked == true"
+        src="../assets/images/Schloss.png"
+      />
+    </span>
+  </div>
+</div>
+
+
+
+
+  <div
+    (click)="goToModul1()"
+    class="card modul1card text-bg-dark mb-3"
+    style="max-width: 14rem"
+  >
+    <div class="card-header">Modul 1</div>
+    <div class="card-body">
+      <h5 class="card-title">Fortschritt: 100%</h5>
+      <span>
+        <img
+          class="medallie"
+          *ngIf="quest1_1 == 'grey'"
+          src="../assets/images/Medallie-grey.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest1_1 == 'bronze'"
+          src="../assets/images/Medallie Bronze.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest1_1 == 'silber'"
+          src="../assets/images/Medallie Silber.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest1_1 == 'gold'"
+          src="../assets/images/Medallie Gold.png"
+        />
+      </span>
+      <span>
+        <img
+          class="medallie"
+          *ngIf="quest1_2 == 'grey'"
+          src="../assets/images/Medallie-grey.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest1_2 == 'bronze'"
+          src="../assets/images/Medallie Bronze.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest1_2 == 'silber'"
+          src="../assets/images/Medallie Silber.png"
+        />
+        <img
+          class="medallie"
+          *ngIf="quest1_2 == 'gold'"
+          src="../assets/images/Medallie Gold.png"
+        />
+      </span>
+    </div>
+  </div>
+
+
+
+
 
   <div class="footer" style="display: inline-block">
     <div class="backDiv" style="display: inline-block">

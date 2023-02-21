@@ -3,8 +3,8 @@
 }
 
 .wholePage {
-  --background: url(../../assets/images/Background_mobile_green.png) 0 0/100%
-    100% no-repeat;
+  --background: url(../../assets/images/dummymap.webp) 0 0/100%;
+  // --background: url(../../assets/images/Background_mobile_green.png) 0 0/100%
 }
 
 .avatar {
@@ -73,10 +73,6 @@
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-}
-
-.card {
-  margin: auto;
 }
 
 .card:hover {
@@ -157,10 +153,28 @@
 }
 
 .back {
-  color: white;
+  color: black;
   font-size: 40px;
 }
 
 .back:hover {
   cursor: pointer;
 }
+
+.modul1card{
+  margin-left: 13%;
+}
+
+.modul2card{
+  margin-left: 70%;
+}
+
+.modul3card{
+  margin-left: 32%;
+}
+
+.modul4card{
+  margin-left: 58%;
+}
+
+
