@@ -3,7 +3,7 @@
 }
 
 .wholePage {
-  --background: url(../../assets/images/Background_mobile_green.png) 0 0/100%
+  --background: url(../../assets/images/wooden-desk.png) 0 0/100%
     100% no-repeat;
 }
 
@@ -57,3 +57,45 @@
 .back:hover {
   cursor: pointer;
 }
+
+
+
+
+
+.drop-area{
+  // border: #ccc dashed 2px;
+  height: 160px;
+  width: 220px;
+  padding: 5px;
+}
+
+.drop-area1{
+  margin-left: 5%;
+}
+
+.drop-area2{
+  margin-left: 60%;
+}
+
+.drop-area3{
+  margin-left: 5%;
+}
+
+.drop-area4{
+  margin-left: 60%;
+}
+
+.row{
+  height: 220px;
+}
+
+.card-area{
+  border: #ccc dashed 2px;
+  width: 220px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+

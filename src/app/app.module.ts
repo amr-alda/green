@@ -17,6 +17,8 @@ import { Quest22Component } from './quest22/quest22.component';
 import { Quest23Component } from './quest23/quest23.component';
 import { Quest24Component } from './quest24/quest24.component';
 
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,13 @@ import { Quest24Component } from './quest24/quest24.component';
     Quest23Component,
     Quest24Component,
   ],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: 
+  [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    DragDropModule,
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

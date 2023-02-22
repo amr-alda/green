@@ -24,8 +24,90 @@
     </div>
   </nav>
 
-  <h1 style="text-align: center; font-weight: bold">QUEST 1.1</h1>
-  <!-- Kann weg -->
+  <h1 style="text-align: center; font-weight: bold; margin-bottom: 5px; margin-top: 0">QUEST 1.1</h1>
+  <h2 style="text-align: center; font-weight: bold; margin-bottom: 0; margin-top: 0">Erkenntnisinteresse der BWL</h2>
+
+
+
+
+
+  <div class="row1 row">
+    <span class="drop-area drop-area1">
+      <img *ngIf="droparea1 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/blue-empty.png"
+        />
+        <img *ngIf="droparea1 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/blue-filled.png"
+        />
+        <div style="width: 100%; margin-top: 15px;">
+          <div style="text-align: center; font-weight: bold; font-size: 18px">
+            Erkenntnisobjekt
+          </div>
+        </div>
+    </span>
+
+    <span class="drop-area drop-area2">
+      <img *ngIf="droparea2 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/green-empty.png"
+        />
+        <img *ngIf="droparea2 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/green-filled.png"
+        />
+        <div style="width: 100%; margin-top: 15px;">
+          <div style="text-align: center; font-weight: bold; font-size: 18px">
+            Erklärungsziel
+          </div>
+        </div>
+    </span>
+  </div>
+
+  <div class="card-area">
+    
+  </div>
+
+
+  <div class="row2 row">
+    <span class="drop-area drop-area3">
+      <img *ngIf="droparea3 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/red-empty.png"
+        />
+        <img *ngIf="droparea3 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/red-filled.png"
+        />
+        <div style="width: 100%; margin-top: 15px;">
+          <div style="text-align: center; font-weight: bold; font-size: 18px">
+            Gestaltungsziel
+          </div>
+        </div>
+    </span>
+
+    <span class="drop-area drop-area4">
+      <img *ngIf="droparea4 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/yellow-empty.png"
+        />
+        <img *ngIf="droparea4 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/yellow-filled.png"
+        />
+        <div style="width: 100%; margin-top: 15px;">
+          <div style="text-align: center; font-weight: bold; font-size: 18px">
+            Methoden
+          </div>
+        </div>
+    </span>
+  </div>
+
+
+
+
+
 
   <div class="footer" style="display: inline-block">
     <div class="backDiv" style="display: inline-block">
