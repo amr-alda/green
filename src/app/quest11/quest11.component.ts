@@ -14,36 +14,52 @@ export class Quest11Component implements OnInit {
   droparea4:number = 0;
   droparea5:number = 0;
 
-  box1:any = [
-  
-  ];
-
-  box2:any = [
-    
-  ];
-
+  box1:any = [];
+  box2:any = [];
   box3:any = [
-    "Text1",
-    "Text2",
-    "Text3",
-    "Text4",
-    "Text5",
-    "Text6",
-    "Text7",
-    "Text8",
-    "Text9",
-    "Text10",
-    "Text11",
-    "Text12",
+    "Erarbeitung von Ansätzen zur Vermeidung von Overtourism",
+    "Veranstaltungsteilnehmer",
+    "Literaturrecherchen",
+    "Reiseveranstalter",
+    "Durchführung von Befragungen",
+    "Untersuchung der Erfolgsdeterminanten der Social-Media-Kommunikation von Bio-Hotels",
+    "Auswertung statistischer Daten",
+    "Darstellung von Methoden der Preisbestimmung für hybride Kongresse",
+    "Destinationsmanagementorganisation",
+    "Beschreibung von Möglichkeiten zur Senkung des Ausstoßes klimaschädlicher Gase bei Geschäftsreisen",
+    "Analyse von Ursachen des Overtourism",
+    "Bestimmung der Einflussfaktoren des Beschwerdeverhaltens von Flugreisenden",
   ];
+  box4:any = [];
+  box5:any = [];
 
-  box4:any = [
-    
-  ];
+  get isbox1Available(): boolean {
+    return this.box1 && this.box1.length < 3;
+  }
+  box1Predicate = (): boolean => {
+  return this.isbox1Available;
+  }
 
-  box5:any = [
-    
-  ];
+  get isbox2Available(): boolean {
+    return this.box2 && this.box2.length < 3;
+  }
+  box2Predicate = (): boolean => {
+  return this.isbox2Available;
+  }
+
+  get isbox4Available(): boolean {
+    return this.box4 && this.box4.length < 3;
+  }
+  box4Predicate = (): boolean => {
+  return this.isbox4Available;
+  }
+
+  get isbox5Available(): boolean {
+    return this.box5 && this.box5.length < 3;
+  }
+  box5Predicate = (): boolean => {
+  return this.isbox5Available;
+  }
 
   onDrop(event: CdkDragDrop<string []>){
     if(event.previousContainer === event.container){

@@ -12,6 +12,8 @@
         <span class="username">Marc</span>
       </a>
 
+      <h1 style="color: white; text-align: center; font-weight: bold; margin-bottom: 5px; margin-top: 0">QUEST 1.1: Erkenntnisinteresse der BWL</h1>
+
       <a class="navbar-brand">
         <img
           alt="Logo der Hochschule Worms"
@@ -24,79 +26,34 @@
     </div>
   </nav>
 
-  <h1 style="text-align: center; font-weight: bold; margin-bottom: 5px; margin-top: 0">QUEST 1.1</h1>
-  <h2 style="text-align: center; font-weight: bold; margin-bottom: 0; margin-top: 0">Erkenntnisinteresse der BWL</h2>
 
 
 
 
-<!-- 
-  <div class="row1 row">
-    <span class="drop-area drop-area1">
-      <img *ngIf="droparea1 == 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/blue-empty.png"
-        />
-        <img *ngIf="droparea1 > 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/blue-filled.png"
-        />
-        <div style="width: 100%; margin-top: 15px;">
-          <div style="text-align: center; font-weight: bold; font-size: 18px">
-            Erkenntnisobjekt
-          </div>
-        </div>
-    </span>
 
-    <span class="drop-area drop-area2">
-      <img *ngIf="droparea2 == 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/green-empty.png"
-        />
-        <img *ngIf="droparea2 > 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/green-filled.png"
-        />
-        <div style="width: 100%; margin-top: 15px;">
-          <div style="text-align: center; font-weight: bold; font-size: 18px">
-            Erklärungsziel
-          </div>
-        </div>
-    </span>
-  </div>
-  -->
-
-
-  <!--
- <div class="card-area">
-  <img cdkDrag
-  alt=""
-  src="../../assets/images/zettel.png"
-/>
-  </div>
--->
 
 <div class="body">
+
 <div cdkDropListGroup style="display:table">
 
 <div class="row1">
-<h3>Box1</h3>
 <div class="box box1" style="display: table-cell"
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
     [cdkDropListData]="box1"
+    [cdkDropListEnterPredicate]="box1Predicate"
     >
-    <img *ngIf="droparea1 == 0"
+    <img *ngIf="box1.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/blue-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="droparea1 > 0"
+        <img *ngIf="box1.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/blue-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-    <div class="title" style="background-color: blue">
+    <div class="title" style="background-color: rgba(0, 0, 255, 0.8); font-weight: bold">
       Erkenntnisobjekt
     </div>
   <div cdkDrag class="drag-item" *ngFor="let item of box1">
@@ -109,18 +66,19 @@
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
     [cdkDropListData]="box2"
+    [cdkDropListEnterPredicate]="box2Predicate"
     >
-    <img *ngIf="droparea2 == 0"
+    <img *ngIf="box2.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/green-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="droparea2 > 0"
+        <img *ngIf="box2.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/green-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-    <div class="title" style="background-color: green">
+    <div class="title" style="background-color: rgba(0, 128, 0, 0.8); font-weight: bold">
       Erklärungsziel
     </div>
   <div cdkDrag class="drag-item" *ngFor="let item of box2">
@@ -134,33 +92,37 @@
     (cdkDropListDropped)="onDrop($event)"
     [cdkDropListData]="box3"
     >
-    <div class="title" style="background-color: black">
+    <div class="title" style="background-color: rgba(0, 0, 0, 1); font-weight: bold">
       Zuzuordnende Aussage
     </div>
   <div cdkDrag class="drag-item" *ngFor="let item of box3">
     {{item}}
   </div>
+
+  <ion-button mode="ios" size="large" color="success" *ngIf="box3.length == 0">WEITER</ion-button>
 </div>
 
 
+
+
 <div class="row2">
-<h3>Box4</h3>
 <div class="box box4" style="display: table-cell"
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
     [cdkDropListData]="box4"
+    [cdkDropListEnterPredicate]="box4Predicate"
     >
-    <img *ngIf="droparea4 == 0"
+    <img *ngIf="box4.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/red-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="droparea4 > 0"
+        <img *ngIf="box4.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/red-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-    <div class="title" style="background-color: red">
+    <div class="title" style="background-color: rgba(255, 0, 0, 0.8); font-weight: bold">
       Gestaltungsziel
     </div>
   <div cdkDrag class="drag-item" *ngFor="let item of box4">
@@ -173,18 +135,19 @@
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
     [cdkDropListData]="box5"
+    [cdkDropListEnterPredicate]="box5Predicate"
     >
-    <img *ngIf="droparea5 == 0"
+    <img *ngIf="box5.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/yellow-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="droparea5 > 0"
+        <img *ngIf="box5.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/yellow-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-    <div class="title" style="background-color: yellow">
+    <div class="title" style="background-color: rgba(255, 255, 0, 0.5); font-weight: bold">
       Methoden
     </div>
   <div cdkDrag class="drag-item" *ngFor="let item of box5">
@@ -196,42 +159,6 @@
 </div>
 </div>
 
-
-<!-- 
-  <div class="row2 row">
-    <span class="drop-area drop-area3">
-      <img *ngIf="droparea3 == 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/red-empty.png"
-        />
-        <img *ngIf="droparea3 > 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/red-filled.png"
-        />
-        <div style="width: 100%; margin-top: 15px;">
-          <div style="text-align: center; font-weight: bold; font-size: 18px">
-            Gestaltungsziel
-          </div>
-        </div>
-    </span>
-
-    <span class="drop-area drop-area4">
-      <img *ngIf="droparea4 == 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/yellow-empty.png"
-        />
-        <img *ngIf="droparea4 > 0"
-          alt=""
-          src="../../assets/images/Ablagefaecher/yellow-filled.png"
-        />
-        <div style="width: 100%; margin-top: 15px;">
-          <div style="text-align: center; font-weight: bold; font-size: 18px">
-            Methoden
-          </div>
-        </div>
-    </span>
-  </div>
--->
 
 
 
