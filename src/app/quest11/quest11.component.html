@@ -30,7 +30,7 @@
 
 
 
-
+<!-- 
   <div class="row1 row">
     <span class="drop-area drop-area1">
       <img *ngIf="droparea1 == 0"
@@ -64,12 +64,140 @@
         </div>
     </span>
   </div>
+  -->
 
-  <div class="card-area">
-    
+
+  <!--
+ <div class="card-area">
+  <img cdkDrag
+  alt=""
+  src="../../assets/images/zettel.png"
+/>
   </div>
+-->
+
+<div class="body">
+<div cdkDropListGroup style="display:table">
+
+<div class="row1">
+<h3>Box1</h3>
+<div class="box box1" style="display: table-cell"
+    cdkDropList 
+    (cdkDropListDropped)="onDrop($event)"
+    [cdkDropListData]="box1"
+    >
+    <img *ngIf="droparea1 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/blue-empty.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+        <img *ngIf="droparea1 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/blue-filled.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+    <div class="title" style="background-color: blue">
+      Erkenntnisobjekt
+    </div>
+  <div cdkDrag class="drag-item" *ngFor="let item of box1">
+    {{item}}
+  </div>
+</div>
+
+<h3>Box2</h3>
+<div class="box box2" style="display: table-cell"
+    cdkDropList 
+    (cdkDropListDropped)="onDrop($event)"
+    [cdkDropListData]="box2"
+    >
+    <img *ngIf="droparea2 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/green-empty.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+        <img *ngIf="droparea2 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/green-filled.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+    <div class="title" style="background-color: green">
+      Erklärungsziel
+    </div>
+  <div cdkDrag class="drag-item" *ngFor="let item of box2">
+    {{item}}
+  </div>
+</div>
+</div>
+
+<div class="box box3" style="display: table-cell"
+    cdkDropList 
+    (cdkDropListDropped)="onDrop($event)"
+    [cdkDropListData]="box3"
+    >
+    <div class="title" style="background-color: black">
+      Zuzuordnende Aussage
+    </div>
+  <div cdkDrag class="drag-item" *ngFor="let item of box3">
+    {{item}}
+  </div>
+</div>
 
 
+<div class="row2">
+<h3>Box4</h3>
+<div class="box box4" style="display: table-cell"
+    cdkDropList 
+    (cdkDropListDropped)="onDrop($event)"
+    [cdkDropListData]="box4"
+    >
+    <img *ngIf="droparea4 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/red-empty.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+        <img *ngIf="droparea4 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/red-filled.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+    <div class="title" style="background-color: red">
+      Gestaltungsziel
+    </div>
+  <div cdkDrag class="drag-item" *ngFor="let item of box4">
+    {{item}}
+  </div>
+</div>
+
+<h3>Box5</h3>
+<div class="box box5" style="display: table-cell"
+    cdkDropList 
+    (cdkDropListDropped)="onDrop($event)"
+    [cdkDropListData]="box5"
+    >
+    <img *ngIf="droparea5 == 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/yellow-empty.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+        <img *ngIf="droparea5 > 0"
+          alt=""
+          src="../../assets/images/Ablagefaecher/yellow-filled.png"
+          style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
+        />
+    <div class="title" style="background-color: yellow">
+      Methoden
+    </div>
+  <div cdkDrag class="drag-item" *ngFor="let item of box5">
+    {{item}}
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- 
   <div class="row2 row">
     <span class="drop-area drop-area3">
       <img *ngIf="droparea3 == 0"
@@ -103,7 +231,7 @@
         </div>
     </span>
   </div>
-
+-->
 
 
 
