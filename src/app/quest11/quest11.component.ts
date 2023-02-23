@@ -9,7 +9,7 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 })
 export class Quest11Component implements OnInit {
 
-  droparea1:number = 1;
+  droparea1:number = 0;
   droparea2:number = 0;
   droparea4:number = 0;
   droparea5:number = 0;
@@ -89,5 +89,9 @@ export class Quest11Component implements OnInit {
 
   goToModul1(): void {
     this.router.navigateByUrl('/modul1');
+  }
+
+  goToQuest112(): void {
+    this.router.navigateByUrl('/quest112');
   }
 }

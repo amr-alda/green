@@ -12,7 +12,8 @@
         <span class="username">Marc</span>
       </a>
 
-      <h2 style="color: white; text-align: center; font-weight: bold; margin-bottom: 5px; margin-top: 0">QUEST 1.1: <br> Erkenntnisinteresse der BWL</h2> 
+      <h2 style="color: white; text-align: center; font-weight: bold; margin-bottom: 5px; margin-top: 0">QUEST 1.1: <br> Zentrale wissenschaftstheoretische Begriffe</h2> 
+
       
       <a class="navbar-brand">
         <img
@@ -37,112 +38,112 @@
 <div cdkDropListGroup style="display:table">
 
 <div class="row1">
-<div class="box box1" style="display: table-cell"
+<div class="box box6" style="display: table-cell"
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListData]="box1"
-    [cdkDropListEnterPredicate]="box1Predicate"
+    [cdkDropListData]="box6"
+    [cdkDropListEnterPredicate]="box6Predicate"
     >
-    <img *ngIf="box1.length == 0"
+    <img *ngIf="box6.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/blue-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="box1.length > 0"
+        <img *ngIf="box6.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/blue-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
     <div class="title" style="background-color: rgba(0, 0, 255, 0.8); font-weight: bold">
-      Erkenntnisobjekt
+      Hypothese
     </div>
-  <div cdkDrag class="drag-item" *ngFor="let item of box1">
+  <div cdkDrag class="drag-item" *ngFor="let item of box6">
     {{item}}
   </div>
 </div>
 
-<h3>Box2</h3>
-<div class="box box2" style="display: table-cell"
+<h3>Box7</h3>
+<div class="box box7" style="display: table-cell"
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListData]="box2"
-    [cdkDropListEnterPredicate]="box2Predicate"
+    [cdkDropListData]="box7"
+    [cdkDropListEnterPredicate]="box7Predicate"
     >
-    <img *ngIf="box2.length == 0"
+    <img *ngIf="box7.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/green-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="box2.length > 0"
+        <img *ngIf="box7.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/green-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
     <div class="title" style="background-color: rgba(0, 128, 0, 0.8); font-weight: bold">
-      Erklärungsziel
+      Theorie
     </div>
-  <div cdkDrag class="drag-item" *ngFor="let item of box2">
+  <div cdkDrag class="drag-item" *ngFor="let item of box7">
     {{item}}
   </div>
 </div>
 </div>
 
-<div class="box box3" style="display: table-cell"
+<div class="box box8" style="display: table-cell"
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListData]="box3"
+    [cdkDropListData]="box8"
     >
     <div class="title" style="background-color: rgba(0, 0, 0, 1); font-weight: bold">
-      Zuzuordnende Aussage
+      Modell
     </div>
-  <div cdkDrag class="drag-item" *ngFor="let item of box3">
+  <div cdkDrag class="drag-item" *ngFor="let item of box8">
     {{item}}
   </div>
 
-  <ion-button (click)="goToQuest112()" mode="ios" size="large" color="success" *ngIf="box3.length == 0">WEITER</ion-button>
+  <ion-button mode="ios" size="large" color="success" *ngIf="box8.length == 0">FERTIG</ion-button>
 </div>
 
 
 
 
 <div class="row2">
-<div class="box box4" style="display: table-cell"
+<div class="box box9" style="display: table-cell"
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListData]="box4"
-    [cdkDropListEnterPredicate]="box4Predicate"
+    [cdkDropListData]="box9"
+    [cdkDropListEnterPredicate]="box9Predicate"
     >
-    <img *ngIf="box4.length == 0"
+    <img *ngIf="box9.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/red-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="box4.length > 0"
+        <img *ngIf="box9.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/red-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
     <div class="title" style="background-color: rgba(255, 0, 0, 0.8); font-weight: bold">
-      Gestaltungsziel
+      Konzept
     </div>
-  <div cdkDrag class="drag-item" *ngFor="let item of box4">
+  <div cdkDrag class="drag-item" *ngFor="let item of box9">
     {{item}}
   </div>
 </div>
 
 <h3>Box5</h3>
-<div class="box box5" style="display: table-cell"
+<div class="box box10" style="display: table-cell"
     cdkDropList 
     (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListData]="box5"
-    [cdkDropListEnterPredicate]="box5Predicate"
+    [cdkDropListData]="box10"
+    [cdkDropListEnterPredicate]="box10Predicate"
     >
-    <img *ngIf="box5.length == 0"
+    <img *ngIf="box10.length == 0"
           alt=""
           src="../../assets/images/Ablagefaecher/yellow-empty.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
         />
-        <img *ngIf="box5.length > 0"
+        <img *ngIf="box10.length > 0"
           alt=""
           src="../../assets/images/Ablagefaecher/yellow-filled.png"
           style="width: 200px; padding-left: 50px; padding-bottom: 10px;"
@@ -150,8 +151,11 @@
     <div class="title" style="background-color: rgba(255, 255, 0, 0.5); font-weight: bold">
       Methoden
     </div>
-  <div cdkDrag class="drag-item" *ngFor="let item of box5">
-    {{item}}
+  <div cdkDrag class="drag-item" *ngFor="let item of box10">
+    {{item}} 
+    
+      
+    
   </div>
 </div>
 </div>

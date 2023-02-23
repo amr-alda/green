@@ -6,12 +6,13 @@ import {Modul1Component} from '../app/modul1/modul1.component'
 import {Modul2Component} from '../app/modul2/modul2.component'
 import {Modul3Component} from '../app/modul3/modul3.component'
 import {Modul4Component} from '../app/modul4/modul4.component'
-import { Quest11Component } from './quest11/quest11.component';
-import { Quest12Component } from './quest12/quest12.component';
-import { Quest21Component } from './quest21/quest21.component';
-import { Quest22Component } from './quest22/quest22.component';
-import { Quest23Component } from './quest23/quest23.component';
-import { Quest24Component } from './quest24/quest24.component';
+import { Quest11Component } from './quest11/quest11.component'
+import { Quest112Component } from './quest112/quest112.component';
+import { Quest12Component } from './quest12/quest12.component'
+import { Quest21Component } from './quest21/quest21.component'
+import { Quest22Component } from './quest22/quest22.component'
+import { Quest23Component } from './quest23/quest23.component'
+import { Quest24Component } from './quest24/quest24.component'
 
 
 const routes: Routes = [
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'quest11', 
     component: Quest11Component
+  },
+  {
+    path: 'quest112', 
+    component: Quest112Component
   },
   {
     path: 'quest12', 
