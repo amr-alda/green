@@ -17,6 +17,10 @@ import { Quest22Component } from './quest22/quest22.component';
 import { Quest23Component } from './quest23/quest23.component';
 import { Quest24Component } from './quest24/quest24.component';
 
+import { Text1Component } from './text1/text1.component';
+import { Text2Component } from './text2/text2.component';
+import { Text3Component } from './text3/text3.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +34,9 @@ import { Quest24Component } from './quest24/quest24.component';
     Quest22Component,
     Quest23Component,
     Quest24Component,
+    Text1Component,
+    Text2Component,
+    Text3Component,
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

@@ -12,6 +12,9 @@ import { Quest21Component } from './quest21/quest21.component';
 import { Quest22Component } from './quest22/quest22.component';
 import { Quest23Component } from './quest23/quest23.component';
 import { Quest24Component } from './quest24/quest24.component';
+import { Text1Component } from './text1/text1.component';
+import { Text2Component } from './text2/text2.component';
+import { Text3Component } from './text3/text3.component';
 
 
 const routes: Routes = [
@@ -71,6 +74,18 @@ const routes: Routes = [
   {
     path: 'quest24', 
     component: Quest24Component
+  },
+  {
+    path: 'text1', 
+    component: Text1Component
+  },
+  {
+    path: 'text2', 
+    component: Text2Component
+  },
+  {
+    path: 'text3', 
+    component: Text3Component
   },
 ];
 
