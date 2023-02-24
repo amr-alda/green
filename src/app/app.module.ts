@@ -20,6 +20,9 @@ import { Quest24Component } from './quest24/quest24.component';
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
+import { Text1Component } from './text1/text1.component';
+import { Text2Component } from './text2/text2.component';
+import { Text3Component } from './text3/text3.component';
 
 
 @NgModule({
@@ -32,6 +35,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     Quest11Component,
     Quest112Component,
     Quest12Component,
+    Text1Component,
+    Text2Component,
+    Text3Component,
     Quest21Component,
     Quest22Component,
     Quest23Component,

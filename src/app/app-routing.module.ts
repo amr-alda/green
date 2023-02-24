@@ -9,6 +9,9 @@ import {Modul4Component} from '../app/modul4/modul4.component'
 import { Quest11Component } from './quest11/quest11.component'
 import { Quest112Component } from './quest112/quest112.component';
 import { Quest12Component } from './quest12/quest12.component'
+import { Text1Component } from './text1/text1.component';
+import { Text2Component } from './text2/text2.component';
+import { Text3Component } from './text3/text3.component';
 import { Quest21Component } from './quest21/quest21.component'
 import { Quest22Component } from './quest22/quest22.component'
 import { Quest23Component } from './quest23/quest23.component'
@@ -60,6 +63,18 @@ const routes: Routes = [
   {
     path: 'quest12', 
     component: Quest12Component
+  },
+  {
+    path: 'text1', 
+    component: Text1Component
+  },
+  {
+    path: 'text2', 
+    component: Text2Component
+  },
+  {
+    path: 'text3', 
+    component: Text3Component
   },
   {
     path: 'quest21', 
