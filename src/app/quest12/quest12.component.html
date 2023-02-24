@@ -24,20 +24,21 @@
     </div>
   </nav>
 
-  <h2 style="text-align: center; font-weight: bold; color: white">QUEST 1.2: kritischer Rationalismus</h2>
+  <h2 style="text-align: center; font-weight: bold; color: white; margin-top: -2%;">QUEST 1.2: Kritischer Rationalismus</h2>
   <!-- Kann weg -->
   <div class="body">
     <div class="helDiv"><br></div>
     <div id="dokumentPosition">
       <h1>
         <div id="textbox">
-          <div id="divText1"><img src="../assets/images/pdf1.png" (click)="goToText1()" style="width:100px" alt="Text1"></div>
-          <div id="divText2"><img src="../assets/images/pdf2.png" (click)="goToText2()" style="width:100px" alt="Text2"></div>
-          <div id="divText3"><img src="../assets/images/pdf3.png" (click)="goToText3()" style="width:100px" alt="Text3"></div>
-          <div id="divFinishbutton"><ion-button (click)="determining()" mode="ios" size="large" color="success">Fertig</ion-button></div>
+          <div class="pdf" id="divText1"><img src="../assets/images/pdf1.png" (click)="goToText1()" style="width:100px" alt="Text1"></div>
+          <div class="pdf" id="divText2"><img src="../assets/images/pdf2.png" (click)="goToText2()" style="width:100px" alt="Text2"></div>
+          <div class="pdf" id="divText3"><img src="../assets/images/pdf3.png" (click)="goToText3()" style="width:100px" alt="Text3"></div>
+          <div><ion-button class="finishButton" (click)="determining()" mode="ios" size="large" color="success">Fertig</ion-button></div>
         </div>
       </h1>
     </div>
+    <div class="align-items-center justify-content-center">
       <table id="TabelforQuest12">
         <tr>
           <td class="TDQuest12"><br></td>
@@ -72,7 +73,10 @@
           <td class="TDQuest12"><select class="valueQuest12" id="T3K5"><option value="nothing"></option><option value="fulfilled">Kriterium erfüllt</option><option value="notfulfilled">Kriterium nicht erfüllt</option></select></td>
         </tr>
       </table>
+    </div>
+
   </div>
+
   <div class="footer" style="display: inline-block">
     <div class="backDiv" style="display: inline-block">
       <ion-icon
@@ -91,4 +95,3 @@
 </ion-content>
 
 <!-- https://www.freepik.com/free-vector/workspace-concept-flat-style_2914591.htm#page=10&query=empty%20comic%20desktop&position=6&from_view=search&track=ais -->
-<!-- https://www.freepik.com/free-icon/pdf_15538235.htm#page=19&query=document%20pdf%20comic&position=35&from_view=search&track=ais -->
