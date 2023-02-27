@@ -34,7 +34,8 @@ export class StartComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+} 
 
   goToModul1(): void {
     this.router.navigateByUrl('/modul1');
