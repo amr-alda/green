@@ -24,6 +24,8 @@ import { Text1Component } from './text1/text1.component';
 import { Text2Component } from './text2/text2.component';
 import { Text3Component } from './text3/text3.component';
 
+import { StartComponent } from './start/start.component';
+
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { Text3Component } from './text3/text3.component';
     Quest22Component,
     Quest23Component,
     Quest24Component,
+    StartComponent,
   ],
   imports: 
   [
