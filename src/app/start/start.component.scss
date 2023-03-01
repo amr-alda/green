@@ -34,7 +34,7 @@ a{
 main{
     display: grid;
     height: 100vh;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 4fr 1fr;
 }
 
@@ -83,25 +83,14 @@ main{
 .kasten1{
     // background-image: url(../../assets/images/street.png);
     background-size: 110% 110%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .kasten2{
-   
-}
-
-.kasten3{
-    
-}
-
-.kasten4{
-    text-align: center;
-}
-
-.kasten5{
-    height: 100%;
-    width: 50%;
-    float: right;
-    text-align: center;
+   padding: 2%;
 }
 
 .avatar{
@@ -170,4 +159,8 @@ main{
   .schloss {
     width: 15%;
     float: right;
+  }
+
+  .unityBox{
+    text-align: center;
   }
