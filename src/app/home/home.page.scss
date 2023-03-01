@@ -1,27 +1,105 @@
-* {
-  font-family: "Courier New", Courier, monospace;
+*{
+  box-sizing: border-box;
 }
 
-.wholePage {
-  --background: url(../../assets/images/pfad.jpg) 0 90%;
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
 }
 
-.avatar {
-  margin-right: 3%;
+nav{
+  height: 8%;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.2rem;
+  margin-top: 0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+h1, h2, h3, a, p, span{
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+main{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 1fr;
+}
+
+.nav-kasten1{
+  height: 100%;
+  width: 5%;
+}
+
+.nav-kasten2{
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 5%;
+}
+
+.nav-kasten3{
+  height: 100%;
+  margin-top: 5px;
+  width: 8%;
+  text-align: left;
+}
+
+.nav-kasten4{
+  height: 100%;
+  width: 64%;
+  text-align: center;
+}
+
+.nav-kasten5{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 13%;
+  text-align: right;
+}
+
+.nav-kasten6{
+  height: 100%;
+  width: 5%;
+  text-align: right;
+}
+
+.kasten{
+  border: 1px solid rgb(255,255,255, 0.1);
+}
+
+.kasten1{
+  // background-image: url(../../assets/images/street.png);
+  background-size: 110% 110%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.kasten2{
+ padding: 2%;
+}
+
+.avatar{
+  border-radius: 50px;
 }
 
 .progress-outer {
   border-radius: 50px;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
   margin: auto;
-  width: 90%;
-}
-
-@media (min-width: 800px) {
-  .progress-outer {
-    width: 60%;
-    padding-bottom: 2%;
-  }
+  width: 80%;
 }
 
 .progress {
@@ -48,28 +126,9 @@
   animation: reverse progress-bar-stripes 0.4s linear infinite,
     animate-positive 2s;
 }
-@-webkit-keyframes animate-positive {
-  0% {
-    width: 0%;
-  }
-}
-@keyframes animate-positive {
-  0% {
-    width: 0%;
-  }
-}
 
-.username {
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.parlamentarier {
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
+.card{
+  margin: auto;
 }
 
 .card:hover {
@@ -79,10 +138,6 @@
 .card-header {
   margin: auto;
   font-weight: bold;
-}
-
-.feedback {
-  margin-top: 5%;
 }
 
 .card-body {
@@ -104,92 +159,6 @@
   float: right;
 }
 
-.back {
-  color: white !important;
-  font-size: 40px;
-  margin-left: 1%;
-}
-
-.back:hover {
-  cursor: pointer;
-}
-
-@media (min-width: 800px) {
-  .back {
-    margin-top: 8%;
-  }
-}
-
-.homeButton {
-  width: 100%;
+.unityBox{
   text-align: center;
-  font-size: 40px;
-  width: fit-content;
-  visibility: hidden;
 }
-
-.footer {
-  width: 100vw;
-  position: absolute;
-  text-align: center;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 1%;
-  bottom: 0;
-}
-
-.backDiv {
-  width: fit-content;
-  float: left;
-}
-
-.fakeBackDiv {
-  width: fit-content;
-  float: right;
-  visibility: hidden;
-}
-
-.back {
-  color: black;
-  font-size: 40px;
-}
-
-.back:hover {
-  cursor: pointer;
-}
-
-.modul1card{
-  margin-left: 16%;
-  margin-top: 4%;
-}
-
-.modul2card{
-  margin-left: 38%;
-  margin-top: -6%;
-}
-
-.modul3card{
-  margin-left: 30%;
-  margin-top: 9%;
-}
-
-.modul4card{
-  margin-left: 75%;
-  margin-top: -11%;
-}
-
-.movingAvatar{
-  height: 280px;
-  width: 350px;
-}
-
-.movingAvatar2{
-  position: relative;
-  margin-top: -8%;
-  margin-left: 41%;
-}
-
-
-
-
-

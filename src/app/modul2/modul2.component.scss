@@ -2,8 +2,63 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.avatar {
-  margin-right: 3%;
+.avatar{
+  border-radius: 50px;
+}
+
+nav{
+  height: 8.5%;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom: 1px solid rgb(255,255,255, 0.1);
+}
+
+h1, h2, h3, a, p, span{
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-kasten1{
+  height: 100%;
+  width: 5%;
+}
+
+.nav-kasten2{
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 5%;
+}
+
+.nav-kasten3{
+  height: 100%;
+  margin-top: 5px;
+  width: 8%;
+  text-align: left;
+}
+
+.nav-kasten4{
+  height: 100%;
+  width: 64%;
+  text-align: center;
+}
+
+.nav-kasten5{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 13%;
+  text-align: right;
+}
+
+.nav-kasten6{
+  height: 100%;
+  width: 5%;
+  text-align: right;
 }
 
 .box {
@@ -58,7 +113,8 @@ ion-icon {
 }
 
 .wholePage {
-  --background: url(../../assets/images/street.png) 0 0/100%;
+  // --background: url(../../assets/images/street.png) 0 0/100%;
+  --background: rgba(1,61,98,255);
 }
 
 .username {

@@ -20,7 +20,7 @@
     <h2>Mission Green Possible</h2>
   </div>
   <div class="nav-kasten5 nav-kasten">
-    <p style="font-weight: bold; margin-top: 5%;">Abmelden</p>
+    <p (click)="goToLogin()" style="font-weight: bold; margin-top: 5%; cursor: pointer">Abmelden</p>
   </div>
   <div class="nav-kasten6 nav-kasten">
     <img
@@ -36,23 +36,6 @@
 <main style="color: white">
 
   <div class="kasten1 kasten">
-
-    <!-- <div class="container" style="margin-top: 1%;">
-      <div class="row">
-        <div class="progress-outer">
-          <div class="progress">
-            <div
-              class="progress-bar bg-success progress-bar-striped active"
-              style="
-                width: 60%;
-                box-shadow: -1px 10px 10px rgba(116, 195, 116, 0.7);
-              "
-            ></div>
-            <div class="progress-value">60%</div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div
     (click)="goToModul1()"
@@ -417,26 +400,50 @@
         />
       </span>
     </div>
-  </div> -->
+  </div> 
 
-  <div class="unityBox" style="width:100%; height: 100%">
+  <!-- <div class="unityBox" style="width:100%; height: 100%">
     <iframe mozallowfullscreen="true" allow="autoplay; fullscreenautoplay; encrypted-media;" src="http://melmmarc.github.io/Builds2/index.html" style="border:0px #000000 none;" name="Unity Worms Map" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" height="100%" width="100%"></iframe>
-  </div>
+  </div> -->
 
   </div>
 
   <div class="kasten2 kasten">
-    <p style="font-size: 20px; text-align: center; margin-top: 30%; font-weight: bold"> Praktikant</p>
+
+    <div class="container" style="margin-top: 8%; margin-bottom: 15%;">
+      <div class="row">
+        <div class="progress-outer">
+          <div class="progress">
+            <div
+              class="progress-bar bg-success progress-bar-striped active"
+              style="
+                width: 60%;
+                box-shadow: -1px 10px 10px rgba(116, 195, 116, 0.7);
+              "
+            ></div>
+            <div class="progress-value">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div style="text-align: center;">
     <img
         alt="Dummy Character"
         src="../../assets/images/praktikant.png"
-        width="300"
-        height="280"
+        width="320"
+        height="300"
         class="inline-block"
       />
-      <p style="text-align: center; margin-top: 5%">Überzeuge mehr Parlamentarier um in deinem Rang aufzusteigen</p>
+
+      <h1 *ngIf="player_rank == 1" style="font-weight: bold; font-size: 35px">Praktikant</h1>
+      <h1 *ngIf="player_rank == 2" style="font-weight: bold; font-size: 35px">Studentische Hilfskraft</h1>
+      <h1 *ngIf="player_rank == 3" style="font-weight: bold; font-size: 35px">Wissenschaftlicher Mitarbeiter</h1>
+      <h1 *ngIf="player_rank == 4" style="font-weight: bold; font-size: 35px">Rang 4</h1>
+      
+    
+      <p style="text-align: center; margin-top: 10%">Überzeuge mehr Parlamentarier um in deinem Rang aufzusteigen</p>
     </div>
   </div>
-</main>
 
+</main>

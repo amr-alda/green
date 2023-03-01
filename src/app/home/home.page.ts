@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HomePage implements OnInit {
 
+  player_rank:number = 1;
+
   modul2_locked: boolean = false;
   modul3_locked: boolean = true;
   modul4_locked: boolean = true;
