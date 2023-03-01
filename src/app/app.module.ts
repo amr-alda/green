@@ -25,6 +25,7 @@ import { Text2Component } from './text2/text2.component';
 import { Text3Component } from './text3/text3.component';
 
 import { StartComponent } from './start/start.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { StartComponent } from './start/start.component';
     IonicModule.forRoot(), 
     AppRoutingModule,
     DragDropModule,
+    YouTubePlayerModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

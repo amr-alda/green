@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @Component({
   selector: 'app-modul2',
