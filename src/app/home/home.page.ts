@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Global } from '../global';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,78 @@ import { Router } from '@angular/router';
 export class HomePage implements OnInit {
 
   player_rank:number = 1;
+  parlament_progress = 40;  
+
+
+  isIn10Range(parlament_progress:number){
+    if(parlament_progress>=10 && parlament_progress <20){
+      return true;
+    }
+    return false;
+  }
+
+  isIn20Range(parlament_progress:number){
+    if(parlament_progress>=20 && parlament_progress <30){
+      return true;
+    }
+    return false;
+  }
+
+  isIn30Range(parlament_progress:number){
+    if(parlament_progress>=30 && parlament_progress <40){
+      return true;
+    }
+    return false;
+  }
+  
+  isIn40Range(parlament_progress:number){
+    if(parlament_progress>=40 && parlament_progress <50){
+      return true;
+    }
+    return false;
+  }
+
+  isIn50Range(parlament_progress:number){
+    if(parlament_progress>=50 && parlament_progress <60){
+      return true;
+    }
+    return false;
+  }
+
+  isIn60Range(parlament_progress:number){
+    if(parlament_progress>=60 && parlament_progress <70){
+      return true;
+    }
+    return false;
+  }
+
+  isIn70Range(parlament_progress:number){
+    if(parlament_progress>=70 && parlament_progress <80){
+      return true;
+    }
+    return false;
+  }
+
+  isIn80Range(parlament_progress:number){
+    if(parlament_progress>=80 && parlament_progress <90){
+      return true;
+    }
+    return false;
+  }
+
+  isIn90Range(parlament_progress:number){
+    if(parlament_progress>=90 && parlament_progress <100){
+      return true;
+    }
+    return false;
+  }
+
+  isIn100Range(parlament_progress:number){
+    if(parlament_progress==100){
+      return true;
+    }
+    return false;
+  }
 
   modul2_locked: boolean = false;
   modul3_locked: boolean = true;

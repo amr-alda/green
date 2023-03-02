@@ -410,15 +410,83 @@
 
   <div class="kasten2 kasten">
 
-    <p style="text-align: center; padding: 2%; margin-top: 5%">30% des Europaparlaments sind bereits auf deiner Seite!</p>
+    <p style="text-align: center; padding: 2%; margin-top: 5%">40% des Europaparlaments sind bereits auf deiner Seite!</p>
 
-    <img
-        alt="Dummy Parlament"
-        src="../../assets/images/parlament-dummy.png"
+    <img *ngIf="isIn10Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/10percent.png"
         width="100%"
         height="20%"
         class="inline-block"
       />
+
+      <img *ngIf="isIn20Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/20percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+
+      <img *ngIf="isIn30Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/30percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+
+    <img *ngIf="isIn40Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/40percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn50Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/50percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn60Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/60percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn70Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/70percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn80Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/80percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn90Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/90percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn100Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/100percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+    
+
   <!-- 
     <div class="container" style="margin-top: 8%; margin-bottom: 15%;">
       <div class="row">
