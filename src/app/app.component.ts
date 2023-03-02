@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
+import { Global } from './global';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent{
 
   username:string = "Name";
-  
 
   constructor(private router: Router) {}
 
@@ -18,7 +18,7 @@ export class AppComponent {
       this.router.navigateByUrl('/login');
     }
   }
-
+  
 }
 
 
