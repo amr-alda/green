@@ -44,7 +44,7 @@
   >
     <div class="card-header">Modul 1</div>
     <div class="card-body">
-      <h5 class="card-title">Fortschritt: 100%</h5>
+      <h5 class="card-title">Fortschritt: {{modul1_percent}}%</h5>
       <span>
         <img
           class="medallie"
@@ -99,7 +99,7 @@
 >
   <div class="card-header">Modul 2</div>
   <div class="card-body">
-    <h5 class="card-title">Fortschritt: 0%</h5>
+    <h5 class="card-title">Fortschritt: {{modul2_percent}}%</h5>
     <span>
       <img
         class="medallie"
@@ -201,7 +201,7 @@
 <div class="card modul3card text-bg-light mb-3" style="max-width: 14rem">
   <div class="card-header">Modul 3</div>
   <div class="card-body">
-    <h5 class="card-title">Fortschritt: 0%</h5>
+    <h5 class="card-title">Fortschritt: {{modul3_percent}}%</h5>
     <span>
       <img
         class="medallie"
@@ -303,7 +303,7 @@
 <div class="card modul4card text-bg-light mb-3" style="max-width: 14rem">
     <div class="card-header">Modul 4</div>
     <div class="card-body">
-      <h5 class="card-title">Fortschritt: 0%</h5>
+      <h5 class="card-title">Fortschritt: {{modul4_percent}}%</h5>
       <span>
         <img
           class="medallie"
@@ -410,7 +410,7 @@
 
   <div class="kasten2 kasten">
 
-    <p style="text-align: center; padding: 2%; margin-top: 5%">40% des Europaparlaments sind bereits auf deiner Seite!</p>
+    <p style="text-align: center; padding: 2%; margin-top: 5%">{{parlament_progress}}% des Europaparlaments sind bereits auf deiner Seite!</p>
 
     <img *ngIf="isIn10Range(parlament_progress) == true"
         alt="Parlament"

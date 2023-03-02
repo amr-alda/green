@@ -10,8 +10,72 @@ import { Global } from '../global';
 export class HomePage implements OnInit {
 
   player_rank:number = 1;
-  parlament_progress = 40;  
+  parlament_progress = 30;  
 
+  modul1_percent:number = 100;
+  modul2_percent:number = 0;
+  modul3_percent:number = 0;
+  modul4_percent:number = 0;
+
+  modul2_locked: boolean = false;
+  modul3_locked: boolean = true;
+  modul4_locked: boolean = true;
+  
+  quest1_1: string = 'gold';
+  quest1_2: string = 'bronze';
+
+  quest2_1: string = 'grey';
+  quest2_2: string = 'grey';
+  quest2_3: string = 'grey';
+  quest2_4: string = 'grey';
+
+  quest3_1: string = 'grey';
+  quest3_2: string = 'grey';
+  quest3_3: string = 'grey';
+  quest3_4: string = 'grey';
+
+  quest4_1: string = 'grey';
+  quest4_2: string = 'grey';
+  quest4_3: string = 'grey';
+  quest4_4: string = 'grey';
+
+  formModal: any;
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {}
+
+  goToModul1(): void {
+    this.router.navigateByUrl('/modul1');
+  }
+
+  goToModul2(): void {
+    if (this.modul2_locked == false) {
+      this.router.navigateByUrl('/modul2');
+    }
+  }
+
+  goToModul3(): void {
+    if (this.modul2_locked == false) {
+      this.router.navigateByUrl('/modul3');
+    }
+  }
+
+  goToModul4(): void {
+    if (this.modul2_locked == false) {
+      this.router.navigateByUrl('/modul4');
+    }
+  }
+
+  goToFeedback(): void {
+    this.router.navigateByUrl('/feedback');
+  }
+
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
 
   isIn10Range(parlament_progress:number){
     if(parlament_progress>=10 && parlament_progress <20){
@@ -81,65 +145,5 @@ export class HomePage implements OnInit {
       return true;
     }
     return false;
-  }
-
-  modul2_locked: boolean = false;
-  modul3_locked: boolean = true;
-  modul4_locked: boolean = true;
-  
-  quest1_1: string = 'gold';
-  quest1_2: string = 'bronze';
-
-  quest2_1: string = 'grey';
-  quest2_2: string = 'grey';
-  quest2_3: string = 'grey';
-  quest2_4: string = 'grey';
-
-  quest3_1: string = 'grey';
-  quest3_2: string = 'grey';
-  quest3_3: string = 'grey';
-  quest3_4: string = 'grey';
-
-  quest4_1: string = 'grey';
-  quest4_2: string = 'grey';
-  quest4_3: string = 'grey';
-  quest4_4: string = 'grey';
-
-  formModal: any;
-
-  constructor(private router: Router) {}
-
-  ngOnInit(): void {}
-
-  goToModul1(): void {
-    this.router.navigateByUrl('/modul1');
-  }
-
-  goToModul2(): void {
-    if (this.modul2_locked == false) {
-      this.router.navigateByUrl('/modul2');
-    }
-  }
-
-  goToModul3(): void {
-    if (this.modul2_locked == false) {
-      this.router.navigateByUrl('/modul3');
-    }
-  }
-
-  goToModul4(): void {
-    if (this.modul2_locked == false) {
-      this.router.navigateByUrl('/modul4');
-    }
-  }
-
-  goToFeedback(): void {
-    this.router.navigateByUrl('/feedback');
-  }
-
-  goToLogin(): void {
-    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
-      this.router.navigateByUrl('/login');
-    }
   }
 }
