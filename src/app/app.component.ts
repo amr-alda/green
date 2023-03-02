@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 import { Global } from './global';
 
 @Component({
@@ -11,7 +11,19 @@ export class AppComponent{
 
   username:string = "Name";
 
-  constructor(private router: Router) {}
+  showHeader: boolean = false;
+
+  constructor(private router: Router) {
+    router.events.forEach((event) => {
+      if (event instanceof NavigationStart) {
+        if (event['url'] == '/login') {
+          this.showHeader = false;
+        } else {
+          this.showHeader = true;
+        }
+      }
+    });
+  }
 
   goToLogin(): void {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
