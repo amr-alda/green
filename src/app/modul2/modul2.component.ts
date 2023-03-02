@@ -8,6 +8,9 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
   styleUrls: ['./modul2.component.scss'],
 })
 export class Modul2Component implements OnInit {
+
+  username:string = "Name";
+  
   quest1_1: string = 'grey';
   quest1_2: string = 'grey';
 

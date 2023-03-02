@@ -9,6 +9,8 @@ import { Global } from '../global';
 })
 export class HomePage implements OnInit {
 
+  username:string = "Name";
+  
   player_rank:number = 1;
   parlament_progress = 30;  
 
