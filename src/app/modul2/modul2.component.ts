@@ -9,8 +9,6 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 })
 export class Modul2Component implements OnInit {
 
-  username:string = "Name";
-  
   quest1_1: string = 'grey';
   quest1_2: string = 'grey';
 

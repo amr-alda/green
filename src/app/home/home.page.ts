@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Global } from '../global';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +8,6 @@ import { Global } from '../global';
 })
 export class HomePage implements OnInit {
 
-  username:string = "Name";
-  
   player_rank:number = 1;
   parlament_progress = 30;  
 
@@ -71,12 +68,6 @@ export class HomePage implements OnInit {
 
   goToFeedback(): void {
     this.router.navigateByUrl('/feedback');
-  }
-
-  goToLogin(): void {
-    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
-      this.router.navigateByUrl('/login');
-    }
   }
 
   isIn10Range(parlament_progress:number){
