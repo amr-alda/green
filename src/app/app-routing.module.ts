@@ -17,6 +17,7 @@ import { Quest22Component } from './quest22/quest22.component'
 import { Quest23Component } from './quest23/quest23.component'
 import { Quest24Component } from './quest24/quest24.component'
 import { StartComponent } from './start/start.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'feedback', 
     component: FeedbackComponent
+  },
+  {
+    path: 'register', 
+    component: RegisterComponent
   },
   {
     path: 'start', 

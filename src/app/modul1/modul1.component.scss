@@ -2,6 +2,10 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+.wholePage{
+  --background: url(../../assets/images/questBg.png) 0 0/100%;
+}
+
 .avatar{
   border-radius: 50px;
 }
@@ -110,11 +114,6 @@ ion-icon {
 
 .quest-height {
   height: 50px;
-}
-
-.wholePage {
-  // --background: url(../../assets/images/street.png) 0 0/100%;
-  --background: rgba(1,61,98,255);
 }
 
 .username {
