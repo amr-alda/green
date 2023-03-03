@@ -17,10 +17,11 @@ main{
 
 .userInfo{
   display: flex;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
 
 .kasten1{
+  display: flex;
   padding: 2%;
   border-top: 1px solid rgb(255,255,255, 0.1);
  }
@@ -72,3 +73,28 @@ main{
   text-align: center;
 }
 
+.modul1card{
+  position: relative;
+  transform: translateY(180%);
+}
+
+@media screen and (min-height: 800px) {
+  .modul1card {
+    transform: translateY(230%);
+  }
+}
+
+.modul2card{
+  position: relative;
+  transform: translateY(-260%);
+}
+
+.modul3card{
+  position: relative;
+  transform: translateY(-128%);
+}
+
+.modul4card{
+  position: relative;
+  transform: translateY(-250%);
+}
