@@ -20,6 +20,9 @@ export class AppComponent{
         else if (event['url'] == '/register') {
           this.showHeader = false;
         }
+        else if (event['url'] == '/newpassword') {
+          this.showHeader = false;
+        }
         else {
           this.showHeader = true;
         }

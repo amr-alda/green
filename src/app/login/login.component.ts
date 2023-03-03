@@ -14,4 +14,8 @@ export class LoginComponent implements OnInit {
   goToHome(): void {
     this.router.navigateByUrl('/home');
   }
+
+  goToNewPassword(): void {
+    this.router.navigateByUrl('/newpassword');
+  }
 }

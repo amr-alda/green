@@ -18,6 +18,7 @@ import { Quest23Component } from './quest23/quest23.component'
 import { Quest24Component } from './quest24/quest24.component'
 import { StartComponent } from './start/start.component';
 import { RegisterComponent } from './register/register.component';
+import { NewpasswordComponent } from './newpassword/newpassword.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'feedback', 
     component: FeedbackComponent
+  },
+  {
+    path: 'newpassword', 
+    component: NewpasswordComponent
   },
   {
     path: 'register', 
