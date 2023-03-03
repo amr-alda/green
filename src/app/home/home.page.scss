@@ -2,68 +2,27 @@
   box-sizing: border-box;
 }
 
-body{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0px;
-  overflow: hidden;
-}
-
 main{
   background-image: url(../../assets/images/backgroundNew.png);
   background-size: 100% 100%;
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 3fr 1fr;
+  background-image: url(../../assets/images/backgroundNew.png);
 }
 
-.nav-kasten1{
-  height: 100%;
-  width: 5%;
+.avatar{
+  border-radius: 50px;
 }
 
-.nav-kasten2{
-  height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 5%;
-}
-
-.nav-kasten3{
-  height: 100%;
-  margin-top: 5px;
-  width: 8%;
-  text-align: left;
-}
-
-.nav-kasten4{
-  height: 100%;
-  width: 64%;
-  text-align: center;
-}
-
-.nav-kasten5{
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 13%;
-  text-align: right;
-}
-
-.nav-kasten6{
-  height: 100%;
-  width: 5%;
-  text-align: right;
-}
-
-.kasten{
-  // border: 1px solid rgb(255,255,255, 0.1);
+.userInfo{
+  display: flex;
+  margin-bottom: 5%;
 }
 
 .kasten1{
   padding: 2%;
   border-top: 1px solid rgb(255,255,255, 0.1);
-  background-color: rgba(1,61,98,0.5);
  }
 
 .kasten2{
@@ -73,10 +32,7 @@ main{
   padding-bottom: 4%;
   padding-left: 6%;
   padding-right: 6%;
-}
-
-.avatar{
-  border-radius: 50px;
+  background-color: rgba(1,61,98,0.5);
 }
 
 .card{
@@ -90,6 +46,7 @@ main{
 .card-header {
   margin: auto;
   font-weight: bold;
+  width: 100%;
 }
 
 .card-body {
@@ -114,3 +71,4 @@ main{
 .unityBox{
   text-align: center;
 }
+

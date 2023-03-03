@@ -9,8 +9,6 @@ import { Global } from './global';
 })
 export class AppComponent{
 
-  username:string = "Name";
-
   showHeader: boolean = false;
 
   constructor(private router: Router) {

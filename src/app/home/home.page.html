@@ -2,132 +2,14 @@
 
   <div class="kasten1 kasten">
 
-    <p style="text-align: center; padding: 2%; margin-top: 1%">{{parlament_progress}}% des Europaparlaments sind bereits auf deiner Seite!</p>
-
-    <img *ngIf="isIn10Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/10percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-
-      <img *ngIf="isIn20Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/20percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-
-      <img *ngIf="isIn30Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/30percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-
-    <img *ngIf="isIn40Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/40percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-      <img *ngIf="isIn50Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/50percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-      <img *ngIf="isIn60Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/60percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-      <img *ngIf="isIn70Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/70percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-      <img *ngIf="isIn80Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/80percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-      <img *ngIf="isIn90Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/90percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-      <img *ngIf="isIn100Range(parlament_progress) == true"
-        alt="Parlament"
-        src="../../assets/images/parlament/100percent.png"
-        width="100%"
-        height="20%"
-        class="inline-block"
-      />
-    
-
-
-   
-  
-
-    
-       
-            
-         
-               
-              
-
-   
-          
-    
-
-
-
-
-
-    <div style="text-align: center; margin-top: 3%;">
-    <img
-        alt="Dummy Character"
-        src="../../assets/images/praktikant.png"
-        width="280"
-        height="260"
-        class="inline-block"
-      />
-
-      <h1 *ngIf="player_rank == 1" style="font-weight: bold; font-size: 35px">Praktikant</h1>
-      <h1 *ngIf="player_rank == 2" style="font-weight: bold; font-size: 35px">Studentische Hilfskraft</h1>
-      <h1 *ngIf="player_rank == 3" style="font-weight: bold; font-size: 35px">Wissenschaftlicher Mitarbeiter</h1>
-      <h1 *ngIf="player_rank == 4" style="font-weight: bold; font-size: 35px">Rang 4</h1>
-      
-    
-      <p style="text-align: center; margin-top: 10%">Überzeuge mehr Parlamentarier um in deinem Rang aufzusteigen</p>
-    </div>
-
-  </div>
-
-  <div class="kasten2 kasten">
-
     <div
     (click)="goToModul1()"
     class="card modul1card text-bg-light mb-3"
-    style="max-width: 14rem; margin-top: 1%;"
+    style="max-width: 16rem; margin-top: 1%;"
   >
-    <div class="card-header">Modul 1</div>
+    <div class="card-header" style="text-align: center;">Wissenschaftstheoretische Grundlagen</div>
     <div class="card-body">
-      <h5 class="card-title">Fortschritt: {{modul1_percent}}%</h5>
+      <h5 class="card-title">Modul I Lorem Ipsum</h5>
       <span>
         <img
           class="medallie"
@@ -178,11 +60,11 @@
   <div
   (click)="goToModul2()"
   class="card modul2card text-bg-light mb-3"
-  style="max-width: 14rem"
+  style="max-width: 16rem"
 >
-  <div class="card-header">Modul 2</div>
+  <div class="card-header" style="text-align: center">Literaturrecherche & Zitation</div>
   <div class="card-body">
-    <h5 class="card-title">Fortschritt: {{modul2_percent}}%</h5>
+    <h5 class="card-title">Modul II Lorem Ipsum</h5>
     <span>
       <img
         class="medallie"
@@ -281,10 +163,10 @@
   </div>
 </div>
 
-<div class="card modul3card text-bg-light mb-3" style="max-width: 14rem">
-  <div class="card-header">Modul 3</div>
+<div class="card modul3card text-bg-light mb-3" style="max-width: 16rem">
+  <div class="card-header" style="text-align: center">Modulname <br> III</div>
   <div class="card-body">
-    <h5 class="card-title">Fortschritt: {{modul3_percent}}%</h5>
+    <h5 class="card-title">Modul III Lorem Ipsum</h5>
     <span>
       <img
         class="medallie"
@@ -383,10 +265,10 @@
   </div>
 </div>
 
-<div class="card modul4card text-bg-light mb-3" style="max-width: 14rem">
-    <div class="card-header">Modul 4</div>
+<div class="card modul4card text-bg-light mb-3" style="max-width: 16rem">
+    <div class="card-header" style="text-align: center">Modulname <br> IV</div>
     <div class="card-body">
-      <h5 class="card-title">Fortschritt: {{modul4_percent}}%</h5>
+      <h5 class="card-title">Modul IV Lorem Ipsum</h5>
       <span>
         <img
           class="medallie"
@@ -490,5 +372,119 @@
   </div> -->
 
   </div>
+
+  <div class="kasten2 kasten">
+<div class="userInfo">
+    <div style="margin-right: 2%;">
+      <img
+          src="../../assets/images/avatar2.png"
+          alt="Avatar"
+          width="64"
+          height="64"
+          class="d-inline-block align-text-middle avatar"
+        />
+    </div>
+    <div>
+      <h3>{{username}}</h3>
+    </div>
+  </div>
+
+    <p style="text-align: center; padding: 2%; margin-top: 1%">{{parlament_progress}}% des Europaparlaments sind bereits auf deiner Seite!</p>
+
+    <img *ngIf="isIn10Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/10percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+
+      <img *ngIf="isIn20Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/20percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+
+      <img *ngIf="isIn30Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/30percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+
+    <img *ngIf="isIn40Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/40percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn50Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/50percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn60Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/60percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn70Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/70percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn80Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/80percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn90Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/90percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+      <img *ngIf="isIn100Range(parlament_progress) == true"
+        alt="Parlament"
+        src="../../assets/images/parlament/100percent.png"
+        width="100%"
+        height="20%"
+        class="inline-block"
+      />
+    
+
+    <div style="text-align: center; margin-top: 3%;">
+    <img
+        alt="Dummy Character"
+        src="../../assets/images/praktikant.png"
+        width="250"
+        height="230"
+        class="inline-block"
+      />
+
+      <h1 *ngIf="player_rank == 1" style="font-weight: bold; font-size: 35px">Praktikant</h1>
+      <h1 *ngIf="player_rank == 2" style="font-weight: bold; font-size: 35px">Studentische Hilfskraft</h1>
+      <h1 *ngIf="player_rank == 3" style="font-weight: bold; font-size: 35px">Wissenschaftlicher Mitarbeiter</h1>
+      <h1 *ngIf="player_rank == 4" style="font-weight: bold; font-size: 35px">Rang 4</h1>
+      
+    
+      <p style="text-align: center; margin-top: 10%">Überzeuge mehr Parlamentarier um in deinem Rang aufzusteigen</p>
+    </div>
+
+  </div>
+
 
 </main>
