@@ -15,7 +15,10 @@
   --bs-btn-border-color: rgba(1, 61, 98, 1);
 }
 
-.text-blue{
-  color: rgba(1, 61, 98, 1) !important;
+.text-white{
+  color: white !important;
 }
 
+.text-white:hover{
+  text-decoration: underline !important;
+}
