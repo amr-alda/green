@@ -56,4 +56,8 @@ export class Quest11dialogue1Component implements OnInit {
     window.location.reload();
   }
 
+  goToQuest11(): void {
+    this.router.navigateByUrl('/quest11');
+  }
+
 }

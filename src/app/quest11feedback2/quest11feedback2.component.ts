@@ -12,4 +12,8 @@ export class Quest11feedback2Component implements OnInit {
 
   ngOnInit() {}
 
+  goToModul1(): void {
+    this.router.navigateByUrl('/modul1');
+  }
+
 }
