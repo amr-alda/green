@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { Modul1Component } from './modul1/modul1.component';
 import { Modul2Component } from './modul2/modul2.component';
 import { LoginComponent } from './login/login.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { Quest11Component } from './quest11/quest11.component';
 import { Quest112Component } from './quest112/quest112.component';
@@ -46,6 +47,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     Quest23Component,
     Quest24Component,
     StartComponent,
+    ImpressumComponent,
   ],
   imports: 
   [

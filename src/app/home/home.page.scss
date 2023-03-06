@@ -3,12 +3,11 @@
 }
 
 main{
-  background-image: url(../../assets/images/backgroundNew.png);
-  background-size: 100% 100%;
+  // background-image: url(../../assets/images/backgroundNew.png);
+  // background-size: 100% 100%;
   display: grid;
   height: 100vh;
   grid-template-columns: 3fr 1fr;
-  background-image: url(../../assets/images/backgroundNew.png);
 }
 
 .avatar{
@@ -97,4 +96,71 @@ main{
 .modul4card{
   position: relative;
   transform: translateY(-250%);
+}
+
+// NAV-BAR
+
+nav{
+  height: 8%;
+  display: flex;
+  width: 100%;
+  padding-bottom: 0.2rem;
+  padding-top: 0.1rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  background-color: rgba(1, 61, 98, 0.8);
+}
+
+@media screen and (max-height: 800px) {
+  nav {
+    height: 9%;
+  }
+}
+
+h1, h2, h3, a, p, span{
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.settingsIcon:hover{
+  cursor: pointer;
+}
+
+.nav-kasten1{
+  height: 100%;
+  width: 16%;
+  margin-top: 0.7rem;
+}
+
+.nav-kasten2{
+  height: 100%;
+  width: 68%;
+  text-align: center;
+}
+
+.nav-kasten3{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 11%;
+  text-align: right;
+}
+
+.nav-kasten4{
+  height: 100%;
+  width: 5%;
+  text-align: right;
+}
+
+.logoutText:hover{
+cursor: pointer;
+}
+
+.wholePage{
+  background-image: url(../../assets/images/backgroundNew.png);
+  background-size: 100% 100%;
 }

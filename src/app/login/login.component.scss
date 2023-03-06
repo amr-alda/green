@@ -10,4 +10,12 @@
   transform: translateY(35%);
 }
 
+.btn-primary{
+  background-color: rgba(1, 61, 98, 1) !important;
+  --bs-btn-border-color: rgba(1, 61, 98, 1);
+}
+
+.text-blue{
+  color: rgba(1, 61, 98, 1) !important;
+}
 

@@ -19,6 +19,7 @@ import { Quest24Component } from './quest24/quest24.component'
 import { StartComponent } from './start/start.component';
 import { RegisterComponent } from './register/register.component';
 import { NewpasswordComponent } from './newpassword/newpassword.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'feedback', 
     component: FeedbackComponent
+  },
+  {
+    path: 'impressum', 
+    component: ImpressumComponent
   },
   {
     path: 'newpassword', 

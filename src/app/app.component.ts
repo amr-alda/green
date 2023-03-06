@@ -23,6 +23,9 @@ export class AppComponent{
         else if (event['url'] == '/newpassword') {
           this.showHeader = false;
         }
+        else if (event['url'] == '/home') { // NUR ZUM TESTEN
+          this.showHeader = false;
+        }
         else {
           this.showHeader = true;
         }
