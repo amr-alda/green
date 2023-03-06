@@ -23,4 +23,8 @@ export class Quest11feedback1Component implements OnInit {
     }
   }  
 
+  goToQuest11Feedback2(): void {
+    this.router.navigateByUrl('/quest11feedback2');
+  }
+
 }
