@@ -133,27 +133,33 @@ a{
 
 .nav-kasten1{
   height: 100%;
-  width: 16%;
-  margin-top: 0.7rem;
+  width: 4%;
 }
 
 .nav-kasten2{
   height: 100%;
-  width: 68%;
-  text-align: center;
+  width: 9%;
+  margin-top: 1%;
 }
 
 .nav-kasten3{
-  margin-top: auto;
   margin-bottom: auto;
-  width: 11%;
-  text-align: right;
+  width: 80%;
+  text-align: center;
 }
 
 .nav-kasten4{
   height: 100%;
-  width: 5%;
+  width: 10%;
   text-align: right;
+  padding-top: 1.2rem;
+}
+
+.nav-kasten5{
+  height: 100%;
+  width: 3%;
+  text-align: right;
+  padding-top: 0.7rem;
 }
 
 .logoutText:hover{
