@@ -1,5 +1,5 @@
 .wholePage{
-  background-image: url(../../assets/images/backgroundNew.png);
+  background-image: url(../../assets/images/lara-office.jpg);
   background-size: 100% 100%;
 }
 
@@ -90,4 +90,10 @@ nav{
   .wholeBox{
     // background-image: url(../../assets/images/Firework.jpg);
     // background-size: 100% 100%;
+  }
+
+  @media screen and (min-height: 800px) {
+    .wholeBox {
+      margin-top: 6% !important;
+    }
   }
