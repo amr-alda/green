@@ -12,25 +12,7 @@ export class AppComponent{
   showHeader: boolean = false;
 
   constructor(private router: Router) {
-    router.events.forEach((event) => {
-      if (event instanceof NavigationStart) {
-        if (event['url'] == '/login') {
-          this.showHeader = false;
-        } 
-        else if (event['url'] == '/register') {
-          this.showHeader = false;
-        }
-        else if (event['url'] == '/newpassword') {
-          this.showHeader = false;
-        }
-        else if (event['url'] == '/home') { // NUR ZUM TESTEN
-          this.showHeader = false;
-        }
-        else {
-          this.showHeader = true;
-        }
-      }
-    });
+    
   }
 
   goToLogin(): void {

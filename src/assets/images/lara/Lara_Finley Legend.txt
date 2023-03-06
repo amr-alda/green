@@ -1,0 +1,8 @@
+D = Diagonal
+F = Frontal
+MG = Mund Geschlossen
+MO = Mund Offen
+RA = Rechter Arm
+LA = Linker Arm
+K = Kaffee
+R/LAK = Rechter/Linker-Arm Kaffee
