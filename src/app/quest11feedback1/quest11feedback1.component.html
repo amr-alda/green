@@ -33,12 +33,6 @@
 
   <div class="kasten1">
     <div class="kasten1oben">
-      <div class="laraFinley">
-      <img
-          src="../../assets/images/lara/Lara_Finley_D_MO_LA.png"
-          width="220"
-            />
-        </div>
     </div>
     <div class="kasten1unten">
       <button style="margin-left: 5%; margin-top: 3%; background-color: rgba(1, 61, 98, 1); color: white; width: 150px; height: 40px; border-radius: 8px;">
@@ -55,13 +49,21 @@
 
         <form class="rounded shadow-lg p-5 wholeBox" style="background-color: rgba(0, 0, 0, 0.6); width: 80%; margin: auto; margin-top: 2%;">
           <div class="medallien">
-            <img
+            <img *ngIf="quest1_1 == 'gold' " 
               src="../assets/images/Medallie Gold.png"
+              width="200"
+            />
+            <img *ngIf="quest1_1 == 'silber' " 
+              src="../assets/images/Medallie Silber.png"
+              width="200"
+            />
+            <img *ngIf="quest1_1 == 'bronze' " 
+              src="../assets/images/Medallie Bronze.png"
               width="200"
             />
           </div>
         
-        <h1 style="text-align: center; margin-top: 5%;">Du hast 9 von 10 möglichen Punkten erhalten</h1>
+        <h1 style="text-align: center; margin-top: 5%;">Du hast {{anzahlPunkte}} von 10 möglichen Punkten erhalten</h1>
         <h1 style="text-align: center; margin-top: 2%;">Glückwunsch!</h1>
 
         <div class="parlamentarier">
@@ -70,7 +72,7 @@
               width="100"
             />
         </div>
-        <h3 style="text-align: center; margin-top: 5%;">Du konntest 6 Parlamentarier überzeugen</h3>
+        <h3 style="text-align: center; margin-top: 5%;">Du konntest {{anzahlParlamentarier}} Parlamentarier überzeugen</h3>
       </form>
       
   </div>

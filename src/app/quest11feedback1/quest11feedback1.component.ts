@@ -9,6 +9,10 @@ import { Router } from '@angular/router';
 })
 export class Quest11feedback1Component implements OnInit {
 
+  quest1_1: string = 'gold';
+  anzahlPunkte: number = 9;
+  anzahlParlamentarier: number = 6;
+
   constructor(private router: Router) { }
 
   ngOnInit() {}
