@@ -60,4 +60,10 @@ export class Quest11dialogue1Component implements OnInit {
     this.router.navigateByUrl('/quest11');
   }
 
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }  
+
 }
