@@ -29,4 +29,8 @@ export class Modul1Component implements OnInit {
   goToQuest12(): void {
     this.router.navigateByUrl('/quest12');
   }
+
+  goToQuest11Dialogue(): void{
+    this.router.navigateByUrl('/quest11dialogue1');
+  }
 }

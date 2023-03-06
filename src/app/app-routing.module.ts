@@ -22,6 +22,7 @@ import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
+import { Quest11dialogue1Component } from './quest11dialogue1/quest11dialogue1.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'feedback', 
     component: FeedbackComponent
+  },
+  {
+    path: 'quest11dialogue1', 
+    component: Quest11dialogue1Component
   },
   {
     path: 'quest11feedback1', 
