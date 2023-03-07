@@ -19,13 +19,17 @@ export class Quest11dialogue1Component implements OnInit {
 
     const start = new Typewriter(target, {
       typeColor: 'white',
-      cursorColor: 'white'
+      cursorColor: 'white',
+      loop: false,
     })
 
     start
       .clear()
-      .addCursor()
       .type('Hallo, ich bin writer1.')
+      .addCursor()
+      .rest(1500)
+      .clear()
+      .type('Hallo, ich bin writer2.')
       .start()
 
   }
