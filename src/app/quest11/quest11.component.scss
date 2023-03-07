@@ -1,3 +1,9 @@
+.wholePage{
+  background-image: url(../../assets/images/landschaftbg.png);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
 nav{
     height: 8%;
     display: flex;
@@ -56,4 +62,19 @@ nav{
   
   .logoutText:hover{
   cursor: pointer;
+  }
+
+  main{
+    display: flex;
+  }
+
+  .kasten1{
+    width: 70%;
+    height: 100vh;
+    border-right: 1px solid rgb(255,255,255, 0.1);
+  }
+
+  .kasten2{
+    width: 30%;
+    height: 100vh;
   }
