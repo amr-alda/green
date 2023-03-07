@@ -22,7 +22,24 @@ import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
+
 import { Quest11dialogue1Component } from './quest11dialogue1/quest11dialogue1.component';
+import { Quest11dialogue2Component } from './quest11dialogue2/quest11dialogue2.component';
+
+import { Quest12dialogue1Component } from './quest12dialogue1/quest12dialogue1.component';
+import { Quest12dialogue2Component } from './quest12dialogue2/quest12dialogue2.component';
+
+import { Quest21dialogue1Component } from './quest21dialogue1/quest21dialogue1.component';
+import { Quest21dialogue2Component } from './quest21dialogue2/quest21dialogue2.component';
+
+import { Quest22dialogue1Component } from './quest22dialogue1/quest22dialogue1.component';
+import { Quest22dialogue2Component } from './quest22dialogue2/quest22dialogue2.component';
+
+import { Quest23dialogue1Component } from './quest23dialogue1/quest23dialogue1.component';
+import { Quest23dialogue2Component } from './quest23dialogue2/quest23dialogue2.component';
+
+import { Quest24dialogue1Component } from './quest24dialogue1/quest24dialogue1.component';
+import { Quest24dialogue2Component } from './quest24dialogue2/quest24dialogue2.component';
 
 
 const routes: Routes = [
@@ -42,6 +59,50 @@ const routes: Routes = [
   {
     path: 'quest11dialogue1', 
     component: Quest11dialogue1Component
+  },
+  {
+    path: 'quest11dialogue2', 
+    component: Quest11dialogue2Component
+  },
+  {
+    path: 'quest12dialogue1', 
+    component: Quest12dialogue1Component
+  },
+  {
+    path: 'quest12dialogue2', 
+    component: Quest12dialogue2Component
+  },
+  {
+    path: 'quest21dialogue1', 
+    component: Quest21dialogue1Component
+  },
+  {
+    path: 'quest21dialogue2', 
+    component: Quest21dialogue2Component
+  },
+  {
+    path: 'quest22dialogue1', 
+    component: Quest22dialogue2Component
+  },
+  {
+    path: 'quest22dialogue2', 
+    component: Quest22dialogue2Component
+  },
+  {
+    path: 'quest23dialogue1', 
+    component: Quest23dialogue1Component
+  },
+  {
+    path: 'quest23dialogue2', 
+    component: Quest23dialogue2Component
+  },
+  {
+    path: 'quest24dialogue1', 
+    component: Quest24dialogue1Component
+  },
+  {
+    path: 'quest24dialogue2', 
+    component: Quest24dialogue2Component
   },
   {
     path: 'quest11feedback1', 
