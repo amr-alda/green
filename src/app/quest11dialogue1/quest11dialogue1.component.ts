@@ -25,6 +25,7 @@ export class Quest11dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
+      typeSpeed: 75
     })
 
     start
