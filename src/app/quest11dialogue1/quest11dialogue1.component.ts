@@ -21,15 +21,21 @@ export class Quest11dialogue1Component implements OnInit {
       typeColor: 'white',
       cursorColor: 'white',
       loop: false,
+      deleteSpeed: 5
     })
 
     start
       .clear()
-      .type('Hallo, ich bin writer1.')
+      .type('Oh Mann, das geht ja gut los.')
       .addCursor()
       .rest(1500)
-      .clear()
-      .type('Hallo, ich bin writer2.')
+      .queueClearText()
+      .type('Ich war gerade in der Mensa mir einen Kaffee holen.')
+      .rest(1500)
+      .queueClearText()
+      .type('Ich hatte mein Büro offengelassen und als ich zurückkam, war plötzlich ein ziemliches Chaos.')
+      .rest(1500)
+      .queueClearText()
       .start()
 
   }
