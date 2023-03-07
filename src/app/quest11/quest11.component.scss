@@ -69,12 +69,17 @@ nav{
   }
 
   .kasten1{
-    width: 70%;
+    width: 65%;
     height: 100vh;
-    border-right: 1px solid rgb(255,255,255, 0.1);
   }
 
   .kasten2{
-    width: 30%;
+    width: 35%;
     height: 100vh;
+  }
+
+  @media screen and (min-height: 800px) {
+    .unityBox {
+      margin-top: 10% !important;
+    }
   }
