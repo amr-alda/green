@@ -23,7 +23,8 @@ export class Quest11dialogue1Component implements OnInit {
       typeColor: 'white',
       cursorColor: 'white',
       loop: false,
-      deleteSpeed: 5
+      deleteSpeed: 5,
+      animateCursor: false,
     })
 
     start
