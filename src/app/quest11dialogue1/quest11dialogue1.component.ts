@@ -15,6 +15,8 @@ export class Quest11dialogue1Component implements OnInit {
   i = 0;
 
   ngOnInit() {
+    
+
     const target = document.querySelector('.tw');
 
     const start = new Typewriter(target, {
@@ -25,9 +27,7 @@ export class Quest11dialogue1Component implements OnInit {
     })
 
     start
-      .clear()
       .type('Oh Mann, das geht ja gut los.')
-      .addCursor()
       .rest(1500)
       .queueClearText()
       .type('Ich war gerade in der Mensa mir einen Kaffee holen.')
@@ -39,6 +39,8 @@ export class Quest11dialogue1Component implements OnInit {
       .start()
 
   }
+
+
 
   higheri(){
     this.i++;
