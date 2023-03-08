@@ -29,21 +29,19 @@
       </div>
 </nav>
 
-<div class="">
-    <div class="container">
-      <div
-        class="col-sm-8 offset-sm-2 col-lg-12 offset-lg-3 col-xl-4 offset-xl-4 text-center"
-      >
-        <div class="box">
-          <h3 class="text-light fw-bolder fs-4 mb-2">Modul 1</h3>
-          <p class="text-light fw-normal mb-2">
+<main>
+
+        
+          <h3 class="text-dark fw-bolder fs-4 mb-2" style="margin-top: 0; text-align: center;">Modul 1</h3>
+          <p class="text-dark fw-normal mb-2" style="text-align: center;">
             Hier werden wissenschaftliche Grundlagen erarbeitet
           </p>
-          <div class="box"></div>
-          <div class="row">
-            <div class="col">
-              <div class="card text-bg-light card-box">
-                <div (click)="goToQuest11Dialogue1()" class="card-body padding-10">
+            
+
+
+             <div class="cardBg cardBg1" (click)="goToQuest11Dialogue1()">
+              <div class="card card-box">
+                <div class="card-body padding-10">
                   <h5 class="card-title margin-top-0" style="color: black">Quest 1.1</h5>
                   <div class="quest-height">
                     <p class="card-text" style="color: black">So ein Chaos!</p>
@@ -75,9 +73,11 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card text-bg-light card-box">
-                <div (click)="goToQuest12()" class="card-body padding-10">
+            
+
+            <div class="cardBg cardBg2" (click)="goToQuest12()">
+              <div class="card card-box">
+                <div class="card-body padding-10">
                   <h5 class="card-title margin-top-0" style="color: black">Quest 1.2</h5>
                   <div class="quest-height">
                     <p class="card-text" style="color: black">Kritischer Rationalismus</p>
@@ -120,27 +120,17 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
+  <div class="cardBg videoBg" (click)="goToModul1Videos()">
   <div class="youtubeIcon" style="text-align: center">
-  <svg (click)="goToModul1Videos()" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
     <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
   </svg>
-  <h2 style="color: white; margin-top: 0;">Zu den Lernvideos</h2>
+  <p style="color: black; margin-top: 0;">Zu den Lernvideos</p>
 </div>
-<!--
-  <div class="videoBox" style="text-align: center; margin-top: 2%;">
-    <div class="video1" style="display: inline-block; margin-right: 1%">
-      <youtube-player [height]="165" [width]="300" videoId="uzuB8PiYNKE"> </youtube-player>
-    </div>
-    <div class="video2" style="display: inline-block">
-      <youtube-player [height]="165" [width]="300" videoId="uzuB8PiYNKE"> </youtube-player>
-    </div>
-  </div>
-  -->
+</div>
+
+
+</main>
 
 </div>
