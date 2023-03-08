@@ -44,6 +44,8 @@ import { Quest24dialogue2Component } from './quest24dialogue2/quest24dialogue2.c
 import { Modul1videosComponent } from './modul1videos/modul1videos.component';
 import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
+import { SettingsComponent } from './settings/settings.component';
+
 
 const routes: Routes = [
   {
@@ -58,6 +60,10 @@ const routes: Routes = [
   {
     path: 'feedback', 
     component: FeedbackComponent
+  },
+  {
+    path: 'settings', 
+    component: SettingsComponent
   },
   {
     path: 'modul1videos', 
