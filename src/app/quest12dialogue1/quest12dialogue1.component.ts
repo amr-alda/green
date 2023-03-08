@@ -30,23 +30,16 @@ export class Quest12dialogue1Component implements OnInit {
 
     start
       .removeCursor()
-      .type('Oh Mann, das geht ja gut los.')
+      .type('Wir wollen neues Personal einstellen und haben eine Stelle für Wissenschaftskommunikation ausgeschrieben.')
       .rest(1500)
       .queueClearText()
-      .type('Ich war gerade in der Mensa mir einen Kaffee holen.')
+      .type('Um ihre Komptenzen für diesen Job unter Beweis zu stellen,')
       .rest(1500)
       .queueClearText()
-      .type('Ich hatte mein Büro offengelassen und als ich zurückkam, war plötzlich ein ziemliches Chaos.')
+      .type('sollten die Bewerberinnen und Bewerber auch einen kurzen Text zum Thema "Klimawandel und Tourismus" verfassen.')
       .rest(1500)
       .queueClearText()
-      .type('Ich kann mir ehrlich gesagt nicht erklären, wie das passieren konnte!?')
-      .rest(1500)
-      .queueClearText()
-      .type('Leider wurden auf dem Schreibtisch auch meine ganzen Unterlagen zum wissenschaftlichen Arbeiten durcheinandergebracht.')
-      .rest(1500)
-      .queueClearText()
-      .type('Hilf mir bitte, die Unterlagen zu ordnen. Ich brauche sie für meine Vorlesung, die in 15 Minuten stattfindet.')
-      .rest(1500)
+      .type('Würdest du bitte die von Marianne Weber, Mike Kramer und Lisa Nowak eingereichten Texte anhand unserer Anforderungskriterien zum wissenschaftlichen Arbeiten prüfen.')
       .start()
 
   }
