@@ -18,6 +18,16 @@ export class Modul1Component implements OnInit {
 
   ngOnInit() {}
 
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
+
+  goToModul1Videos(): void {
+    this.router.navigateByUrl('/modul1videos');
+  }
+
   goToHome(): void {
     this.router.navigateByUrl('/home');
   }

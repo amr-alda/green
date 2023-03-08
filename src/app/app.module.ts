@@ -30,6 +30,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
+import { Modul1videosComponent } from './modul1videos/modul1videos.component';
+import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
 
 @NgModule({
@@ -53,6 +55,8 @@ import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.c
     ImpressumComponent,
     Quest11feedback1Component,
     Quest11feedback2Component,
+    Modul1videosComponent,
+    Modul2videosComponent,
   ],
   imports: 
   [

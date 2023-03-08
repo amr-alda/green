@@ -1,0 +1,67 @@
+.wholePage{
+  // background: url(../../assets/images/pinwand.png);
+  background: url(../../assets/images/backgroundNew.png);
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav{
+    height: 8%;
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.2rem;
+    padding-top: 0.1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    background-color: rgba(1, 61, 98, 0.8);
+  }
+  
+  @media screen and (max-height: 800px) {
+    nav {
+      height: 9%;
+    }
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .settingsIcon:hover{
+    cursor: pointer;
+  }
+  
+  .nav-kasten1{
+    height: 100%;
+    width: 4%;
+  }
+  
+  .nav-kasten2{
+    height: 100%;
+    width: 9%;
+    margin-top: 1%;
+  }
+  
+  .nav-kasten3{
+    margin-bottom: auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .nav-kasten4{
+    height: 100%;
+    width: 10%;
+    text-align: right;
+    padding-top: 1.2rem;
+  }
+  
+  .nav-kasten5{
+    height: 100%;
+    width: 3%;
+    text-align: right;
+    padding-top: 0.7rem;
+  }
+  
+  .logoutText:hover{
+  cursor: pointer;
+  }

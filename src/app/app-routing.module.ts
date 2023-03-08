@@ -41,6 +41,9 @@ import { Quest23dialogue2Component } from './quest23dialogue2/quest23dialogue2.c
 import { Quest24dialogue1Component } from './quest24dialogue1/quest24dialogue1.component';
 import { Quest24dialogue2Component } from './quest24dialogue2/quest24dialogue2.component';
 
+import { Modul1videosComponent } from './modul1videos/modul1videos.component';
+import { Modul2videosComponent } from './modul2videos/modul2videos.component';
+
 
 const routes: Routes = [
   {
@@ -55,6 +58,14 @@ const routes: Routes = [
   {
     path: 'feedback', 
     component: FeedbackComponent
+  },
+  {
+    path: 'modul1videos', 
+    component: Modul1videosComponent
+  },
+  {
+    path: 'modul2videos', 
+    component: Modul2videosComponent
   },
   {
     path: 'quest11dialogue1', 
