@@ -30,23 +30,7 @@ export class Quest11dialogue2Component implements OnInit {
 
     start
       .removeCursor()
-      .type('Oh Mann, das geht ja gut los.')
-      .rest(1500)
-      .queueClearText()
-      .type('Ich war gerade in der Mensa mir einen Kaffee holen.')
-      .rest(1500)
-      .queueClearText()
-      .type('Ich hatte mein Büro offengelassen und als ich zurückkam, war plötzlich ein ziemliches Chaos.')
-      .rest(1500)
-      .queueClearText()
-      .type('Ich kann mir ehrlich gesagt nicht erklären, wie das passieren konnte!?')
-      .rest(1500)
-      .queueClearText()
-      .type('Leider wurden auf dem Schreibtisch auch meine ganzen Unterlagen zum wissenschaftlichen Arbeiten durcheinandergebracht.')
-      .rest(1500)
-      .queueClearText()
-      .type('Hilf mir bitte, die Unterlagen zu ordnen. Ich brauche sie für meine Vorlesung, die in 15 Minuten stattfindet.')
-      .rest(1500)
+      .type('Ich frage mich jedoch immer noch, wer sich in mein Büro geschlichen und das Chaos verursacht hat.')
       .start()
 
   }
