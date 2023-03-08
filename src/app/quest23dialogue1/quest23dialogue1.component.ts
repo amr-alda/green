@@ -30,23 +30,13 @@ export class Quest23dialogue1Component implements OnInit {
 
     start
       .removeCursor()
-      .type('Oh Mann, das geht ja gut los.')
+      .type('Die Mitarbeiter vom Wissenschaftlichen Dienst des Europäischen Parlamentes haben einen kurzen Text für die')
       .rest(1500)
       .queueClearText()
-      .type('Ich war gerade in der Mensa mir einen Kaffee holen.')
+      .type('Abgeordneten des Europäischen Parlaments über das zu fördernde Projekt des „Green European Tourism“ erstellt.')
       .rest(1500)
       .queueClearText()
-      .type('Ich hatte mein Büro offengelassen und als ich zurückkam, war plötzlich ein ziemliches Chaos.')
-      .rest(1500)
-      .queueClearText()
-      .type('Ich kann mir ehrlich gesagt nicht erklären, wie das passieren konnte!?')
-      .rest(1500)
-      .queueClearText()
-      .type('Leider wurden auf dem Schreibtisch auch meine ganzen Unterlagen zum wissenschaftlichen Arbeiten durcheinandergebracht.')
-      .rest(1500)
-      .queueClearText()
-      .type('Hilf mir bitte, die Unterlagen zu ordnen. Ich brauche sie für meine Vorlesung, die in 15 Minuten stattfindet.')
-      .rest(1500)
+      .type('Leider enthält der Text noch mehrere Zitierfehler. Würdest du den Text bitte für mich korrigieren.')
       .start()
 
   }

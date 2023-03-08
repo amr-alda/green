@@ -30,23 +30,16 @@ export class Quest22dialogue1Component implements OnInit {
 
     start
       .removeCursor()
-      .type('Oh Mann, das geht ja gut los.')
+      .type('Das kann doch nicht wahr sein!')
       .rest(1500)
       .queueClearText()
-      .type('Ich war gerade in der Mensa mir einen Kaffee holen.')
+      .type('Mir wurde gerade mitgeteilt, dass wohl unsere Internetseite mit der Übersicht über die einzelnen Arten wissenschaftlicher Literatur gehackt wurde.')
       .rest(1500)
       .queueClearText()
-      .type('Ich hatte mein Büro offengelassen und als ich zurückkam, war plötzlich ein ziemliches Chaos.')
+      .type('Jetzt ist dort alles durcheinanander geraten.')
       .rest(1500)
       .queueClearText()
-      .type('Ich kann mir ehrlich gesagt nicht erklären, wie das passieren konnte!?')
-      .rest(1500)
-      .queueClearText()
-      .type('Leider wurden auf dem Schreibtisch auch meine ganzen Unterlagen zum wissenschaftlichen Arbeiten durcheinandergebracht.')
-      .rest(1500)
-      .queueClearText()
-      .type('Hilf mir bitte, die Unterlagen zu ordnen. Ich brauche sie für meine Vorlesung, die in 15 Minuten stattfindet.')
-      .rest(1500)
+      .type('Kannst du das bitte schnell wieder ordnen und die richtigen Lösungen an dasRechenzentrum schicken, damit das dort korrigiert werden kann.')
       .start()
 
   }
