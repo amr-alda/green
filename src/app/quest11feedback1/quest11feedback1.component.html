@@ -48,6 +48,9 @@
 
 
         <form class="rounded shadow-lg p-5 wholeBox" style="background-color: rgba(0, 0, 0, 0.6); width: 80%; margin: auto; margin-top: 2%;">
+
+          <h1 style="text-align: center; margin-top: 5%;">{{anzahlPunkte}} von 10 Punkte</h1>
+
           <div class="medallien">
             <img *ngIf="quest1_1 == 'gold' " 
               src="../assets/images/Medallie Gold.png"
@@ -63,16 +66,9 @@
             />
           </div>
         
-        <h1 style="text-align: center; margin-top: 5%;">Du hast {{anzahlPunkte}} von 10 möglichen Punkten erhalten</h1>
-        <h1 style="text-align: center; margin-top: 2%;">Glückwunsch!</h1>
+        <h1 style="text-align: center; margin-top: 3%;">Glückwunsch!</h1>
 
-        <div class="parlamentarier">
-        <img
-              src="../../assets/images/parlamentarier/green.png"
-              width="100"
-            />
-        </div>
-        <h3 style="text-align: center; margin-top: 5%;">Du konntest {{anzahlParlamentarier}} Parlamentarier überzeugen</h3>
+        <h3 style="text-align: center; margin-top: 5%;">Du konntest einige Parlamentarier überzeugen</h3>
       </form>
       
   </div>
