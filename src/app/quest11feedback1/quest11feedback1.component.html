@@ -43,7 +43,7 @@
 
         <form class="rounded shadow-lg p-5 wholeBox" style="background-color: rgba(0, 0, 0, 0.6); width: 80%; margin: auto; margin-top: 2%;">
 
-          <h1 style="text-align: center; margin-top: 5%;">{{anzahlPunkte}} von 10 Punkte</h1>
+          <h1 style="text-align: center; margin-top: 5%; font-size: 30px">{{anzahlPunkte}} von 10 Punkte</h1>
 
           <div class="medallien">
             <img *ngIf="quest1_1 == 'gold' " 
@@ -60,7 +60,10 @@
             />
           </div>
         
-        <h1 style="text-align: center; margin-top: 3%;">Glückwunsch!</h1>
+        <h1 *ngIf="anzahlPunkte == 0 || anzahlPunkte == 1 || anzahlPunkte == 2 || anzahlPunkte == 3 || anzahlPunkte == 4" style="text-align: center; margin-top: 3%;">Ohje, die Dokumente sind immer noch durcheinander.</h1>
+        <h1 *ngIf="anzahlPunkte == 5 || anzahlPunkte == 6" style="text-align: center; margin-top: 3%;">Danke für die Hilfe, aber leider sind einige Dokumente im falschen Ordner gelandet."</h1>
+        <h1 *ngIf="anzahlPunkte == 7 || anzahlPunkte == 8"style="text-align: center; margin-top: 3%;">Bis auf ein paar kleine Fehler war das eine gute Leistung.</h1>
+        <h1 *ngIf="anzahlPunkte == 9 || anzahlPunkte == 10"style="text-align: center; margin-top: 3%;">Super, du hast alles wieder perfekt geordnet, gute Arbeit.</h1>
 
         <h3 style="text-align: center; margin-top: 5%;">Du konntest einige Parlamentarier überzeugen</h3>
       </form>
