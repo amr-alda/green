@@ -70,7 +70,77 @@ a{
 }
 
 .logoutText:hover{
-cursor: pointer;
+  cursor: pointer;
+}
+
+.row1{
+  display: flex;
+  padding-top: 1%;
+}
+
+.row1kasten1{
+  width: 23%;
+  padding-left: 3%;
+}
+
+.row1kasten2{
+  width: 15%;
+}
+
+.row1kasten3{
+  width: 24%;
+}
+
+.row1kasten4{
+  width: 15%;
+}
+
+.row1kasten5{
+  width: 23%;
+  padding-right: 3%;
+}
+
+.row2{
+  display: flex;
+  transform: translateY(-15%);
+}
+
+.row3{
+  display: flex;
+  transform: translateY(-15%);
+}
+
+@media (min-height: 800px) {
+  .row2 {
+    transform: translateY(0%);
+  }
+  .row3 {
+    transform: translateY(5%);
+  }
+  .cardBg1{
+    transform: translateY(75%) !important;
+  }
+  .cardBg2{
+    transform: translateY(75%) !important;
+  }
+}
+
+.row3kasten1{
+  padding-left: 10%;
+  width: 42%;
+  transform: translateY(-30%);
+}
+
+.row3kasten2{
+  width: 16%;
+  padding-left: 1%;
+  transform: translateY(10%);
+}
+
+.row3kasten3{
+  width: 42%;
+  padding-right: 3%;
+  transform: translateY(-10%);
 }
 
 .cardBg{
@@ -82,16 +152,21 @@ cursor: pointer;
 }
 
 .cardBg:hover{
-  cursor: pointer;
+  
 }
 
 .cardBg1{
-  margin-left: 10%;
+  margin-left: 15%;
+  transform: translateY(50%);
 }
 
 .cardBg2{
-  margin-top: 5%;
-  margin-left: 75%;
+  margin-left: 15%;
+  transform: translateY(50%);
+  background: url(../../assets/images/moduleSelection/PostItBlue.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
 }
 
 .card{
@@ -114,8 +189,16 @@ cursor: pointer;
   margin-top: 42px;
 }
 
+.youtubeIcon:hover{
+  cursor: pointer;
+}
+
 .videoBg{
-  margin-left: 40%;
+  margin: auto;
+  background: url(../../assets/images/moduleSelection/PostItPink.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 800px) {

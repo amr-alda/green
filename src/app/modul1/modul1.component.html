@@ -31,105 +31,170 @@
 
 <main>
 
-        
+        <!--
           <h3 class="text-dark fw-bolder fs-4 mb-2" style="margin-top: 0; text-align: center;">Modul 1</h3>
           <p class="text-dark fw-normal mb-2" style="text-align: center;">
             Hier werden wissenschaftliche Grundlagen erarbeitet
-          </p>
-            
+          </p> 
+        -->
 
+          <div class="row1">
 
-             <div class="cardBg cardBg1" (click)="goToQuest11Dialogue1()">
-              <div class="card card-box">
-                <div class="card-body padding-10">
-                  <h5 class="card-title margin-top-0" style="color: black">Quest 1.1</h5>
-                  <div class="quest-height">
-                    <p class="card-text" style="color: black">So ein Chaos!</p>
-                  </div>
-                  <img
-                    *ngIf="quest1_1 === 'grey'"
-                    class="medallie"
-                    src="./assets/images/Medallie-grey.png"
-                    alt=""
-                  />
-                  <img
-                    *ngIf="quest1_1 === 'bronze'"
-                    class="medallie"
-                    src="./assets/images/Medallie Bronze.png"
-                    alt=""
-                  />
-                  <img
-                    *ngIf="quest1_1 === 'silber'"
-                    class="medallie"
-                    src="./assets/images/Medallie Silber.png"
-                    alt=""
-                  />
-                  <img
-                    *ngIf="quest1_1 === 'gold'"
-                    class="medallie"
-                    src="./assets/images/Medallie Gold.png"
-                    alt=""
-                  />
-                </div>
-              </div>
+            <div class="row1kasten1">
+              <img  
+            src="../../assets/images/moduleSelection/LongPostItYellowEcoCamp.png"
+            width="300"
+          />
             </div>
-            
 
-            <div class="cardBg cardBg2" (click)="goToQuest12()">
-              <div class="card card-box">
-                <div class="card-body padding-10">
-                  <h5 class="card-title margin-top-0" style="color: black">Quest 1.2</h5>
-                  <div class="quest-height">
-                    <p class="card-text" style="color: black">Kritischer Rationalismus</p>
-                  </div>
-
-                  <span>
+            <div class="row1kasten2">
+              <div class="cardBg cardBg1">
+                <div class="card card-box">
+                  <div class="card-body padding-10">
+                    <h5 (click)="goToQuest11Dialogue1()" class="card-title margin-top-0" style="color: black">Quest 1.1</h5>
+                    <div class="quest-height">
+                      <p class="card-text" style="color: black">So ein Chaos!</p>
+                    </div>
                     <img
-                      *ngIf="quest1_2 === 'grey'"
+                      *ngIf="quest1_1 === 'grey'"
                       class="medallie"
                       src="./assets/images/Medallie-grey.png"
                       alt=""
                     />
                     <img
-                      *ngIf="quest1_2 === 'bronze'"
+                      *ngIf="quest1_1 === 'bronze'"
                       class="medallie"
                       src="./assets/images/Medallie Bronze.png"
                       alt=""
                     />
                     <img
-                      *ngIf="quest1_2 === 'silber'"
+                      *ngIf="quest1_1 === 'silber'"
                       class="medallie"
                       src="./assets/images/Medallie Silber.png"
                       alt=""
                     />
                     <img
-                      *ngIf="quest1_2 === 'gold'"
+                      *ngIf="quest1_1 === 'gold'"
                       class="medallie"
                       src="./assets/images/Medallie Gold.png"
                       alt=""
                     />
-                  </span>
-
-                  <span>
-                    <img
-                      class="schloss"
-                      *ngIf="quest12_locked == true"
-                      src="../../assets/images/Schloss.png"
-                    />
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>
 
-  <div class="cardBg videoBg" (click)="goToModul1Videos()">
-  <div class="youtubeIcon" style="text-align: center">
-  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
-    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-  </svg>
-  <p style="color: black; margin-top: 0;">Zu den Lernvideos</p>
-</div>
-</div>
+            <div class="row1kasten3">
+              <img
+                    src="../../assets/images/moduleSelection/TravelEcoTourism.png"
+                    width="300"
+                    style="margin-left: 8%;"
+                  />
+            </div>
 
+            <div class="row1kasten4">
+              <div class="cardBg cardBg2">
+                <div class="card card-box">
+                  <div class="card-body padding-10">
+                    <h5 (click)="goToQuest12()" class="card-title margin-top-0" style="color: black">Quest 1.2</h5>
+                    <div class="quest-height">
+                      <p class="card-text" style="color: black">Kritischer Rationalismus</p>
+                    </div>
+    
+                    <span>
+                      <img
+                        *ngIf="quest1_2 === 'grey'"
+                        class="medallie"
+                        src="./assets/images/Medallie-grey.png"
+                        alt=""
+                      />
+                      <img
+                        *ngIf="quest1_2 === 'bronze'"
+                        class="medallie"
+                        src="./assets/images/Medallie Bronze.png"
+                        alt=""
+                      />
+                      <img
+                        *ngIf="quest1_2 === 'silber'"
+                        class="medallie"
+                        src="./assets/images/Medallie Silber.png"
+                        alt=""
+                      />
+                      <img
+                        *ngIf="quest1_2 === 'gold'"
+                        class="medallie"
+                        src="./assets/images/Medallie Gold.png"
+                        alt=""
+                      />
+                    </span>
+    
+                    <span>
+                      <img
+                        class="schloss"
+                        *ngIf="quest12_locked == true"
+                        src="../../assets/images/Schloss.png"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row1kasten5">
+              <img
+                    src="../../assets/images/moduleSelection/EcoTourismCOncept.png"
+                    width="200"
+                    style="float: right"
+                  />
+            </div>
+
+          </div>
+
+          <div class="row2">
+
+            <div class="cardBg videoBg">
+              <div (click)="goToModul1Videos()" class="youtubeIcon" style="text-align: center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg>
+              <p class= "lernvideoText" style="color: black; margin-top: 0;">Zu den Lernvideos</p>
+              </div>
+              </div>
+
+          </div>
+
+          <div class="row3">
+
+            <div class="row3kasten1">
+              <img
+                    src="../../assets/images/moduleSelection/Man_Hikeing.png"
+                    width="300"
+                  />
+            </div>
+
+            <div class="row3kasten2">
+              <img
+                    src="../../assets/images/moduleSelection/ToDoListeModul1.png"
+                    width="200"
+                  />
+            </div>
+
+            <div class="row3kasten3">
+              <img
+                    src="../../assets/images/moduleSelection/LongPostItPink_Picnic.png"
+                    width="400"
+                    style="float: right"
+                  />
+            </div>
+            
+          </div>
+
+          <button (click)="goToHome()" class="fixed-bottom" style="margin-bottom: 2%; margin-left: 3%; background-color: rgba(1, 61, 98, 1); color: white; width: 150px; height: 40px; border-radius: 8px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            Zurück
+          </button>
 
 </main>
 
