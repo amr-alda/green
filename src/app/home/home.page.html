@@ -405,7 +405,7 @@
   </div>
 
   <div class="kasten2 kasten">
-<div class="userInfo">
+<!-- <div class="userInfo">
     <div style="margin-right: 2%;">
       <img
           src="../../assets/images/avatar2.png"
@@ -415,10 +415,7 @@
           class="d-inline-block align-text-middle avatar"
         />
     </div>
-    <div>
-      <h3>{{username}}</h3>
-    </div>
-  </div>
+  </div> -->
 
     <p style="text-align: center; padding: 2%; margin-top: 1%">{{parlament_progress}}% des Europaparlaments sind bereits auf deiner Seite!</p>
 
@@ -512,6 +509,10 @@
         height="210"
         class="inline-block"
       />
+
+      <div>
+        <h3>{{username}}</h3>
+      </div>
 
       <h1 *ngIf="player_rank == 1 && gender == 'male' " style="font-weight: bold; font-size: 35px">Praktikant</h1>
       <h1 *ngIf="player_rank == 2 && gender == 'male' " style="font-weight: bold; font-size: 35px">Studentische Hilfskraft</h1>
