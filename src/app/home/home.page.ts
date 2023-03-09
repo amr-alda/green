@@ -9,7 +9,9 @@ import { Router } from '@angular/router';
 export class HomePage implements OnInit {
 
   username:string = "Name";
-  gender:string = "female"
+  gender:string = "female";
+
+  showSettings:boolean = false;
 
   player_rank:number = 1;
   parlament_progress = 30;  
@@ -46,6 +48,10 @@ export class HomePage implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  goToSettings(): void {
+    this.router.navigateByUrl('/settings');
+  }
 
   goToModul1(): void {
     this.router.navigateByUrl('/modul1');
@@ -147,5 +153,22 @@ export class HomePage implements OnInit {
       return true;
     }
     return false;
+  }
+
+  setGenderToMale(): void {
+    this.gender = 'male';
+  }
+
+  setGenderToFemale(): void {
+    this.gender = 'female';
+  }
+
+  showSettingsToggle(): void {
+    if(this.showSettings == false){
+      this.showSettings = true;
+    }
+    else{
+      this.showSettings = false;
+    }
   }
 }
