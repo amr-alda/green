@@ -27,6 +27,7 @@ import { Text3Component } from './text3/text3.component';
 
 import { StartComponent } from './start/start.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { AdminComponent } from './admin/admin.component';
 
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
@@ -37,6 +38,7 @@ import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 @NgModule({
   declarations: [
     AppComponent,
+    AdminComponent,
     LoginComponent,
     FeedbackComponent,
     Modul1Component,

@@ -45,6 +45,7 @@ import { Modul1videosComponent } from './modul1videos/modul1videos.component';
 import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
 import { SettingsComponent } from './settings/settings.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const routes: Routes = [
@@ -60,6 +61,10 @@ const routes: Routes = [
   {
     path: 'feedback', 
     component: FeedbackComponent
+  },
+  {
+    path: 'admin', 
+    component: AdminComponent
   },
   {
     path: 'settings', 
