@@ -33,10 +33,139 @@
 
 <main style="color: white">
   <div class="kasten1 kasten">
-    1
+    
+    <table class="table table-dark table-striped table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Student</th>
+          <th scope="col">Nickname</th>
+          <th scope="col">Rang</th>
+          <th scope="col">Punkte</th>
+          <th scope="col">Quests</th>
+          <th scope="col"> <a (click)="resetAllUsers()" class="link" style="color: white">Alle zurücksetzen</a> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Marc</td>
+          <td>Wissenschaftlicher Mitarbeiter</td>
+          <td>102</td>
+          <td>1.1, 1.2, 2.1, 2.2</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Hendrik</td>
+          <td>Studentische Hilfskraft</td>
+          <td>68</td>
+          <td>1.1, 1.2</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Amr</td>
+          <td>Praktikant</td>
+          <td>12</td>
+          <td>1.1</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Ionis</td>
+          <td>Praktikant</td>
+          <td>12</td>
+          <td>1.1</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Chris</td>
+          <td>Praktikant</td>
+          <td>12</td>
+          <td>1.1</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Tobi</td>
+          <td>Praktikant</td>
+          <td>12</td>
+          <td>1.1</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Flo</td>
+          <td>Praktikant</td>
+          <td>12</td>
+          <td>1.1</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Alex</td>
+          <td>Praktikant</td>
+          <td>12</td>
+          <td>1.1</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+        <tr>
+          <th scope="row">tourxxxx</th>
+          <td>Moritz</td>
+          <td>Praktikant</td>
+          <td>12</td>
+          <td>1.1</td>
+          <td><a (click)="resetUser()" class="link" style="color: white">Kurs zurücksetzen</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="fixed-bottom" style="margin-left: auto; margin-right: auto; margin-bottom: 5%; background-color: rgba(46, 46, 46, 0.7); color: white; width: 220px; height: 50px; border-radius: 8px">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-card-checklist" viewBox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+      </svg>
+      Gesamtstatistik
+    </button>
+
   </div>
   <div class="kasten2 kasten">
-    2
+    
+    <table class="table table-dark table-striped table-bordered">
+      <thead>
+        <tr>
+          <th scope="col" style="text-align: center;" colspan="2">Questauswahl</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Quest 1.1</th>
+          <th scope="row" class="unlockLink">Freischalten</th>
+        </tr>
+        <tr>
+          <th scope="row">Quest 1.2</th>
+          <th scope="row" class="unlockLink">Freischalten</th>
+        </tr>
+        <tr>
+          <th scope="row">Quest 2.1</th>
+          <th scope="row" class="unlockLink">Freischalten</th>
+        </tr>
+        <tr>
+          <th scope="row">Quest 2.2</th>
+          <th scope="row" class="unlockLink">Freischalten</th>
+        </tr>
+        <tr>
+          <th scope="row">Quest 2.3</th>
+          <th scope="row" class="unlockLink">Freischalten</th>
+        </tr>
+        <tr>
+          <th scope="row">Quest 2.4</th>
+          <th scope="row" class="unlockLink">Freischalten</th>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
 </main>
 

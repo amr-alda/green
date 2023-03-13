@@ -18,4 +18,16 @@ export class AdminComponent implements OnInit {
     }
   }
 
+  resetAllUsers(): void {
+    if (confirm('Sind Sie sicher dass Sie alle Nutzer zurücksetzen wollen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
+
+  resetUser(): void {
+    if (confirm('Sind Sie sicher dass Sie diesen Nutzer zurücksetzen wollen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
+
 }

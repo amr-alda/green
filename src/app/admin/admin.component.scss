@@ -74,14 +74,14 @@
   main{
     display: grid;
     height: 100vh;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1.5fr;
   }
 
   .kasten1{
-    display: flex;
     padding: 2%;
     border-top: 1px solid rgb(255,255,255, 0.1);
     border-right: 1px solid rgb(255,255,255, 0.1);
+    margin-bottom: 80px;
    }
   
   .kasten2{
@@ -90,4 +90,14 @@
     padding-bottom: 4%;
     padding-left: 6%;
     padding-right: 6%;
+  }
+
+  .link:hover{
+    cursor: pointer;
+    color: red !important;
+  }
+
+  .unlockLink:hover{
+    cursor: pointer;
+    color: green !important;
   }
