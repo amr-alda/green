@@ -12,4 +12,12 @@ export class NewpasswordComponent implements OnInit {
 
   ngOnInit() {}
 
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  goToNewPassword(): void {
+    this.router.navigateByUrl('/newpassword');
+  }
+
 }
