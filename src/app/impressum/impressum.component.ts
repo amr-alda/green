@@ -12,4 +12,8 @@ export class ImpressumComponent implements OnInit {
 
   ngOnInit() {}
 
+  goToLogin(): void {
+      this.router.navigateByUrl('/login');
+    }
+
 }
