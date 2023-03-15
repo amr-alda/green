@@ -12,7 +12,8 @@ import Typewriter from 't-writer.js';
   standalone: true
 })
 export class OnboardingComponent implements OnInit {
-
+  
+  showForm:boolean = false;
   
   backgroundImg : string =  '../../assets/images/elfriede.png';
 
@@ -20,6 +21,7 @@ export class OnboardingComponent implements OnInit {
 
   ngOnInit() {
 
+    
 
     const target = document.querySelector('.tw');
 
@@ -49,6 +51,8 @@ export class OnboardingComponent implements OnInit {
       
 
   setTimeout(() => this.backgroundImg = '../../assets/images/lara-office2.png', 26000 );
+  setTimeout(() => this.showForm = true, 26000 );
+  
 
   }
 
