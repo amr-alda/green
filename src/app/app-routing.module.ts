@@ -20,6 +20,9 @@ import { StartComponent } from './start/start.component';
 import { RegisterComponent } from './register/register.component';
 import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+
+import { OnboardingComponent } from './onboarding/onboarding.component';
+
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
 
@@ -69,6 +72,10 @@ const routes: Routes = [
   {
     path: 'settings', 
     component: SettingsComponent
+  },
+  {
+    path: 'onboarding', 
+    component: OnboardingComponent
   },
   {
     path: 'modul1videos', 
