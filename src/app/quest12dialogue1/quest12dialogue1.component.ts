@@ -72,8 +72,8 @@ export class Quest12dialogue1Component implements OnInit {
     window.location.reload();
   }
 
-  goToQuest11(): void {
-    this.router.navigateByUrl('/quest11');
+  goToQuest12(): void {
+    this.router.navigateByUrl('/quest12');
   }
 
   goToLogin(): void {

@@ -30,17 +30,32 @@ import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.c
 import { Quest11dialogue1Component } from './quest11dialogue1/quest11dialogue1.component';
 import { Quest11dialogue2Component } from './quest11dialogue2/quest11dialogue2.component';
 
+import { Quest12feedback1Component } from './quest12feedback1/quest12feedback1.component';
+import { Quest12feedback2Component } from './quest12feedback2/quest12feedback2.component';
+
 import { Quest12dialogue1Component } from './quest12dialogue1/quest12dialogue1.component';
 import { Quest12dialogue2Component } from './quest12dialogue2/quest12dialogue2.component';
+
+import { Quest21feedback1Component } from './quest21feedback1/quest21feedback1.component';
+import { Quest21feedback2Component } from './quest21feedback2/quest21feedback2.component';
 
 import { Quest21dialogue1Component } from './quest21dialogue1/quest21dialogue1.component';
 import { Quest21dialogue2Component } from './quest21dialogue2/quest21dialogue2.component';
 
+import { Quest22feedback1Component } from './quest22feedback1/quest22feedback1.component';
+import { Quest22feedback2Component } from './quest22feedback2/quest22feedback2.component';
+
 import { Quest22dialogue1Component } from './quest22dialogue1/quest22dialogue1.component';
 import { Quest22dialogue2Component } from './quest22dialogue2/quest22dialogue2.component';
 
+import { Quest23feedback1Component } from './quest23feedback1/quest23feedback1.component';
+import { Quest23feedback2Component } from './quest23feedback2/quest23feedback2.component';
+
 import { Quest23dialogue1Component } from './quest23dialogue1/quest23dialogue1.component';
 import { Quest23dialogue2Component } from './quest23dialogue2/quest23dialogue2.component';
+
+import { Quest24feedback1Component } from './quest24feedback1/quest24feedback1.component';
+import { Quest24feedback2Component } from './quest24feedback2/quest24feedback2.component';
 
 import { Quest24dialogue1Component } from './quest24dialogue1/quest24dialogue1.component';
 import { Quest24dialogue2Component } from './quest24dialogue2/quest24dialogue2.component';
@@ -141,6 +156,46 @@ const routes: Routes = [
   {
     path: 'quest11feedback2', 
     component: Quest11feedback2Component
+  },
+  {
+    path: 'quest12feedback1', 
+    component: Quest12feedback1Component
+  },
+  {
+    path: 'quest12feedback2', 
+    component: Quest12feedback2Component
+  },
+  {
+    path: 'quest21feedback1', 
+    component: Quest21feedback1Component
+  },
+  {
+    path: 'quest21feedback2', 
+    component: Quest21feedback2Component
+  },
+  {
+    path: 'quest22feedback1', 
+    component: Quest22feedback1Component
+  },
+  {
+    path: 'quest22feedback2', 
+    component: Quest22feedback2Component
+  },
+  {
+    path: 'quest23feedback1', 
+    component: Quest23feedback1Component
+  },
+  {
+    path: 'quest23feedback2', 
+    component: Quest23feedback2Component
+  },
+  {
+    path: 'quest24feedback1', 
+    component: Quest24feedback1Component
+  },
+  {
+    path: 'quest24feedback2', 
+    component: Quest24feedback2Component
   },
   {
     path: 'impressum', 

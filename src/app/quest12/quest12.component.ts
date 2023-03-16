@@ -11,4 +11,14 @@ export class Quest12Component implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  goToQuest12feedback1(): void{
+    this.router.navigateByUrl('/quest12feedback1');
+  }
+
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
 }
