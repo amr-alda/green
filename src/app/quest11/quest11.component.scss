@@ -77,7 +77,7 @@ a{
   }
 
   .kasten1{
-    width: 65%;
+    width: 100vw;
     height: 100vh;
   }
 
@@ -86,8 +86,3 @@ a{
     height: 100vh;
   }
 
-  @media screen and (min-height: 800px) {
-    .unityBox {
-      margin-top: 10% !important;
-    }
-  }
