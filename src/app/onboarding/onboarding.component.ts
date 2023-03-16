@@ -71,8 +71,8 @@ export class OnboardingComponent implements OnInit {
     window.location.reload();
   }
 
-  goToModul1(): void {
-    this.router.navigateByUrl('/modul1');
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
   }
 
 }

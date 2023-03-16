@@ -19,4 +19,8 @@ export class RegisterComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
+  goToOnboarding(): void {
+    this.router.navigateByUrl('/onboarding');
+  }
+
 }

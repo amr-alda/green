@@ -18,4 +18,8 @@ export class LoginComponent implements OnInit {
   goToNewPassword(): void {
     this.router.navigateByUrl('/newpassword');
   }
+
+  goToOnboarding(): void {
+    this.router.navigateByUrl('/onboarding');
+  }
 }
