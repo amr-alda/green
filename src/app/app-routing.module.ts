@@ -20,6 +20,7 @@ import { StartComponent } from './start/start.component';
 import { RegisterComponent } from './register/register.component';
 import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { Impressum2Component } from './impressum2/impressum2.component';
 
 import { OnboardingComponent } from './onboarding/onboarding.component';
 
@@ -144,6 +145,10 @@ const routes: Routes = [
   {
     path: 'impressum', 
     component: ImpressumComponent
+  },
+  {
+    path: 'impressum2', 
+    component: Impressum2Component
   },
   {
     path: 'newpassword', 
