@@ -20,6 +20,8 @@ export class OnboardingComponent implements OnInit {
   showImg2:boolean = false;
 
   showImg3:boolean = false;
+
+  Rang1:boolean = false;
   
   backgroundImg : string =  '../../assets/images/elfriede.png';
 
@@ -101,6 +103,9 @@ export class OnboardingComponent implements OnInit {
 
   setTimeout(() => this.showImg2 = false, 106500 );
   setTimeout(() => this.showImg3 = true, 106500 );
+
+  setTimeout(() => this.showImg3 = false, 132500 );
+  setTimeout(() => this.Rang1 = true, 132500 );
 
 
   }
