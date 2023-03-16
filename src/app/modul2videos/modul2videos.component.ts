@@ -13,4 +13,14 @@ export class Modul2videosComponent implements OnInit {
 
   ngOnInit() {}
 
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
+
+  goToModul2(): void {
+    this.router.navigateByUrl('/modul2');
+  }
+
 }

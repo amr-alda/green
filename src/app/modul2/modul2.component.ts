@@ -9,8 +9,10 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 })
 export class Modul2Component implements OnInit {
 
-  quest1_1: string = 'grey';
-  quest1_2: string = 'grey';
+  quest2_1: string = 'grey';
+  quest2_2: string = 'grey';
+  quest2_3: string = 'grey';
+  quest2_4: string = 'grey';
 
   quest22_locked: boolean = true;
   quest23_locked: boolean = true;
@@ -22,6 +24,12 @@ export class Modul2Component implements OnInit {
 
   goToHome(): void {
     this.router.navigateByUrl('/home');
+  }
+
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
   }
 
   goToModul2Videos(): void {
@@ -42,5 +50,37 @@ export class Modul2Component implements OnInit {
 
   goToQuest24(): void {
     this.router.navigateByUrl('/quest24');
+  }
+
+  goToQuest21Dialogue1(): void{
+    this.router.navigateByUrl('/quest21dialogue1');
+  }
+
+  goToQuest21Dialogue2(): void {
+    this.router.navigateByUrl('/quest21dialogue2');
+  }
+
+  goToQuest22Dialogue1(): void{
+    this.router.navigateByUrl('/quest22dialogue1');
+  }
+
+  goToQuest22Dialogue2(): void {
+    this.router.navigateByUrl('/quest22dialogue2');
+  }
+
+  goToQuest23Dialogue1(): void{
+    this.router.navigateByUrl('/quest23dialogue1');
+  }
+
+  goToQuest23Dialogue2(): void {
+    this.router.navigateByUrl('/quest23dialogue2');
+  }
+
+  goToQuest24Dialogue1(): void{
+    this.router.navigateByUrl('/quest24dialogue1');
+  }
+
+  goToQuest24Dialogue2(): void {
+    this.router.navigateByUrl('/quest24dialogue2');
   }
 }
