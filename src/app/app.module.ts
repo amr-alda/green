@@ -31,6 +31,23 @@ import { AdminComponent } from './admin/admin.component';
 
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
+
+import { Quest12feedback1Component } from './quest12feedback1/quest12feedback1.component';
+import { Quest12feedback2Component } from './quest12feedback2/quest12feedback2.component';
+
+import { Quest21feedback1Component } from './quest21feedback1/quest21feedback1.component';
+import { Quest21feedback2Component } from './quest21feedback2/quest21feedback2.component';
+
+import { Quest22feedback1Component } from './quest22feedback1/quest22feedback1.component';
+import { Quest22feedback2Component } from './quest22feedback2/quest22feedback2.component';
+
+import { Quest23feedback1Component } from './quest23feedback1/quest23feedback1.component';
+import { Quest23feedback2Component } from './quest23feedback2/quest23feedback2.component';
+
+import { Quest24feedback1Component } from './quest24feedback1/quest24feedback1.component';
+import { Quest24feedback2Component } from './quest24feedback2/quest24feedback2.component';
+
+
 import { Modul1videosComponent } from './modul1videos/modul1videos.component';
 import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
@@ -59,6 +76,16 @@ import { Modul2videosComponent } from './modul2videos/modul2videos.component';
     Quest11feedback2Component,
     Modul1videosComponent,
     Modul2videosComponent,
+    Quest12feedback1Component,
+    Quest12feedback2Component,
+    Quest21feedback1Component,
+    Quest21feedback2Component,
+    Quest22feedback1Component,
+    Quest22feedback2Component,
+    Quest23feedback1Component,
+    Quest23feedback2Component,
+    Quest24feedback1Component,
+    Quest24feedback2Component,
   ],
   imports: 
   [
