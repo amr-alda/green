@@ -13,9 +13,9 @@ import Typewriter from 't-writer.js';
 })
 export class OnboardingComponent implements OnInit {
   
-  showForm:boolean = false;
+  showForm:boolean = true;
 
-  showImg1:boolean = false;
+  showImg1:boolean = true;
 
   showImg2:boolean = false;
 
