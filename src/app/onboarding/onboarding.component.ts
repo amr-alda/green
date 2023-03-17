@@ -23,7 +23,7 @@ export class OnboardingComponent implements OnInit {
 
   Rang1:boolean = false;
   
-  backgroundImg : string =  '../../assets/images/elfriede.png';
+  backgroundImg : string =  '../../assets/images/Lauras-BüroOnboarding1-Begrüßung.png';
 
   constructor(private router: Router) { }
 
@@ -94,10 +94,11 @@ export class OnboardingComponent implements OnInit {
 
       
 
-  setTimeout(() => this.backgroundImg = '../../assets/images/lara-office2.png', 26000 );
+  setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroOnboarding2-EU-Flagge.png', 26000 );
   setTimeout(() => this.showForm = true, 26000 );
   setTimeout(() => this.showImg1 = true, 26000 );
 
+  setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroOnboarding2-EU-Flagge.png', 54000 );
   setTimeout(() => this.showImg1 = false, 54000 );
   setTimeout(() => this.showImg2 = true, 54000 );
 

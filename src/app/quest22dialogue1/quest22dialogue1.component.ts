@@ -39,7 +39,7 @@ export class Quest22dialogue1Component implements OnInit {
       .type('Jetzt ist dort alles durcheinanander geraten.')
       .rest(1500)
       .queueClearText()
-      .type('Kannst du das bitte schnell wieder ordnen und die richtigen Lösungen an dasRechenzentrum schicken, damit das dort korrigiert werden kann.')
+      .type('Kannst du das bitte schnell wieder ordnen und die richtigen Lösungen an das Rechenzentrum schicken, damit das dort korrigiert werden kann.')
       .start()
 
   }

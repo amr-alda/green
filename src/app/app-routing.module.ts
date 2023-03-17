@@ -138,7 +138,7 @@ const routes: Routes = [
   },
   {
     path: 'quest22dialogue1', 
-    component: Quest22dialogue2Component
+    component: Quest22dialogue1Component
   },
   {
     path: 'quest22dialogue2', 

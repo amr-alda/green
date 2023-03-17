@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 // @ts-ignore
 import Typewriter from 't-writer.js';
@@ -7,8 +8,13 @@ import Typewriter from 't-writer.js';
   selector: 'app-quest21dialogue2',
   templateUrl: './quest21dialogue2.component.html',
   styleUrls: ['./quest21dialogue2.component.scss'],
+  imports: [CommonModule],
+  standalone: true
 })
 export class Quest21dialogue2Component implements OnInit {
+
+
+  backgroundImg : string =  '../../assets/images/Lauras-BüroQuest2.1.1Outro.png';
 
   constructor(private router: Router) { }
 
@@ -44,6 +50,10 @@ export class Quest21dialogue2Component implements OnInit {
       .queueClearText()
       .type('Ich hefte das am besten mal unsere Pinnwand.')
       .start()
+
+
+
+      setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroQuest2.1.2Outro.png', 3500 );
 
   }
 

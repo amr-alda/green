@@ -10,6 +10,9 @@ import Typewriter from 't-writer.js';
 })
 export class Quest21dialogue1Component implements OnInit {
 
+
+
+
   constructor(private router: Router) { }
 
   i = 0;
