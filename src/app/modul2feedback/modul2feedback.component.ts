@@ -12,4 +12,29 @@ export class Modul2feedbackComponent implements OnInit {
 
   ngOnInit() {}
 
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
+
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  goToQuest21feedback2() :void{
+    this.router.navigateByUrl('/quest21feedback2');
+  }
+
+  goToQuest22feedback2() :void{
+    this.router.navigateByUrl('/quest22feedback2');
+  }
+
+  goToQuest23feedback2() :void{
+    this.router.navigateByUrl('/quest23feedback2');
+  }
+
+  goToQuest24feedback2() :void{
+    this.router.navigateByUrl('/quest24feedback2');
+  }
 }
