@@ -66,6 +66,9 @@ import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 import { SettingsComponent } from './settings/settings.component';
 import { AdminComponent } from './admin/admin.component';
 
+import { Modul1feedbackComponent } from './modul1feedback/modul1feedback.component';
+import { Modul2feedbackComponent } from './modul2feedback/modul2feedback.component';
+
 
 const routes: Routes = [
   {
@@ -88,6 +91,14 @@ const routes: Routes = [
   {
     path: 'settings', 
     component: SettingsComponent
+  },
+  {
+    path: 'modul1feedback', 
+    component: Modul1feedbackComponent
+  },
+  {
+    path: 'modul2feedback', 
+    component: Modul2feedbackComponent
   },
   {
     path: 'onboarding', 

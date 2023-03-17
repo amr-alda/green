@@ -51,6 +51,9 @@ import { Quest24feedback2Component } from './quest24feedback2/quest24feedback2.c
 import { Modul1videosComponent } from './modul1videos/modul1videos.component';
 import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
+import { Modul1feedbackComponent } from './modul1feedback/modul1feedback.component';
+import { Modul2feedbackComponent } from './modul2feedback/modul2feedback.component';
+
 
 @NgModule({
   declarations: [
@@ -86,6 +89,8 @@ import { Modul2videosComponent } from './modul2videos/modul2videos.component';
     Quest23feedback2Component,
     Quest24feedback1Component,
     Quest24feedback2Component,
+    Modul1feedbackComponent,
+    Modul2feedbackComponent,
   ],
   imports: 
   [

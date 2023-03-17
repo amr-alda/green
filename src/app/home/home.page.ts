@@ -85,6 +85,14 @@ export class HomePage implements OnInit {
     }
   }
 
+  goToModul1feedback(): void{
+    this.router.navigateByUrl('/modul1feedback');
+  }
+
+  goToModul2feedback(): void{
+    this.router.navigateByUrl('/modul2feedback');
+  }
+
   isIn10Range(parlament_progress:number){
     if(parlament_progress>=10 && parlament_progress <20){
       return true;
