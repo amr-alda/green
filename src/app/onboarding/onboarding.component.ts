@@ -105,6 +105,7 @@ export class OnboardingComponent implements OnInit {
   setTimeout(() => this.showImg3 = true, 106500 );
 
   setTimeout(() => this.showImg3 = false, 132500 );
+  
   setTimeout(() => this.Rang1 = true, 132500 );
 
 
