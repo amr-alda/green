@@ -16,4 +16,10 @@ export class Quest11feedback2Component implements OnInit {
     this.router.navigateByUrl('/quest11dialogue2');
   }
 
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
+
 }
