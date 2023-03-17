@@ -10,4 +10,14 @@ export class Quest21Component implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  goToQuest21feedback1(): void{
+    this.router.navigateByUrl('/quest21feedback1');
+  }
+
+  goToLogin(): void {
+    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
+      this.router.navigateByUrl('/login');
+    }
+  }
 }

@@ -12,4 +12,8 @@ export class Quest21feedback2Component implements OnInit {
 
   ngOnInit() {}
 
+  goToQuest21Dialogue2(): void{
+    this.router.navigateByUrl('/quest21dialogue2');
+  }
+
 }
