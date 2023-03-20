@@ -451,8 +451,6 @@
 
   <div class="kasten2 kasten">
 
-    <p style="text-align: center; padding: 2%; margin-top: 1%">{{parlament_progress}}% des Europaparlaments sind bereits auf deiner Seite!</p>
-
     <img *ngIf="isIn10Range(parlament_progress) == true"
         alt="Parlament"
         src="../../assets/images/parlament/10percent.png"
@@ -526,6 +524,8 @@
         height="20%"
         class="inline-block"
       />
+
+      <p style="text-align: center; padding: 2%; margin-top: 1%">{{parlament_progress}}% des Europaparlaments sind bereits auf deiner Seite!</p>
     
 
     <div style="text-align: center; margin-top: 3%;">
@@ -544,6 +544,7 @@
         class="inline-block"
       />
 
+
       <div>
         <h3>{{username}}</h3>
       </div>
@@ -559,7 +560,6 @@
       <h1 *ngIf="player_rank == 4 && gender == 'female' " style="font-weight: bold; font-size: 35px">Rang 4</h1>
       
     
-      <p style="text-align: center; margin-top: 10%">Überzeuge mehr Parlamentarier um in deinem Rang aufzusteigen</p>
     </div>
 
   </div>

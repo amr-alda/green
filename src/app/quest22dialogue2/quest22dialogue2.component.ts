@@ -63,8 +63,8 @@ export class Quest22dialogue2Component implements OnInit {
     window.location.reload();
   }
 
-  goToQuest11(): void {
-    this.router.navigateByUrl('/quest11');
+  goToModul2(): void {
+    this.router.navigateByUrl('/modul2');
   }
 
   goToLogin(): void {
