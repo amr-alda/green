@@ -1,6 +1,7 @@
 .wholePage{
-    background-image: url(../../assets/images/lara-office.jpg);
+    // background-image: url(../../assets/images/lara-office.jpg);
     background-size: 100% 100%;
+    background-color: #d7e8d5;
     height: 100vh;
   }
   
@@ -73,17 +74,8 @@
     }
   
     main{
-      display: flex;
+      
     }
   
-    .kasten1{
-      width: 100vw;
-      height: 100vh;
-    }
-  
-    .kasten2{
-      width: 35%;
-      height: 100vh;
-    }
   
   
