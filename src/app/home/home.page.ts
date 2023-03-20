@@ -75,6 +75,10 @@ export class HomePage implements OnInit {
     this.router.navigateByUrl('/feedback');
   }
 
+  goToOnboarding(): void {
+    this.router.navigateByUrl('/onboarding');
+  }
+
   goToLogin(): void {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');

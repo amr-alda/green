@@ -20,14 +20,54 @@ main{
 }
 
 .kasten1{
-  display: flex;
-  padding: 2%;
+  display: grid;
   border-top: 1px solid rgb(255,255,255, 0.1);
+  grid-template-rows: 1fr 1fr;
+ }
+
+ .kasten1upper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 150px;
+ }
+
+ .kasten1lower{
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  margin-bottom: 150px;
+ }
+
+ @media screen and (min-height: 800px) {
+  .kasten1upper {
+    margin-top: 190px;
+  }
+}
+
+ .upper1{
+  
+ }
+
+ .upper2{
+  
+ }
+
+ .upper3{
+  
+ }
+
+ .lower1{
+  
+ }
+
+ .lower2{
+  
+ }
+
+ .lower3{
+  
  }
 
 .kasten2{
-  // background-image: url(../../assets/images/backgroundNew.png);
-  // background-size: 100% 100%;
   padding-top: 4%;
   padding-bottom: 4%;
   padding-left: 6%;
@@ -37,6 +77,7 @@ main{
 
 .card{
   margin: auto;
+  height: 11rem;
 }
 
 .card:hover {
@@ -70,32 +111,6 @@ main{
 
 .unityBox{
   text-align: center;
-}
-
-.modul1card{
-  position: relative;
-  transform: translateY(180%);
-}
-
-@media screen and (min-height: 800px) {
-  .modul1card {
-    transform: translateY(230%);
-  }
-}
-
-.modul2card{
-  position: relative;
-  transform: translateY(-260%);
-}
-
-.modul3card{
-  position: relative;
-  transform: translateY(-128%);
-}
-
-.modul4card{
-  position: relative;
-  transform: translateY(-250%);
 }
 
 // NAV-BAR
