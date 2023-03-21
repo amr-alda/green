@@ -98,15 +98,16 @@ export class OnboardingComponent implements OnInit {
   setTimeout(() => this.showForm = true, 26000 );
   setTimeout(() => this.showImg1 = true, 26000 );
 
-  setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroOnboarding2-EU-Flagge.png', 54000 );
+  setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroOnboarding3-GreenTourismLogo.png', 54000 );
   setTimeout(() => this.showImg1 = false, 54000 );
   setTimeout(() => this.showImg2 = true, 54000 );
 
-  setTimeout(() => this.showImg2 = false, 106500 );
-  setTimeout(() => this.showImg3 = true, 106500 );
+  setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroOnboarding4-Parlamentarier.png', 107000 );
+  setTimeout(() => this.showImg2 = false, 107000 );
+  setTimeout(() => this.showImg3 = true, 107000 );
 
+  setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroOnboarding5-Rang_Erklaerung.png', 132500 );
   setTimeout(() => this.showImg3 = false, 132500 );
-  
   setTimeout(() => this.Rang1 = true, 132500 );
 
 
