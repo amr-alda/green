@@ -80,3 +80,16 @@ main{
   .clickableBox:hover{
     cursor: pointer;
   }
+
+  .schloss {
+    width: 42px;
+    float: right;
+    transform: translateY(-30%);
+  }
+
+  h2{
+    margin: 0;
+      margin-top: 18px;
+      width: 380px;
+      margin-left: 80px;
+  }
