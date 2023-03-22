@@ -109,12 +109,12 @@ a{
 
 .row1kasten5{
   width: 23%;
-  padding-right: 3%;
+  padding-right: 2%;
 }
 
 .row2{
   display: flex;
-  transform: translateY(-15%);
+  transform: translateY(-40%);
 }
 
 .row3{
@@ -124,13 +124,13 @@ a{
 
 @media (min-height: 800px) {
   .row2 {
-    transform: translateY(0%);
+    transform: translateY(-20%);
   }
   .row3 {
-    transform: translateY(5%);
+    transform: translateY(10%);
   }
   .cardBg1{
-    transform: translateY(75%) !important;
+    transform: translateY(40%) !important;
   }
   .cardBg2{
     transform: translateY(75%) !important;
@@ -140,13 +140,13 @@ a{
 .row3kasten1{
   padding-left: 3%;
   width: 42%;
-  transform: translateY(-55%);
+  transform: translateY(-30%);
 }
 
 .row3kasten2{
   width: 16%;
   padding-left: 1%;
-  transform: translateY(10%);
+  transform: translateY(-10%);
 }
 
 .row3kasten3{
@@ -169,7 +169,7 @@ a{
 
 .cardBg1{
   margin-left: 15%;
-  transform: translateY(50%);
+  transform: translateY(30%);
 }
 
 .cardBg2{
