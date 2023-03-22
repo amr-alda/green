@@ -72,6 +72,8 @@ import { Modul2feedbackComponent } from './modul2feedback/modul2feedback.compone
 import { Quest11feedbackComponent } from './quest11feedback/quest11feedback.component';
 import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.component';
 
+import { Quest21feedbackComponent } from './quest21feedback/quest21feedback.component';
+
 
 const routes: Routes = [
   {
@@ -98,6 +100,10 @@ const routes: Routes = [
   {
     path: 'quest11feedback', 
     component: Quest11feedbackComponent
+  },
+  {
+    path: 'quest21feedback', 
+    component: Quest21feedbackComponent
   },
   {
     path: 'quest12feedback', 

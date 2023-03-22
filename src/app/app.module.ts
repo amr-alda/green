@@ -57,10 +57,14 @@ import { Modul2feedbackComponent } from './modul2feedback/modul2feedback.compone
 import { Quest11feedbackComponent } from './quest11feedback/quest11feedback.component';
 import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.component';
 
+import { Quest21feedbackComponent } from './quest21feedback/quest21feedback.component';
+
 
 @NgModule({
   declarations: [
     Quest11feedbackComponent,
+    Quest12feedbackComponent,
+    Quest21feedbackComponent,
     AppComponent,
     AdminComponent,
     LoginComponent,
