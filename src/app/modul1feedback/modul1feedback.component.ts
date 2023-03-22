@@ -25,9 +25,9 @@ export class Modul1feedbackComponent implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
-  goToQuest11feedback2(): void {
+  goToQuest11feedback(): void {
     if(this.quest11_locked == false){
-      this.router.navigateByUrl('/quest11feedback2');
+      this.router.navigateByUrl('/quest11feedback');
     }
   }
 

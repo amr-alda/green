@@ -54,9 +54,12 @@ import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 import { Modul1feedbackComponent } from './modul1feedback/modul1feedback.component';
 import { Modul2feedbackComponent } from './modul2feedback/modul2feedback.component';
 
+import { Quest11feedbackComponent } from './quest11feedback/quest11feedback.component';
+
 
 @NgModule({
   declarations: [
+    Quest11feedbackComponent,
     AppComponent,
     AdminComponent,
     LoginComponent,

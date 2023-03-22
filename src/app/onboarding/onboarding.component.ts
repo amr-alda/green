@@ -26,7 +26,6 @@ export class OnboardingComponent implements OnInit {
   backgroundImg : string =  '../../assets/images/Lauras-BüroOnboarding1-Begrüßung.png';
 
   constructor(private router: Router) {
-    console.log(this.router.getCurrentNavigation().previousNavigation.finalUrl.toString());
    }
 
   ngOnInit() {
