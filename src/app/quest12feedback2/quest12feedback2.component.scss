@@ -8,7 +8,9 @@
     // background-size: 100% 100%;
     display: grid;
     height: 100vh;
-    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.6);
   }
   
   // NAV-BAR
@@ -79,4 +81,23 @@
     
     .clickableBox:hover{
       cursor: pointer;
+    }
+
+    .row1kasten1{
+      border-right: 1px solid rgb(255,255,255, 0.3);
+    }
+
+    .row1kasten2{
+      border-right: 1px solid rgb(255,255,255, 0.3);
+    }
+
+    .row2kasten1{
+      border-right: 1px solid rgb(255,255,255, 0.3);
+    }
+
+    .row2kasten2{
+      border-right: 1px solid rgb(255,255,255, 0.3);
+    }
+
+    .row2kasten3{
     }
