@@ -14,7 +14,7 @@ export class Modul2Component implements OnInit {
   quest2_3: string = 'grey';
   quest2_4: string = 'grey';
 
-  quest22_locked: boolean = true;
+  quest22_locked: boolean = false;
   quest23_locked: boolean = true;
   quest24_locked: boolean = true;
 
@@ -69,7 +69,9 @@ export class Modul2Component implements OnInit {
   }
 
   goToQuest23Dialogue1(): void{
+    if (this.quest23_locked == false) {
     this.router.navigateByUrl('/quest23dialogue1');
+    }
   }
 
   goToQuest23Dialogue2(): void {
@@ -77,7 +79,9 @@ export class Modul2Component implements OnInit {
   }
 
   goToQuest24Dialogue1(): void{
+    if (this.quest24_locked == false) {
     this.router.navigateByUrl('/quest24dialogue1');
+    }
   }
 
   goToQuest24Dialogue2(): void {
