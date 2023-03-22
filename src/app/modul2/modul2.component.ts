@@ -14,6 +14,7 @@ export class Modul2Component implements OnInit {
   quest2_3: string = 'grey';
   quest2_4: string = 'grey';
 
+  quest21_locked: boolean = false;
   quest22_locked: boolean = false;
   quest23_locked: boolean = true;
   quest24_locked: boolean = true;

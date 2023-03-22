@@ -8,6 +8,11 @@ import { Router } from '@angular/router';
 })
 export class Modul2feedbackComponent implements OnInit {
 
+  quest21_locked: boolean = false;
+  quest22_locked: boolean = false;
+  quest23_locked: boolean = true;
+  quest24_locked: boolean = true;
+
   constructor(private router: Router) { }
 
   ngOnInit() {}
@@ -31,10 +36,14 @@ export class Modul2feedbackComponent implements OnInit {
   }
 
   goToQuest23feedback2() :void{
-    this.router.navigateByUrl('/quest23feedback2');
+    if(this.quest23_locked == false){
+      this.router.navigateByUrl('/quest23feedback2');
+    }
   }
 
   goToQuest24feedback2() :void{
+    if(this.quest24_locked == false){
     this.router.navigateByUrl('/quest24feedback2');
+    }
   }
 }
