@@ -55,6 +55,7 @@ import { Modul1feedbackComponent } from './modul1feedback/modul1feedback.compone
 import { Modul2feedbackComponent } from './modul2feedback/modul2feedback.component';
 
 import { Quest11feedbackComponent } from './quest11feedback/quest11feedback.component';
+import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.component';
 
 
 @NgModule({

@@ -70,6 +70,7 @@ import { Modul1feedbackComponent } from './modul1feedback/modul1feedback.compone
 import { Modul2feedbackComponent } from './modul2feedback/modul2feedback.component';
 
 import { Quest11feedbackComponent } from './quest11feedback/quest11feedback.component';
+import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.component';
 
 
 const routes: Routes = [
@@ -97,6 +98,10 @@ const routes: Routes = [
   {
     path: 'quest11feedback', 
     component: Quest11feedbackComponent
+  },
+  {
+    path: 'quest12feedback', 
+    component: Quest12feedbackComponent
   },
   {
     path: 'modul1feedback', 
