@@ -42,7 +42,7 @@ export class Quest21dialogue2Component implements OnInit {
       .type('Ich frage mich dennoch, wie die Zettel wohl in die Mensa kamen?')
       .rest(1500)
       .queueClearText()
-      .type('Kaum auszumalen, wenn sich unsere Studierenden beim Verfassen ihrer wissenschaftlichen Texte nach diesem Unsinn gerichtet hätten')
+      .type('Kaum auszumalen, wenn sich unsere Studierenden beim Verfassen ihrer wissenschaftlichen Texte nach diesem Unsinn gerichtet hätten.')
       .rest(1500)
       .queueClearText()
       .type('Auf der Rückseite eines Zettel steht übrigens etwas, was ich aber nicht verstehe.')

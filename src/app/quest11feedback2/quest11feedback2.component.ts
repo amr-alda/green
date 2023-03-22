@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
 })
 export class Quest11feedback2Component implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+
+   }
 
   ngOnInit() {}
 
