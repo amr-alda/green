@@ -8,15 +8,6 @@ main {
   grid-template-columns: 3fr 1fr;
 }
 
-.avatar {
-  border-radius: 50px;
-}
-
-.userInfo {
-  display: flex;
-  margin-bottom: 1%;
-}
-
 .kasten1 {
   display: grid;
   border-top: 1px solid rgb(255, 255, 255, 0.1);
@@ -39,24 +30,6 @@ main {
   .kasten1upper {
     margin-top: 190px;
   }
-}
-
-.upper1 {
-}
-
-.upper2 {
-}
-
-.upper3 {
-}
-
-.lower1 {
-}
-
-.lower2 {
-}
-
-.lower3 {
 }
 
 .kasten2 {
@@ -106,10 +79,6 @@ main {
   float: right;
 }
 
-.unityBox {
-  text-align: center;
-}
-
 nav {
   display: flex;
   width: 100%;
@@ -120,10 +89,6 @@ nav {
 
 a {
   text-decoration: none;
-}
-
-.settingsIcon:hover {
-  cursor: pointer;
 }
 
 .nav-kasten1 {
