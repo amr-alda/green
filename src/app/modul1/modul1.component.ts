@@ -8,7 +8,6 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
   styleUrls: ['./modul1.component.scss'],
 })
 export class Modul1Component implements OnInit {
-
   quest1_1: string = 'gold';
   quest1_2: string = 'bronze';
 
@@ -36,7 +35,7 @@ export class Modul1Component implements OnInit {
     this.router.navigateByUrl('/quest11');
   }
 
-  goToQuest11Dialogue1(): void{
+  goToQuest11Dialogue1(): void {
     this.router.navigateByUrl('/quest11dialogue1');
   }
 

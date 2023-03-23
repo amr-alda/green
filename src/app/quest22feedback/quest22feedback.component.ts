@@ -7,13 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./quest22feedback.component.scss'],
 })
 export class Quest22feedbackComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
-
-  goToHome(): void{
+  goToHome(): void {
     this.router.navigateByUrl('/home');
   }
 
@@ -22,5 +20,4 @@ export class Quest22feedbackComponent implements OnInit {
       this.router.navigateByUrl('/login');
     }
   }
-
 }

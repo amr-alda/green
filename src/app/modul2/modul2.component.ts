@@ -8,7 +8,6 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
   styleUrls: ['./modul2.component.scss'],
 })
 export class Modul2Component implements OnInit {
-
   quest2_1: string = 'grey';
   quest2_2: string = 'grey';
   quest2_3: string = 'grey';
@@ -53,7 +52,7 @@ export class Modul2Component implements OnInit {
     this.router.navigateByUrl('/quest24');
   }
 
-  goToQuest21Dialogue1(): void{
+  goToQuest21Dialogue1(): void {
     this.router.navigateByUrl('/quest21dialogue1');
   }
 
@@ -61,7 +60,7 @@ export class Modul2Component implements OnInit {
     this.router.navigateByUrl('/quest21dialogue2');
   }
 
-  goToQuest22Dialogue1(): void{
+  goToQuest22Dialogue1(): void {
     this.router.navigateByUrl('/quest22dialogue1');
   }
 
@@ -69,9 +68,9 @@ export class Modul2Component implements OnInit {
     this.router.navigateByUrl('/quest22dialogue2');
   }
 
-  goToQuest23Dialogue1(): void{
+  goToQuest23Dialogue1(): void {
     if (this.quest23_locked == false) {
-    this.router.navigateByUrl('/quest23dialogue1');
+      this.router.navigateByUrl('/quest23dialogue1');
     }
   }
 
@@ -79,9 +78,9 @@ export class Modul2Component implements OnInit {
     this.router.navigateByUrl('/quest23dialogue2');
   }
 
-  goToQuest24Dialogue1(): void{
+  goToQuest24Dialogue1(): void {
     if (this.quest24_locked == false) {
-    this.router.navigateByUrl('/quest24dialogue1');
+      this.router.navigateByUrl('/quest24dialogue1');
     }
   }
 

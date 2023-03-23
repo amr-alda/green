@@ -1,8 +1,8 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-main{
+main {
   // background-image: url(../../assets/images/backgroundNew.png);
   // background-size: 100% 100%;
   display: grid;
@@ -10,72 +10,66 @@ main{
   grid-template-columns: 3fr 1fr;
 }
 
-.avatar{
+.avatar {
   border-radius: 50px;
 }
 
-.userInfo{
+.userInfo {
   display: flex;
   margin-bottom: 1%;
 }
 
-.kasten1{
+.kasten1 {
   display: grid;
-  border-top: 1px solid rgb(255,255,255, 0.1);
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
   grid-template-rows: 1fr 1fr;
- }
+}
 
- .kasten1upper{
+.kasten1upper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 150px;
- }
+}
 
- .kasten1lower{
+.kasten1lower {
   display: grid;
   grid-template-columns: 1fr 0.2fr 1fr;
   margin-bottom: 150px;
- }
+}
 
- @media screen and (min-height: 800px) {
+@media screen and (min-height: 800px) {
   .kasten1upper {
     margin-top: 190px;
   }
 }
 
- .upper1{
-  
- }
+.upper1 {
+}
 
- .upper2{
-  
- }
+.upper2 {
+}
 
- .upper3{
-  
- }
+.upper3 {
+}
 
- .lower1{
-  
- }
+.lower1 {
+}
 
- .lower2{
-  
- }
+.lower2 {
+}
 
- .lower3{
-  
- }
+.lower3 {
+}
 
-.kasten2{
+.kasten2 {
   padding-top: 25%;
   padding-bottom: 4%;
   padding-left: 6%;
   padding-right: 6%;
-  background-color: rgba(1,61,98,0.5);
+  background-color: rgba(1, 61, 98, 0.5);
 }
 
-.card{
+.card {
   margin: auto;
   height: 11rem;
 }
@@ -104,7 +98,7 @@ main{
   margin-left: 2%;
 }
 
-.laura-body{
+.laura-body {
   width: 25%;
   margin-left: 2%;
 }
@@ -114,13 +108,13 @@ main{
   float: right;
 }
 
-.unityBox{
+.unityBox {
   text-align: center;
 }
 
 // NAV-BAR
 
-nav{
+nav {
   display: flex;
   width: 100%;
   background-color: rgba(1, 61, 98, 0.8);
@@ -128,55 +122,55 @@ nav{
   padding-right: 10px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.settingsIcon:hover{
+.settingsIcon:hover {
   cursor: pointer;
 }
 
-.nav-kasten1{
+.nav-kasten1 {
   height: 100%;
   width: 4%;
   text-align: center;
-  margin-top: 5px; 
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.nav-kasten2{
+.nav-kasten2 {
   height: 100%;
   width: 10%;
   text-align: center;
   margin-top: 22px;
 }
 
-.nav-kasten3{
+.nav-kasten3 {
   height: 100%;
   width: 14%;
   margin-top: 22px;
   text-align: left;
 }
 
-.nav-kasten4{
+.nav-kasten4 {
   width: 44%;
   text-align: center;
 }
 
-.nav-kasten5{
+.nav-kasten5 {
   text-align: center;
   width: 14%;
   margin-top: 22px;
 }
 
-.nav-kasten6{
+.nav-kasten6 {
   height: 100%;
   width: 4%;
   text-align: center;
   margin-top: 22px;
 }
 
-.nav-kasten7{
+.nav-kasten7 {
   height: 100%;
   width: 10%;
   text-align: right;
@@ -184,11 +178,11 @@ a{
   text-align: right;
 }
 
-.logoutText:hover{
-cursor: pointer;
+.logoutText:hover {
+  cursor: pointer;
 }
 
-.wholePage{
+.wholePage {
   background-image: url(../../assets/images/landschaftbg.png);
   background-size: 100% 100%;
 }

@@ -12,7 +12,7 @@ export class Quest12Component implements OnInit {
 
   ngOnInit() {}
 
-  goToQuest12feedback1(): void{
+  goToQuest12feedback1(): void {
     this.router.navigateByUrl('/quest12feedback1');
   }
 

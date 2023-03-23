@@ -7,24 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+  username: string = 'Name';
+  gender: string = 'female';
 
-  username:string = "Name";
-  gender:string = "female";
+  showSettings: boolean = false;
 
-  showSettings:boolean = false;
+  player_rank: number = 1;
+  parlament_progress = 30;
 
-  player_rank:number = 1;
-  parlament_progress = 30;  
-
-  modul1_percent:number = 100;
-  modul2_percent:number = 0;
-  modul3_percent:number = 0;
-  modul4_percent:number = 0;
+  modul1_percent: number = 100;
+  modul2_percent: number = 0;
+  modul3_percent: number = 0;
+  modul4_percent: number = 0;
 
   modul2_locked: boolean = false;
   modul3_locked: boolean = true;
   modul4_locked: boolean = true;
-  
+
   quest1_1: string = 'gold';
   quest1_2: string = 'bronze';
 
@@ -85,79 +84,79 @@ export class HomePage implements OnInit {
     }
   }
 
-  goToModul1feedback(): void{
+  goToModul1feedback(): void {
     this.router.navigateByUrl('/modul1feedback');
   }
 
-  goToModul2feedback(): void{
+  goToModul2feedback(): void {
     this.router.navigateByUrl('/modul2feedback');
   }
 
-  isIn10Range(parlament_progress:number){
-    if(parlament_progress>=10 && parlament_progress <20){
+  isIn10Range(parlament_progress: number) {
+    if (parlament_progress >= 10 && parlament_progress < 20) {
       return true;
     }
     return false;
   }
 
-  isIn20Range(parlament_progress:number){
-    if(parlament_progress>=20 && parlament_progress <30){
+  isIn20Range(parlament_progress: number) {
+    if (parlament_progress >= 20 && parlament_progress < 30) {
       return true;
     }
     return false;
   }
 
-  isIn30Range(parlament_progress:number){
-    if(parlament_progress>=30 && parlament_progress <40){
-      return true;
-    }
-    return false;
-  }
-  
-  isIn40Range(parlament_progress:number){
-    if(parlament_progress>=40 && parlament_progress <50){
+  isIn30Range(parlament_progress: number) {
+    if (parlament_progress >= 30 && parlament_progress < 40) {
       return true;
     }
     return false;
   }
 
-  isIn50Range(parlament_progress:number){
-    if(parlament_progress>=50 && parlament_progress <60){
+  isIn40Range(parlament_progress: number) {
+    if (parlament_progress >= 40 && parlament_progress < 50) {
       return true;
     }
     return false;
   }
 
-  isIn60Range(parlament_progress:number){
-    if(parlament_progress>=60 && parlament_progress <70){
+  isIn50Range(parlament_progress: number) {
+    if (parlament_progress >= 50 && parlament_progress < 60) {
       return true;
     }
     return false;
   }
 
-  isIn70Range(parlament_progress:number){
-    if(parlament_progress>=70 && parlament_progress <80){
+  isIn60Range(parlament_progress: number) {
+    if (parlament_progress >= 60 && parlament_progress < 70) {
       return true;
     }
     return false;
   }
 
-  isIn80Range(parlament_progress:number){
-    if(parlament_progress>=80 && parlament_progress <90){
+  isIn70Range(parlament_progress: number) {
+    if (parlament_progress >= 70 && parlament_progress < 80) {
       return true;
     }
     return false;
   }
 
-  isIn90Range(parlament_progress:number){
-    if(parlament_progress>=90 && parlament_progress <100){
+  isIn80Range(parlament_progress: number) {
+    if (parlament_progress >= 80 && parlament_progress < 90) {
       return true;
     }
     return false;
   }
 
-  isIn100Range(parlament_progress:number){
-    if(parlament_progress==100){
+  isIn90Range(parlament_progress: number) {
+    if (parlament_progress >= 90 && parlament_progress < 100) {
+      return true;
+    }
+    return false;
+  }
+
+  isIn100Range(parlament_progress: number) {
+    if (parlament_progress == 100) {
       return true;
     }
     return false;

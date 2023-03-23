@@ -9,14 +9,11 @@ import Typewriter from 't-writer.js';
   styleUrls: ['./quest22dialogue2.component.scss'],
 })
 export class Quest22dialogue2Component implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   i = 0;
 
   ngOnInit() {
-    
-
     const target = document.querySelector('.tw');
 
     const start = new Typewriter(target, {
@@ -25,39 +22,33 @@ export class Quest22dialogue2Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75
-    })
+      typeSpeed: 75,
+    });
 
     start
       .removeCursor()
-      .type('Das Rechenzentrum hat auf der gehackten Webseite übrigens eine ominöse Nachricht gefunden, die ich mal an die Pinnwand heften werde.')
-      .start()
-
+      .type(
+        'Das Rechenzentrum hat auf der gehackten Webseite übrigens eine ominöse Nachricht gefunden, die ich mal an die Pinnwand heften werde.'
+      )
+      .start();
   }
 
-
-
-  higheri(){
+  higheri() {
     this.i++;
 
-    if(this.i==1) {
-
+    if (this.i == 1) {
       const target1 = document.querySelector('.tw');
 
       const writer1 = new Typewriter(target1, {
         typeColor: 'white',
-        cursorColor: 'white'
-      })
+        cursorColor: 'white',
+      });
 
-      writer1
-        .clear()
-        .start()
-
+      writer1.clear().start();
     }
-
   }
 
-  writer1(){
+  writer1() {
     this.i = 0;
 
     window.location.reload();
@@ -71,6 +62,5 @@ export class Quest22dialogue2Component implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-  }  
-
+  }
 }

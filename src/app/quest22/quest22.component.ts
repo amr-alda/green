@@ -11,7 +11,7 @@ export class Quest22Component implements OnInit {
 
   ngOnInit() {}
 
-  goToQuest22feedback1(): void{
+  goToQuest22feedback1(): void {
     this.router.navigateByUrl('/quest22feedback1');
   }
 

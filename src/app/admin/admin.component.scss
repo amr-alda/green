@@ -1,103 +1,103 @@
-.wholePage{
-    width: 100vw;
-    height: 100vh;
-  }
+.wholePage {
+  width: 100vw;
+  height: 100vh;
+}
 
-  nav{
-    display: flex;
-    width: 100%;
-    background-color: rgba(1, 61, 98, 0.8);
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  .settingsIcon:hover{
-    cursor: pointer;
-  }
-  
-  .nav-kasten1{
-    height: 100%;
-    width: 4%;
-    text-align: center;
-    margin-top: 5px; 
-    margin-bottom: 5px;
-  }
-  
-  .nav-kasten2{
-    height: 100%;
-    width: 10%;
-    text-align: center;
-    margin-top: 22px;
-  }
-  
-  .nav-kasten3{
-    height: 100%;
-    width: 14%;
-    margin-top: 22px;
-    text-align: left;
-  }
-  
-  .nav-kasten4{
-    width: 44%;
-    text-align: center;
-  }
-  
-  .nav-kasten5{
-    text-align: center;
-    width: 14%;
-    margin-top: 22px;
-  }
-  
-  .nav-kasten6{
-    height: 100%;
-    width: 4%;
-    text-align: center;
-    margin-top: 22px;
-  }
-  
-  .nav-kasten7{
-    height: 100%;
-    width: 10%;
-    text-align: right;
-    margin-top: 22px;
-    text-align: right;
-  }
-  
-  .logoutText:hover{
-    cursor: pointer;
-  }
+nav {
+  display: flex;
+  width: 100%;
+  background-color: rgba(1, 61, 98, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-  main{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 3fr 1.5fr;
-  }
+a {
+  text-decoration: none;
+}
 
-  .kasten1{
-    padding: 2%;
-    border-top: 1px solid rgb(255,255,255, 0.1);
-    border-right: 1px solid rgb(255,255,255, 0.1);
-    margin-bottom: 80px;
-   }
-  
-  .kasten2{
-    border-top: 1px solid rgb(255,255,255, 0.1);
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 6%;
-    padding-right: 6%;
-  }
+.settingsIcon:hover {
+  cursor: pointer;
+}
 
-  .link:hover{
-    cursor: pointer;
-    color: red !important;
-  }
+.nav-kasten1 {
+  height: 100%;
+  width: 4%;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
-  .unlockLink:hover{
-    cursor: pointer;
-    color: green !important;
-  }
+.nav-kasten2 {
+  height: 100%;
+  width: 10%;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.nav-kasten3 {
+  height: 100%;
+  width: 14%;
+  margin-top: 22px;
+  text-align: left;
+}
+
+.nav-kasten4 {
+  width: 44%;
+  text-align: center;
+}
+
+.nav-kasten5 {
+  text-align: center;
+  width: 14%;
+  margin-top: 22px;
+}
+
+.nav-kasten6 {
+  height: 100%;
+  width: 4%;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.nav-kasten7 {
+  height: 100%;
+  width: 10%;
+  text-align: right;
+  margin-top: 22px;
+  text-align: right;
+}
+
+.logoutText:hover {
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 1.5fr;
+}
+
+.kasten1 {
+  padding: 2%;
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  border-right: 1px solid rgb(255, 255, 255, 0.1);
+  margin-bottom: 80px;
+}
+
+.kasten2 {
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: red !important;
+}
+
+.unlockLink:hover {
+  cursor: pointer;
+  color: green !important;
+}

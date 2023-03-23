@@ -7,12 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./quest22feedback1.component.scss'],
 })
 export class Quest22feedback1Component implements OnInit {
-
   quest2_2: string = 'gold';
   anzahlPunkte: number = 9;
   anzahlParlamentarier: number = 6;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -20,10 +19,9 @@ export class Quest22feedback1Component implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-  }  
+  }
 
   goToQuest22Feedback2(): void {
     this.router.navigateByUrl('/quest22feedback2');
   }
-
 }

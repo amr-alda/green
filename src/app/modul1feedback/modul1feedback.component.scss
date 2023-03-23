@@ -1,9 +1,9 @@
-.wholePage{
+.wholePage {
   background-image: url(../../assets/images/landschaftbg.png);
   background-size: 100% 100%;
 }
 
-main{
+main {
   // background-image: url(../../assets/images/backgroundNew.png);
   // background-size: 100% 100%;
   // display: grid;
@@ -12,84 +12,84 @@ main{
 }
 
 // NAV-BAR
-  
-  nav{
-    display: flex;
-    width: 100%;
-    background-color: rgba(1, 61, 98, 0.8);
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  .settingsIcon:hover{
-    cursor: pointer;
-  }
-  
-  .nav-kasten1{
-    height: 100%;
-    width: 4%;
-    text-align: center;
-    margin-top: 5px; 
-    margin-bottom: 5px;
-  }
-  
-  .nav-kasten2{
-    height: 100%;
-    width: 10%;
-    text-align: center;
-    margin-top: 22px;
-  }
-  
-  .nav-kasten3{
-    height: 100%;
-    width: 14%;
-    margin-top: 22px;
-    text-align: left;
-  }
-  
-  .nav-kasten4{
-    width: 44%;
-    text-align: center;
-  }
-  
-  .nav-kasten5{
-    text-align: center;
-    width: 14%;
-    margin-top: 22px;
-  }
-  
-  .nav-kasten6{
-    height: 100%;
-    width: 4%;
-    text-align: center;
-    margin-top: 22px;
-  }
-  
-  .nav-kasten7{
-    height: 100%;
-    width: 10%;
-    text-align: right;
-    margin-top: 22px;
-    text-align: right;
-  }
-  
-  .clickableBox:hover{
-    cursor: pointer;
-  }
 
-  .schloss {
-    width: 42px;
-    float: right;
-    transform: translateY(-30%);
-  }
+nav {
+  display: flex;
+  width: 100%;
+  background-color: rgba(1, 61, 98, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-  h2{
-    margin: 0;
-      margin-top: 18px;
-      width: 380px;
-      margin-left: 80px;
-  }
+a {
+  text-decoration: none;
+}
+
+.settingsIcon:hover {
+  cursor: pointer;
+}
+
+.nav-kasten1 {
+  height: 100%;
+  width: 4%;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-kasten2 {
+  height: 100%;
+  width: 10%;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.nav-kasten3 {
+  height: 100%;
+  width: 14%;
+  margin-top: 22px;
+  text-align: left;
+}
+
+.nav-kasten4 {
+  width: 44%;
+  text-align: center;
+}
+
+.nav-kasten5 {
+  text-align: center;
+  width: 14%;
+  margin-top: 22px;
+}
+
+.nav-kasten6 {
+  height: 100%;
+  width: 4%;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.nav-kasten7 {
+  height: 100%;
+  width: 10%;
+  text-align: right;
+  margin-top: 22px;
+  text-align: right;
+}
+
+.clickableBox:hover {
+  cursor: pointer;
+}
+
+.schloss {
+  width: 42px;
+  float: right;
+  transform: translateY(-30%);
+}
+
+h2 {
+  margin: 0;
+  margin-top: 18px;
+  width: 380px;
+  margin-left: 80px;
+}

@@ -9,14 +9,11 @@ import Typewriter from 't-writer.js';
   styleUrls: ['./quest12dialogue1.component.scss'],
 })
 export class Quest12dialogue1Component implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   i = 0;
 
   ngOnInit() {
-    
-
     const target = document.querySelector('.tw');
 
     const start = new Typewriter(target, {
@@ -25,48 +22,46 @@ export class Quest12dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75
-    })
+      typeSpeed: 75,
+    });
 
     start
       .removeCursor()
-      .type('Wir wollen neues Personal einstellen und haben eine Stelle für Wissenschaftskommunikation ausgeschrieben.')
+      .type(
+        'Wir wollen neues Personal einstellen und haben eine Stelle für Wissenschaftskommunikation ausgeschrieben.'
+      )
       .rest(1500)
       .queueClearText()
       .type('Um ihre Komptenzen für diesen Job unter Beweis zu stellen,')
       .rest(1500)
       .queueClearText()
-      .type('sollten die Bewerberinnen und Bewerber auch einen kurzen Text zum Thema "Klimawandel und Tourismus" verfassen.')
+      .type(
+        'sollten die Bewerberinnen und Bewerber auch einen kurzen Text zum Thema "Klimawandel und Tourismus" verfassen.'
+      )
       .rest(1500)
       .queueClearText()
-      .type('Würdest du bitte die von Marianne Weber, Mike Kramer und Lisa Nowak eingereichten Texte anhand unserer Anforderungskriterien zum wissenschaftlichen Arbeiten prüfen.')
-      .start()
-
+      .type(
+        'Würdest du bitte die von Marianne Weber, Mike Kramer und Lisa Nowak eingereichten Texte anhand unserer Anforderungskriterien zum wissenschaftlichen Arbeiten prüfen.'
+      )
+      .start();
   }
 
-
-
-  higheri(){
+  higheri() {
     this.i++;
 
-    if(this.i==1) {
-
+    if (this.i == 1) {
       const target1 = document.querySelector('.tw');
 
       const writer1 = new Typewriter(target1, {
         typeColor: 'white',
-        cursorColor: 'white'
-      })
+        cursorColor: 'white',
+      });
 
-      writer1
-        .clear()
-        .start()
-
+      writer1.clear().start();
     }
-
   }
 
-  writer1(){
+  writer1() {
     this.i = 0;
 
     window.location.reload();
@@ -80,6 +75,5 @@ export class Quest12dialogue1Component implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-  }  
-
+  }
 }

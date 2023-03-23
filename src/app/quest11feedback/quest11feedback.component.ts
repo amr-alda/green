@@ -7,13 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./quest11feedback.component.scss'],
 })
 export class Quest11feedbackComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
-
-  goToHome(): void{
+  goToHome(): void {
     this.router.navigateByUrl('/home');
   }
 
@@ -21,7 +19,5 @@ export class Quest11feedbackComponent implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-
   }
-
 }

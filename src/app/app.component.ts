@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
 import { Global } from './global';
 
@@ -7,20 +7,14 @@ import { Global } from './global';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class AppComponent{
-
+export class AppComponent {
   showHeader: boolean = false;
 
-  constructor(private router: Router) {
-    
-  }
+  constructor(private router: Router) {}
 
   goToLogin(): void {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
   }
-  
 }
-
-

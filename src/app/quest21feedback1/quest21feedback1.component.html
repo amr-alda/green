@@ -1,90 +1,152 @@
 <div class="wholePage">
-
-  <nav style="color: white"> 
-
+  <nav style="color: white">
     <div class="nav-kasten1 nav-kasten">
       <img
-          alt="Logo der Hochschule Worms"
-          src="../assets/images/wormslogo-white.png"
-          width="64"
-          height="64"
-          class="inline-block"
-        />
+        alt="Logo der Hochschule Worms"
+        src="../assets/images/wormslogo-white.png"
+        width="64"
+        height="64"
+        class="inline-block"
+      />
     </div>
     <div class="nav-kasten2 nav-kasten">
-      <a href="home" class="fw-bold text-decoration-none" style="color: white; padding-left: 10%">Hauptmenü</a>
+      <a
+        href="home"
+        class="fw-bold text-decoration-none"
+        style="color: white; padding-left: 10%"
+        >Hauptmenü</a
+      >
     </div>
-      <div class="nav-kasten3 nav-kasten">
-        <a href="impressum2" class="fw-bold text-decoration-none" style="color: white; padding-left: 10%">Impressum</a>
-      </div>
-      <div class="nav-kasten4 nav-kasten">
-        <h1>Mission Green Possible</h1>
-      </div>
-      <div class="nav-kasten5 nav-kasten">
-        
-      </div>
-      <div class="nav-kasten6 nav-kasten">
-       
-      </div>
-      <div class="nav-kasten7 nav-kasten">
-        <p (click)="goToLogin()" style="font-weight: bold; cursor: pointer; margin-right: 10%" class="logoutText">Abmelden</p>
-      </div>
-</nav>
-
-<main style="color: white">
-
-  <div class="kasten1">
-    <div class="kasten1oben">
+    <div class="nav-kasten3 nav-kasten">
+      <a
+        href="impressum2"
+        class="fw-bold text-decoration-none"
+        style="color: white; padding-left: 10%"
+        >Impressum</a
+      >
     </div>
-    <div class="kasten1unten">
-
+    <div class="nav-kasten4 nav-kasten">
+      <h1>Mission Green Possible</h1>
     </div>
-  </div>
-  <div class="kasten2">
+    <div class="nav-kasten5 nav-kasten"></div>
+    <div class="nav-kasten6 nav-kasten"></div>
+    <div class="nav-kasten7 nav-kasten">
+      <p
+        (click)="goToLogin()"
+        style="font-weight: bold; cursor: pointer; margin-right: 10%"
+        class="logoutText"
+      >
+        Abmelden
+      </p>
+    </div>
+  </nav>
 
+  <main style="color: white">
+    <div class="kasten1">
+      <div class="kasten1oben"></div>
+      <div class="kasten1unten"></div>
+    </div>
+    <div class="kasten2">
+      <form
+        class="rounded shadow-lg p-5 wholeBox"
+        style="
+          background-color: rgba(0, 0, 0, 0.6);
+          width: 80%;
+          margin: auto;
+          margin-top: 2%;
+        "
+      >
+        <h1 style="text-align: center; margin-top: 5%; font-size: 30px">
+          {{ anzahlPunkte }} von 10 Punkte
+        </h1>
 
-        <form class="rounded shadow-lg p-5 wholeBox" style="background-color: rgba(0, 0, 0, 0.6); width: 80%; margin: auto; margin-top: 2%;">
+        <div class="medallien">
+          <img
+            *ngIf="quest2_1 == 'gold'"
+            src="../../assets/images/Medallie Gold.png"
+            width="200"
+          />
+          <img
+            *ngIf="quest2_1 == 'silber'"
+            src="../../assets/images/Medallie Silber.png"
+            width="200"
+          />
+          <img
+            *ngIf="quest2_1 == 'bronze'"
+            src="../../assets/images/Medallie Bronze.png"
+            width="200"
+          />
+        </div>
 
-          <h1 style="text-align: center; margin-top: 5%; font-size: 30px">{{anzahlPunkte}} von 10 Punkte</h1>
+        <h1
+          *ngIf="
+            anzahlPunkte == 0 ||
+            anzahlPunkte == 1 ||
+            anzahlPunkte == 2 ||
+            anzahlPunkte == 3 ||
+            anzahlPunkte == 4
+          "
+          style="text-align: center; margin-top: 3%"
+        >
+          Ohje, die Dokumente sind immer noch durcheinander.
+        </h1>
+        <h1
+          *ngIf="anzahlPunkte == 5 || anzahlPunkte == 6"
+          style="text-align: center; margin-top: 3%"
+        >
+          Danke für die Hilfe, aber leider sind einige Dokumente im falschen
+          Ordner gelandet."
+        </h1>
+        <h1
+          *ngIf="anzahlPunkte == 7 || anzahlPunkte == 8"
+          style="text-align: center; margin-top: 3%"
+        >
+          Bis auf ein paar kleine Fehler war das eine gute Leistung.
+        </h1>
+        <h1
+          *ngIf="anzahlPunkte == 9 || anzahlPunkte == 10"
+          style="text-align: center; margin-top: 3%"
+        >
+          Super, du hast alles wieder perfekt geordnet, gute Arbeit.
+        </h1>
 
-          <div class="medallien">
-            <img *ngIf="quest2_1 == 'gold' " 
-              src="../../assets/images/Medallie Gold.png"
-              width="200"
-            />
-            <img *ngIf="quest2_1 == 'silber' " 
-              src="../../assets/images/Medallie Silber.png"
-              width="200"
-            />
-            <img *ngIf="quest2_1 == 'bronze' " 
-              src="../../assets/images/Medallie Bronze.png"
-              width="200"
-            />
-          </div>
-        
-        <h1 *ngIf="anzahlPunkte == 0 || anzahlPunkte == 1 || anzahlPunkte == 2 || anzahlPunkte == 3 || anzahlPunkte == 4" style="text-align: center; margin-top: 3%;">Ohje, die Dokumente sind immer noch durcheinander.</h1>
-        <h1 *ngIf="anzahlPunkte == 5 || anzahlPunkte == 6" style="text-align: center; margin-top: 3%;">Danke für die Hilfe, aber leider sind einige Dokumente im falschen Ordner gelandet."</h1>
-        <h1 *ngIf="anzahlPunkte == 7 || anzahlPunkte == 8"style="text-align: center; margin-top: 3%;">Bis auf ein paar kleine Fehler war das eine gute Leistung.</h1>
-        <h1 *ngIf="anzahlPunkte == 9 || anzahlPunkte == 10"style="text-align: center; margin-top: 3%;">Super, du hast alles wieder perfekt geordnet, gute Arbeit.</h1>
-
-        <h3 style="text-align: center; margin-top: 5%;">Du konntest {{anzahlParlamentarier}} Parlamentarier überzeugen</h3>
+        <h3 style="text-align: center; margin-top: 5%">
+          Du konntest {{ anzahlParlamentarier }} Parlamentarier überzeugen
+        </h3>
       </form>
-      
-  </div>
-  <div class="kasten3">
-    <div class="kasten3oben">
-
     </div>
-    <div class="kasten3unten">
-      <button (click)="goToQuest21Feedback2()" style="float: right; margin-right: 5%; margin-top: 3%; background-color: rgba(1, 61, 98, 1); color: white; width: 150px; height: 40px; border-radius: 8px;">
-        Weiter
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg>
-      </button>
+    <div class="kasten3">
+      <div class="kasten3oben"></div>
+      <div class="kasten3unten">
+        <button
+          (click)="goToQuest21Feedback2()"
+          style="
+            float: right;
+            margin-right: 5%;
+            margin-top: 3%;
+            background-color: rgba(1, 61, 98, 1);
+            color: white;
+            width: 150px;
+            height: 40px;
+            border-radius: 8px;
+          "
+        >
+          Weiter
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-
-</main>
-
+  </main>
 </div>

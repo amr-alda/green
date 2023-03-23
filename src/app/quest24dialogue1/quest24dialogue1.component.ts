@@ -9,14 +9,11 @@ import Typewriter from 't-writer.js';
   styleUrls: ['./quest24dialogue1.component.scss'],
 })
 export class Quest24dialogue1Component implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   i = 0;
 
   ngOnInit() {
-    
-
     const target = document.querySelector('.tw');
 
     const start = new Typewriter(target, {
@@ -25,48 +22,44 @@ export class Quest24dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75
-    })
+      typeSpeed: 75,
+    });
 
     start
       .removeCursor()
       .type('Oh nein!')
       .rest(1500)
       .queueClearText()
-      .type('Unsere Gegner haben sich ins Trainingscamp geschlichen und haben unsere Quellen durcheinandergebracht!')
+      .type(
+        'Unsere Gegner haben sich ins Trainingscamp geschlichen und haben unsere Quellen durcheinandergebracht!'
+      )
       .rest(1500)
       .queueClearText()
       .type('Sie alle wiederzufinden, schaffen wir niemals allein.')
       .rest(1500)
       .queueClearText()
-      .type('Ich glaube, wir müssen uns mit allen Mitgliedern des Trainingscamps versammeln!')
-      .start()
-
+      .type(
+        'Ich glaube, wir müssen uns mit allen Mitgliedern des Trainingscamps versammeln!'
+      )
+      .start();
   }
 
-
-
-  higheri(){
+  higheri() {
     this.i++;
 
-    if(this.i==1) {
-
+    if (this.i == 1) {
       const target1 = document.querySelector('.tw');
 
       const writer1 = new Typewriter(target1, {
         typeColor: 'white',
-        cursorColor: 'white'
-      })
+        cursorColor: 'white',
+      });
 
-      writer1
-        .clear()
-        .start()
-
+      writer1.clear().start();
     }
-
   }
 
-  writer1(){
+  writer1() {
     this.i = 0;
 
     window.location.reload();
@@ -80,6 +73,5 @@ export class Quest24dialogue1Component implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-  }  
-
+  }
 }

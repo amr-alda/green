@@ -17,7 +17,7 @@ import { Quest22Component } from './quest22/quest22.component';
 import { Quest23Component } from './quest23/quest23.component';
 import { Quest24Component } from './quest24/quest24.component';
 
-import {DragDropModule} from '@angular/cdk/drag-drop';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { AdminComponent } from './admin/admin.component';
@@ -40,7 +40,6 @@ import { Quest23feedback2Component } from './quest23feedback2/quest23feedback2.c
 import { Quest24feedback1Component } from './quest24feedback1/quest24feedback1.component';
 import { Quest24feedback2Component } from './quest24feedback2/quest24feedback2.component';
 
-
 import { Modul1videosComponent } from './modul1videos/modul1videos.component';
 import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
@@ -52,7 +51,6 @@ import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.comp
 
 import { Quest21feedbackComponent } from './quest21feedback/quest21feedback.component';
 import { Quest22feedbackComponent } from './quest22feedback/quest22feedback.component';
-
 
 @NgModule({
   declarations: [
@@ -88,10 +86,9 @@ import { Quest22feedbackComponent } from './quest22feedback/quest22feedback.comp
     Modul1feedbackComponent,
     Modul2feedbackComponent,
   ],
-  imports: 
-  [
-    BrowserModule, 
-    IonicModule.forRoot(), 
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
     AppRoutingModule,
     DragDropModule,
     YouTubePlayerModule,

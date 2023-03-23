@@ -9,20 +9,16 @@ import Typewriter from 't-writer.js';
   templateUrl: './quest21dialogue2.component.html',
   styleUrls: ['./quest21dialogue2.component.scss'],
   imports: [CommonModule],
-  standalone: true
+  standalone: true,
 })
 export class Quest21dialogue2Component implements OnInit {
+  backgroundImg: string = '../../assets/images/Lauras-BüroQuest2.1.1Outro.png';
 
-
-  backgroundImg : string =  '../../assets/images/Lauras-BüroQuest2.1.1Outro.png';
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   i = 0;
 
   ngOnInit() {
-    
-
     const target = document.querySelector('.tw');
 
     const start = new Typewriter(target, {
@@ -31,8 +27,8 @@ export class Quest21dialogue2Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75
-    })
+      typeSpeed: 75,
+    });
 
     start
       .removeCursor()
@@ -42,44 +38,43 @@ export class Quest21dialogue2Component implements OnInit {
       .type('Ich frage mich dennoch, wie die Zettel wohl in die Mensa kamen?')
       .rest(1500)
       .queueClearText()
-      .type('Kaum auszumalen, wenn sich unsere Studierenden beim Verfassen ihrer wissenschaftlichen Texte nach diesem Unsinn gerichtet hätten.')
+      .type(
+        'Kaum auszumalen, wenn sich unsere Studierenden beim Verfassen ihrer wissenschaftlichen Texte nach diesem Unsinn gerichtet hätten.'
+      )
       .rest(1500)
       .queueClearText()
-      .type('Auf der Rückseite eines Zettel steht übrigens etwas, was ich aber nicht verstehe.')
+      .type(
+        'Auf der Rückseite eines Zettel steht übrigens etwas, was ich aber nicht verstehe.'
+      )
       .rest(1500)
       .queueClearText()
       .type('Ich hefte das am besten mal unsere Pinnwand.')
-      .start()
+      .start();
 
-
-
-      setTimeout(() => this.backgroundImg = '../../assets/images/Lauras-BüroQuest2.1.2Outro.png', 3500 );
-
+    setTimeout(
+      () =>
+        (this.backgroundImg =
+          '../../assets/images/Lauras-BüroQuest2.1.2Outro.png'),
+      3500
+    );
   }
 
-
-
-  higheri(){
+  higheri() {
     this.i++;
 
-    if(this.i==1) {
-
+    if (this.i == 1) {
       const target1 = document.querySelector('.tw');
 
       const writer1 = new Typewriter(target1, {
         typeColor: 'white',
-        cursorColor: 'white'
-      })
+        cursorColor: 'white',
+      });
 
-      writer1
-        .clear()
-        .start()
-
+      writer1.clear().start();
     }
-
   }
 
-  writer1(){
+  writer1() {
     this.i = 0;
 
     window.location.reload();
@@ -97,6 +92,5 @@ export class Quest21dialogue2Component implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-  }  
-
+  }
 }

@@ -7,13 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./impressum.component.scss'],
 })
 export class ImpressumComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
   goToLogin(): void {
-      this.router.navigateByUrl('/login');
-    }
-
+    this.router.navigateByUrl('/login');
+  }
 }

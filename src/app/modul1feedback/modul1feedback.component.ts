@@ -7,11 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./modul1feedback.component.scss'],
 })
 export class Modul1feedbackComponent implements OnInit {
-
   quest11_locked: boolean = false;
   quest12_locked: boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -26,15 +25,14 @@ export class Modul1feedbackComponent implements OnInit {
   }
 
   goToQuest11feedback(): void {
-    if(this.quest11_locked == false){
+    if (this.quest11_locked == false) {
       this.router.navigateByUrl('/quest11feedback');
     }
   }
 
   goToQuest12feedback(): void {
-    if(this.quest12_locked == false){
-    this.router.navigateByUrl('/quest12feedback');
+    if (this.quest12_locked == false) {
+      this.router.navigateByUrl('/quest12feedback');
     }
   }
-
 }

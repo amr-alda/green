@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin.component.scss'],
 })
 export class AdminComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -19,15 +18,22 @@ export class AdminComponent implements OnInit {
   }
 
   resetAllUsers(): void {
-    if (confirm('Sind Sie sicher dass Sie alle Nutzer zurücksetzen wollen wollen?')) {
+    if (
+      confirm(
+        'Sind Sie sicher dass Sie alle Nutzer zurücksetzen wollen wollen?'
+      )
+    ) {
       this.router.navigateByUrl('/login');
     }
   }
 
   resetUser(): void {
-    if (confirm('Sind Sie sicher dass Sie diesen Nutzer zurücksetzen wollen wollen?')) {
+    if (
+      confirm(
+        'Sind Sie sicher dass Sie diesen Nutzer zurücksetzen wollen wollen?'
+      )
+    ) {
       this.router.navigateByUrl('/login');
     }
   }
-
 }

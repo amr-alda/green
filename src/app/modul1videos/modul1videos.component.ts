@@ -8,8 +8,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
   styleUrls: ['./modul1videos.component.scss'],
 })
 export class Modul1videosComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -22,5 +21,4 @@ export class Modul1videosComponent implements OnInit {
   goToModul1(): void {
     this.router.navigateByUrl('/modul1');
   }
-
 }

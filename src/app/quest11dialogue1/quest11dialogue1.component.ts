@@ -9,14 +9,11 @@ import Typewriter from 't-writer.js';
   styleUrls: ['./quest11dialogue1.component.scss'],
 })
 export class Quest11dialogue1Component implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   i = 0;
 
   ngOnInit() {
-    
-
     const target = document.querySelector('.tw');
 
     const start = new Typewriter(target, {
@@ -25,8 +22,8 @@ export class Quest11dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75
-    })
+      typeSpeed: 75,
+    });
 
     start
       .removeCursor()
@@ -42,41 +39,39 @@ export class Quest11dialogue1Component implements OnInit {
       .type('war plötzlich ein ziemliches Chaos.')
       .rest(1500)
       .queueClearText()
-      .type('Ich kann mir ehrlich gesagt nicht erklären, wie das passieren konnte!?')
+      .type(
+        'Ich kann mir ehrlich gesagt nicht erklären, wie das passieren konnte!?'
+      )
       .rest(1500)
       .queueClearText()
-      .type('Leider wurden auf dem Schreibtisch auch meine ganzen Unterlagen zum wissenschaftlichen Arbeiten durcheinandergebracht.')
+      .type(
+        'Leider wurden auf dem Schreibtisch auch meine ganzen Unterlagen zum wissenschaftlichen Arbeiten durcheinandergebracht.'
+      )
       .rest(1500)
       .queueClearText()
-      .type('Hilf mir bitte, die Unterlagen zu ordnen. Ich brauche sie für meine Vorlesung, die in 15 Minuten stattfindet.')
+      .type(
+        'Hilf mir bitte, die Unterlagen zu ordnen. Ich brauche sie für meine Vorlesung, die in 15 Minuten stattfindet.'
+      )
       .rest(1500)
-      .start()
-
+      .start();
   }
 
-
-
-  higheri(){
+  higheri() {
     this.i++;
 
-    if(this.i==1) {
-
+    if (this.i == 1) {
       const target1 = document.querySelector('.tw');
 
       const writer1 = new Typewriter(target1, {
         typeColor: 'white',
-        cursorColor: 'white'
-      })
+        cursorColor: 'white',
+      });
 
-      writer1
-        .clear()
-        .start()
-
+      writer1.clear().start();
     }
-
   }
 
-  writer1(){
+  writer1() {
     this.i = 0;
 
     window.location.reload();
@@ -90,6 +85,5 @@ export class Quest11dialogue1Component implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-  }  
-
+  }
 }

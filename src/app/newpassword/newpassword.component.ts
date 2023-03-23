@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./newpassword.component.scss'],
 })
 export class NewpasswordComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -19,5 +18,4 @@ export class NewpasswordComponent implements OnInit {
   goToNewPassword(): void {
     this.router.navigateByUrl('/newpassword');
   }
-
 }

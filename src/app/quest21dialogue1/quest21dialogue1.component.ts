@@ -9,17 +9,11 @@ import Typewriter from 't-writer.js';
   styleUrls: ['./quest21dialogue1.component.scss'],
 })
 export class Quest21dialogue1Component implements OnInit {
-
-
-
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   i = 0;
 
   ngOnInit() {
-    
-
     const target = document.querySelector('.tw');
 
     const start = new Typewriter(target, {
@@ -28,12 +22,14 @@ export class Quest21dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75
-    })
+      typeSpeed: 75,
+    });
 
     start
       .removeCursor()
-      .type('Ich war heute morgen wieder in der Mensa, um mir einen Kaffee zu holen.')
+      .type(
+        'Ich war heute morgen wieder in der Mensa, um mir einen Kaffee zu holen.'
+      )
       .rest(1500)
       .queueClearText()
       .type('Keine Angst, dieses Mal hatte ich mein Büro abgeschlossen.')
@@ -42,43 +38,41 @@ export class Quest21dialogue1Component implements OnInit {
       .type('Dafür wurde ich am Kaffeeautomaten negativ überrascht.')
       .rest(1500)
       .queueClearText()
-      .type('Dort lagen überall Zettel mit ziemlich unsinnigen Tipps zum Umgang mit wissenschaftlicher Literatur herum.')
+      .type(
+        'Dort lagen überall Zettel mit ziemlich unsinnigen Tipps zum Umgang mit wissenschaftlicher Literatur herum.'
+      )
       .rest(1500)
       .queueClearText()
       .type('Ich habe sie eingesammelt, um sie zu entsorgen.')
       .rest(1500)
       .queueClearText()
-      .type('Dummerweise sind sie mit meinen eigenen Hinweisen zur Literaturarbeit durcheinandergeraten.')
+      .type(
+        'Dummerweise sind sie mit meinen eigenen Hinweisen zur Literaturarbeit durcheinandergeraten.'
+      )
       .rest(1500)
       .queueClearText()
-      .type('Könntest du bitte die schlechten Beispiele heraussuchen und vernichten?')
-      .start()
-
+      .type(
+        'Könntest du bitte die schlechten Beispiele heraussuchen und vernichten?'
+      )
+      .start();
   }
 
-
-
-  higheri(){
+  higheri() {
     this.i++;
 
-    if(this.i==1) {
-
+    if (this.i == 1) {
       const target1 = document.querySelector('.tw');
 
       const writer1 = new Typewriter(target1, {
         typeColor: 'white',
-        cursorColor: 'white'
-      })
+        cursorColor: 'white',
+      });
 
-      writer1
-        .clear()
-        .start()
-
+      writer1.clear().start();
     }
-
   }
 
-  writer1(){
+  writer1() {
     this.i = 0;
 
     window.location.reload();
@@ -92,6 +86,5 @@ export class Quest21dialogue1Component implements OnInit {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');
     }
-  }  
-
+  }
 }
