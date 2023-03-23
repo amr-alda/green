@@ -8,13 +8,7 @@ import { Global } from './global';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  showHeader: boolean = false;
 
   constructor(private router: Router) {}
 
-  goToLogin(): void {
-    if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
-      this.router.navigateByUrl('/login');
-    }
-  }
 }

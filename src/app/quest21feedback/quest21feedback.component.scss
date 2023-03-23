@@ -4,8 +4,6 @@
 }
 
 main {
-  // background-image: url(../../assets/images/backgroundNew.png);
-  // background-size: 100% 100%;
   display: grid;
   height: 100vh;
   grid-template-rows: 4fr 1fr;
@@ -13,8 +11,6 @@ main {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
 }
-
-// NAV-BAR
 
 nav {
   display: flex;

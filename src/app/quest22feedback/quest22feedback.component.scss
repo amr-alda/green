@@ -4,16 +4,12 @@
 }
 
 main {
-  // background-image: url(../../assets/images/backgroundNew.png);
-  // background-size: 100% 100%;
   display: grid;
   height: 100vh;
   grid-template-rows: 1fr 1fr 1fr 0.7fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
-// NAV-BAR
 
 nav {
   display: flex;
