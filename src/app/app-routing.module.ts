@@ -1,22 +1,16 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import {FeedbackComponent} from '../app/feedback/feedback.component'
 import {LoginComponent} from './login/login.component'
 import {Modul1Component} from '../app/modul1/modul1.component'
 import {Modul2Component} from '../app/modul2/modul2.component'
 import {Modul3Component} from '../app/modul3/modul3.component'
 import {Modul4Component} from '../app/modul4/modul4.component'
 import { Quest11Component } from './quest11/quest11.component'
-import { Quest112Component } from './quest112/quest112.component';
 import { Quest12Component } from './quest12/quest12.component'
-import { Text1Component } from './text1/text1.component';
-import { Text2Component } from './text2/text2.component';
-import { Text3Component } from './text3/text3.component';
 import { Quest21Component } from './quest21/quest21.component'
 import { Quest22Component } from './quest22/quest22.component'
 import { Quest23Component } from './quest23/quest23.component'
 import { Quest24Component } from './quest24/quest24.component'
-import { StartComponent } from './start/start.component';
 import { RegisterComponent } from './register/register.component';
 import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { ImpressumComponent } from './impressum/impressum.component';
@@ -63,7 +57,7 @@ import { Quest24dialogue2Component } from './quest24dialogue2/quest24dialogue2.c
 import { Modul1videosComponent } from './modul1videos/modul1videos.component';
 import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
-import { SettingsComponent } from './settings/settings.component';
+
 import { AdminComponent } from './admin/admin.component';
 
 import { Modul1feedbackComponent } from './modul1feedback/modul1feedback.component';
@@ -87,16 +81,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'feedback', 
-    component: FeedbackComponent
-  },
-  {
     path: 'admin', 
     component: AdminComponent
-  },
-  {
-    path: 'settings', 
-    component: SettingsComponent
   },
   {
     path: 'quest11feedback', 
@@ -247,10 +233,6 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'start', 
-    component: StartComponent
-  },
-  {
     path: 'login', 
     component: LoginComponent
   },
@@ -275,24 +257,8 @@ const routes: Routes = [
     component: Quest11Component
   },
   {
-    path: 'quest112', 
-    component: Quest112Component
-  },
-  {
     path: 'quest12', 
     component: Quest12Component
-  },
-  {
-    path: 'text1', 
-    component: Text1Component
-  },
-  {
-    path: 'text2', 
-    component: Text2Component
-  },
-  {
-    path: 'text3', 
-    component: Text3Component
   },
   {
     path: 'quest21', 
