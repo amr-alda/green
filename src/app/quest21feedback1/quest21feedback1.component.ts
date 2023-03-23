@@ -24,4 +24,12 @@ export class Quest21feedback1Component implements OnInit {
   goToQuest21Feedback2(): void {
     this.router.navigateByUrl('/quest21feedback2');
   }
+
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
 }
