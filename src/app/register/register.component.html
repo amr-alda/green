@@ -62,16 +62,13 @@
         </button>
         <div class="fw-normal text-light mb-4">
           Haben Sie bereits einen Account ?
-          <a href="login" class="text-white fw-bold text-decoration-none"
+          <a (click)="goToLogin()" class="text-white fw-bold text-decoration-none clickableBox"
             >Anmelden</a
           >
         </div>
-        <a
-          href="impressum"
-          class="text-white fw-bold text-decoration-none"
-          style="color: white"
-          >Impressum</a
-        >
+        <a (click)="goToImpressum()" class="text-white fw-bold text-decoration-none clickableBox"
+            >Impressum</a
+          >
       </form>
     </div>
   </div>

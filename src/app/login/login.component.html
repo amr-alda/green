@@ -62,16 +62,13 @@
         </button>
         <div class="fw-normal text-light mb-4">
           Neu hier?
-          <a href="register" class="text-white fw-bold text-decoration-none"
+          <a (click)="goToRegister()" class="text-white fw-bold text-decoration-none clickableBox"
             >Account erstellen</a
           >
         </div>
-        <a
-          href="impressum"
-          class="text-white fw-bold text-decoration-none"
-          style="color: white"
-          >Impressum</a
-        >
+        <a (click)="goToImpressum()" class="text-white fw-bold text-decoration-none clickableBox"
+            >Impressum</a
+          >
       </form>
     </div>
   </div>

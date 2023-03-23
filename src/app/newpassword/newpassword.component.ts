@@ -15,7 +15,19 @@ export class NewpasswordComponent implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
+  goToLogin(): void {
+    this.router.navigateByUrl('/login');
+  }
+
+  goToImpressum(): void {
+    this.router.navigateByUrl('/impressum');
+  }
+
   goToNewPassword(): void {
     this.router.navigateByUrl('/newpassword');
+  }
+
+  goToRegister(): void {
+    this.router.navigateByUrl('/register');
   }
 }

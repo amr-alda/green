@@ -15,6 +15,14 @@ export class LoginComponent implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
+  goToImpressum(): void {
+    this.router.navigateByUrl('/impressum');
+  }
+
+  goToRegister(): void {
+    this.router.navigateByUrl('/register');
+  }
+
   goToNewPassword(): void {
     this.router.navigateByUrl('/newpassword');
   }
