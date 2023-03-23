@@ -67,4 +67,12 @@ export class Quest11dialogue2Component implements OnInit {
   goToModul1(): void {
     this.router.navigateByUrl('/modul1');
   }
+
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
 }

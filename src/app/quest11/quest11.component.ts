@@ -25,4 +25,12 @@ export class Quest11Component implements OnInit {
       this.router.navigateByUrl('/login');
     }
   }
+
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
 }
