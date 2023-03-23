@@ -26,6 +26,10 @@ export class Modul2Component implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
+
   goToLogin(): void {
     if (confirm('Sind sie sicher dass sie sich ausloggen wollen?')) {
       this.router.navigateByUrl('/login');

@@ -2,47 +2,37 @@
   class="wholePage"
   [ngStyle]="{ 'background-image': 'url(' + backgroundImg + ')' }"
 >
-  <nav style="color: white">
-    <div class="nav-kasten1 nav-kasten">
-      <img
-        alt="Logo der Hochschule Worms"
-        src="../assets/images/wormslogo-white.png"
-        width="64"
-        height="64"
-        class="inline-block"
-      />
-    </div>
-    <div class="nav-kasten2 nav-kasten">
-      <a
-        href="home"
-        class="fw-bold text-decoration-none"
-        style="color: white; padding-left: 10%"
-        >Hauptmenü</a
-      >
-    </div>
-    <div class="nav-kasten3 nav-kasten">
-      <a
-        href="impressum2"
-        class="fw-bold text-decoration-none"
-        style="color: white; padding-left: 10%"
-        >Impressum</a
-      >
-    </div>
-    <div class="nav-kasten4 nav-kasten">
-      <h1>Mission Green Possible</h1>
-    </div>
-    <div class="nav-kasten5 nav-kasten"></div>
-    <div class="nav-kasten6 nav-kasten"></div>
-    <div class="nav-kasten7 nav-kasten">
-      <p
-        (click)="goToLogin()"
-        style="font-weight: bold; cursor: pointer; margin-right: 10%"
-        class="logoutText"
-      >
-        Abmelden
-      </p>
-    </div>
-  </nav>
+<nav style="color: white">
+  <div class="nav-kasten1 nav-kasten">
+    <img
+      alt="Logo der Hochschule Worms"
+      src="../assets/images/wormslogo-white.png"
+      width="64"
+      height="64"
+      class="inline-block"
+    />
+  </div>
+  <div class="nav-kasten2 nav-kasten">
+      <p (click)="goToHome()" class="fw-bold text-decoration-none; clickableBox" style="color: white; padding-left: 10%">Hauptmenü</p>
+  </div>
+  <div class="nav-kasten3 nav-kasten">
+    <p (click)="goToImpressum2()" class="fw-bold text-decoration-none; clickableBox" style="color: white; padding-left: 10%">Impressum</p>
+  </div>
+  <div class="nav-kasten4 nav-kasten">
+    <h1>Mission Green Possible</h1>
+  </div>
+  <div class="nav-kasten5 nav-kasten"></div>
+  <div class="nav-kasten6 nav-kasten"></div>
+  <div class="nav-kasten7 nav-kasten">
+    <p
+      (click)="goToLogin()"
+      style="font-weight: bold; cursor: pointer; margin-right: 10%"
+      class="logoutText"
+    >
+      Abmelden
+    </p>
+  </div>
+</nav>
 
   <main style="color: white">
     <div class="kasten1">

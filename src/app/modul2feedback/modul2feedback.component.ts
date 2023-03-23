@@ -27,6 +27,10 @@ export class Modul2feedbackComponent implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
+
   goToQuest21feedback() :void{
     this.router.navigateByUrl('/quest21feedback');
   }

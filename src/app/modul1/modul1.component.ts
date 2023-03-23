@@ -31,6 +31,10 @@ export class Modul1Component implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
+
   goToQuest11(): void {
     this.router.navigateByUrl('/quest11');
   }

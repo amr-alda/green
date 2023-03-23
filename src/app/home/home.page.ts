@@ -84,6 +84,14 @@ export class HomePage implements OnInit {
     }
   }
 
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
+
   goToModul1feedback(): void {
     this.router.navigateByUrl('/modul1feedback');
   }

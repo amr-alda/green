@@ -21,4 +21,12 @@ export class Modul1videosComponent implements OnInit {
   goToModul1(): void {
     this.router.navigateByUrl('/modul1');
   }
+
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  goToImpressum2(): void {
+    this.router.navigateByUrl('/impressum2');
+  }
 }
