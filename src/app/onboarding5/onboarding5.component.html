@@ -40,7 +40,7 @@
       <div class="kasten1unten"></div>
     </div>
 
-    <div class="kasten2" *ngIf="showForm">
+    <div class="kasten2">
       <form
         class="rounded shadow-lg p-5 wholeBox"
         style="
@@ -52,9 +52,14 @@
         "
       >
         <img
-          src="../assets/images/RangErklärung.png"
+          src="../assets/images/ranksMale.png"
           alt="Erklärung der Ränge"
-          *ngIf="Rang1"
+          *ngIf="gender == 'male'"
+        />
+        <img
+          src="../assets/images/ranksFemale.png"
+          alt="Erklärung der Ränge"
+          *ngIf="gender == 'female'"
         />
       </form>
     </div>

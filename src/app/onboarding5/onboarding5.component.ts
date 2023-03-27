@@ -13,9 +13,7 @@ import Typewriter from 't-writer.js';
 })
 export class Onboarding5Component implements OnInit {
 
-  showForm: boolean = true;
-
-  Rang1: boolean = true;
+  gender: string = 'male';
 
   backgroundImg: string =
     '../../assets/images/Lauras-BüroOnboarding5-Rang_Erklaerung.png';
