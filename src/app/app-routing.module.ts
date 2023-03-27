@@ -19,6 +19,7 @@ import { Impressum2Component } from './impressum2/impressum2.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
 import { Onboarding2Component } from './onboarding2/onboarding2.component';
 import { Onboarding3Component } from './onboarding3/onboarding3.component';
+import { Onboarding4Component } from './onboarding4/onboarding4.component';
 
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
@@ -121,6 +122,10 @@ const routes: Routes = [
   {
     path: 'onboarding3', 
     component: Onboarding3Component
+  },
+  {
+    path: 'onboarding4', 
+    component: Onboarding4Component
   },
   {
     path: 'modul1videos', 
