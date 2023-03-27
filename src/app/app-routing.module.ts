@@ -20,6 +20,7 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
 import { Onboarding2Component } from './onboarding2/onboarding2.component';
 import { Onboarding3Component } from './onboarding3/onboarding3.component';
 import { Onboarding4Component } from './onboarding4/onboarding4.component';
+import { Onboarding5Component } from './onboarding5/onboarding5.component';
 
 import { Quest11feedback1Component } from './quest11feedback1/quest11feedback1.component';
 import { Quest11feedback2Component } from './quest11feedback2/quest11feedback2.component';
@@ -126,6 +127,10 @@ const routes: Routes = [
   {
     path: 'onboarding4', 
     component: Onboarding4Component
+  },
+  {
+    path: 'onboarding5', 
+    component: Onboarding5Component
   },
   {
     path: 'modul1videos', 

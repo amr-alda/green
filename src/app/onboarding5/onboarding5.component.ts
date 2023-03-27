@@ -5,13 +5,13 @@ import { Router } from '@angular/router';
 import Typewriter from 't-writer.js';
 
 @Component({
-  selector: 'app-onboarding4',
-  templateUrl: './onboarding4.component.html',
-  styleUrls: ['./onboarding4.component.scss'],
+  selector: 'app-onboarding5',
+  templateUrl: './onboarding5.component.html',
+  styleUrls: ['./onboarding5.component.scss'],
   imports: [CommonModule],
   standalone: true,
 })
-export class Onboarding4Component implements OnInit {
+export class Onboarding5Component implements OnInit {
 
   showForm: boolean = false;
 
@@ -173,12 +173,7 @@ export class Onboarding4Component implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
-  goToOnboarding5(): void {
-    this.router.navigateByUrl('/onboarding5');
-  }
-
   goToImpressum2(): void {
     this.router.navigateByUrl('/impressum2');
   }
 }
-
