@@ -606,22 +606,76 @@
       </p>
 
       <div style="text-align: center; margin-top: 3%">
+
         <img
-          *ngIf="gender == 'male' "
-          alt="Dummy Character"
-          src="../../assets/images/praktikant.png"
+          *ngIf="gender == 'male' && player_rank == 1"
+          alt="Character Rank"
+          src="../../assets/images/ranks/male/Transparent/malerank1.png"
+          width="400"
+          height="200"
+          class="inline-block"
+        />
+
+        <img
+          *ngIf="gender == 'male' && player_rank == 2"
+          alt="Character Rank"
+          src="../../assets/images/ranks/male/Transparent/malerank2.png"
+          width="400"
+          height="200"
+          class="inline-block"
+        />
+
+        <img
+          *ngIf="gender == 'male' && player_rank == 3"
+          alt="Character Rank"
+          src="../../assets/images/ranks/male/Transparent/malerank3.png"
+          width="400"
+          height="200"
+          class="inline-block"
+        />
+
+        <img
+          *ngIf="gender == 'male' && player_rank == 4"
+          alt="Character Rank"
+          src="../../assets/images/ranks/male/Transparent/malerank4.png"
+          width="400"
+          height="200"
+          class="inline-block"
+        />
+       
+        <img
+          *ngIf="gender == 'female' && player_rank == 1"
+          alt="Character Rank"
+          src="../../assets/images/ranks/female/Transparent/femalerank1.png"
           width="400"
           height="200"
           class="inline-block"
         />
         <img
-          *ngIf="gender == 'female' "
-          alt="Dummy Character"
-          src="../../assets/images/praktikantin.png"
+          *ngIf="gender == 'female' && player_rank == 2"
+          alt="Character Rank"
+          src="../../assets/images/ranks/female/Transparent/femalerank2.png"
           width="400"
           height="200"
           class="inline-block"
         />
+        <img
+          *ngIf="gender == 'female' && player_rank == 3"
+          alt="Character Rank"
+          src="../../assets/images/ranks/female/Transparent/femalerank3.png"
+          width="400"
+          height="200"
+          class="inline-block"
+        />
+        <img
+          *ngIf="gender == 'female' && player_rank == 4"
+          alt="Character Rank"
+          src="../../assets/images/ranks/female/Transparent/femalerank4.png"
+          width="400"
+          height="200"
+          class="inline-block"
+        />
+       
 
         <div>
           <h3>{{username}}</h3>
@@ -668,7 +722,7 @@
           *ngIf="player_rank == 3 && gender == 'female' "
           style="font-weight: bold; font-size: 35px"
         >
-          Wissenschaftlicher Mitarbeiterin
+          Wissenschaftliche Mitarbeiterin
         </h1>
         <h1
           *ngIf="player_rank == 4 && gender == 'female' "

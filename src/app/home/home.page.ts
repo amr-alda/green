@@ -12,7 +12,7 @@ export class HomePage implements OnInit {
 
   showSettings: boolean = false;
 
-  player_rank: number = 1;
+  player_rank: number = 2;
   parlament_progress = 30;
 
   modul1_percent: number = 100;
