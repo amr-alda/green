@@ -52,24 +52,6 @@
         "
       >
         <img
-          src="../assets/images/EUFlagge.png"
-          alt="Flagge der EU"
-          *ngIf="showImg1"
-        />
-
-        <img
-          src="../assets/images/GreenTourismLogo.png"
-          alt="Green Tourism Logo"
-          *ngIf="showImg2"
-        />
-
-        <img
-          src="../assets/images/EUFlagge2.png"
-          alt="Parlamentarier"
-          *ngIf="showImg3"
-        />
-
-        <img
           src="../assets/images/RangErklärung.png"
           alt="Erklärung der Ränge"
           *ngIf="Rang1"
@@ -113,7 +95,7 @@
           </button>
 
           <svg
-            (click)="writer1()"
+            (click)="reload()"
             style="float: left; margin-top: 28px; margin-left: 1%"
             xmlns="http://www.w3.org/2000/svg"
             width="40"

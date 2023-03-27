@@ -58,7 +58,10 @@ export class Onboarding2Component implements OnInit {
   }
 
   reload() : void {
-    this.router.navigateByUrl('/onboarding2');
+    this.router.navigate(['/'])
+    .then(() => {
+      this.router.navigate(['/onboarding2'])
+    });
   }
 
   goToHome(): void {
