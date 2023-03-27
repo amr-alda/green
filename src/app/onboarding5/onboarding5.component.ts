@@ -58,7 +58,6 @@ export class Onboarding5Component implements OnInit {
         'Also strenge dich an, damit der Tourismus in Europa künftig nachhaltiger wird.'
       )
       .start();
-
   }
 
   goToLogin(): void {
