@@ -38,7 +38,6 @@ import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.comp
 import { Quest21feedbackComponent } from './quest21feedback/quest21feedback.component';
 import { Quest22feedbackComponent } from './quest22feedback/quest22feedback.component';
 import { CharacterselectionComponent } from './characterselection/characterselection.component';
-import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -82,7 +81,6 @@ import { NgOptimizedImage } from '@angular/common';
     AppRoutingModule,
     DragDropModule,
     YouTubePlayerModule,
-    NgOptimizedImage,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
