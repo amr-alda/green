@@ -10,15 +10,8 @@ export class HomePage implements OnInit {
   username: string = 'Jannes';
   gender: string = 'male';
 
-  showSettings: boolean = false;
-
   player_rank: number = 2;
-  parlament_progress = 30;
-
-  modul1_percent: number = 100;
-  modul2_percent: number = 0;
-  modul3_percent: number = 0;
-  modul4_percent: number = 0;
+  parlament_progress = 70;
 
   modul2_locked: boolean = false;
   modul3_locked: boolean = true;
