@@ -40,6 +40,25 @@
       <div class="kasten1unten"></div>
     </div>
 
+    <div class="kasten2" *ngIf="showForm">
+      <form
+        class="rounded shadow-lg p-5 wholeBox"
+        style="
+          background-color: rgba(0, 0, 0, 0.6);
+          width: 100%;
+          margin-top: 50%;
+          height: auto;
+          margin-top: 2%;
+        "
+      >
+        <img
+          src="../assets/images/EUFlagge.png"
+          alt="Flagge der EU"
+          *ngIf="showImg1"
+        />
+      </form>
+    </div>
+
     <div class="container">
       <div class="img-container">
         <div
@@ -47,7 +66,7 @@
           style="height: 110px"
         >
           <button
-            (click)="goToOnboarding2()"
+            (click)="goToOnboarding3()"
             style="
               margin-top: 25px;
               float: right;
@@ -100,3 +119,4 @@
     </div>
   </main>
 </div>
+

@@ -5,16 +5,20 @@ import { Router } from '@angular/router';
 import Typewriter from 't-writer.js';
 
 @Component({
-  selector: 'app-onboarding',
-  templateUrl: './onboarding.component.html',
-  styleUrls: ['./onboarding.component.scss'],
+  selector: 'app-onboarding2',
+  templateUrl: './onboarding2.component.html',
+  styleUrls: ['./onboarding2.component.scss'],
   imports: [CommonModule],
   standalone: true,
 })
-export class OnboardingComponent implements OnInit {
+export class Onboarding2Component implements OnInit {
+
+  showForm: boolean = true;
+
+  showImg1: boolean = true;
 
   backgroundImg: string =
-    '../../assets/images/Lauras-BüroOnboarding1-Begrüßung.png';
+  '../../assets/images/Lauras-BüroOnboarding2-EU-Flagge.png';
 
   constructor(private router: Router) {}
 
@@ -32,16 +36,13 @@ export class OnboardingComponent implements OnInit {
 
     start
       .removeCursor()
-      .type('Hallo Name, mein Name ist Laura Kraft.')
-      .rest(1500)
-      .queueClearText()
       .type(
-        'Ich bin Professorin für „Nachhaltigen Tourismus“ und kümmere mich außerdem um die wissenschaftliche Ausbildung unserer Studierenden.'
+        'Ich brauche deine Hilfe vor allem bei meiner Tätigkeit als Beraterin des Wissenschaftlichen Dienstes des Parlaments der Europäischen Union.'
       )
       .rest(1500)
       .queueClearText()
       .type(
-        'Ich freue mich, dass du mich in den kommenden Wochen bei meiner Arbeit unterstützen wirst.'
+        'Der Wissenschaftliche Dienst versorgt die 705 Abgeordneten des Europäischen Parlaments mit Analysen sowie Studien und unterstützt sie damit bei ihrer politischen Arbeit.'
       )
       .start();
   }
@@ -57,18 +58,15 @@ export class OnboardingComponent implements OnInit {
   }
 
   reload() : void {
-    this.router.navigate(['/'])
-  .then(() => {
-    this.router.navigate(['/onboarding'])
-  });
+    this.router.navigateByUrl('/onboarding2');
   }
 
   goToHome(): void {
     this.router.navigateByUrl('/home');
   }
 
-  goToOnboarding2(): void {
-    this.router.navigateByUrl('/onboarding2');
+  goToOnboarding3(): void {
+    this.router.navigateByUrl('/onboarding3');
   }
 
   goToImpressum2(): void {
