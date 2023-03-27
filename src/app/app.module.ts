@@ -52,6 +52,8 @@ import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.comp
 import { Quest21feedbackComponent } from './quest21feedback/quest21feedback.component';
 import { Quest22feedbackComponent } from './quest22feedback/quest22feedback.component';
 
+import { CharacterselectionComponent } from './characterselection/characterselection.component';
+
 @NgModule({
   declarations: [
     Quest11feedbackComponent,
@@ -85,6 +87,7 @@ import { Quest22feedbackComponent } from './quest22feedback/quest22feedback.comp
     Quest24feedback2Component,
     Modul1feedbackComponent,
     Modul2feedbackComponent,
+    CharacterselectionComponent,
   ],
   imports: [
     BrowserModule,

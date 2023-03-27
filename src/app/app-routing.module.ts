@@ -61,7 +61,6 @@ import { Quest24dialogue2Component } from './quest24dialogue2/quest24dialogue2.c
 import { Modul1videosComponent } from './modul1videos/modul1videos.component';
 import { Modul2videosComponent } from './modul2videos/modul2videos.component';
 
-
 import { AdminComponent } from './admin/admin.component';
 
 import { Modul1feedbackComponent } from './modul1feedback/modul1feedback.component';
@@ -72,6 +71,8 @@ import { Quest12feedbackComponent } from './quest12feedback/quest12feedback.comp
 
 import { Quest21feedbackComponent } from './quest21feedback/quest21feedback.component';
 import { Quest22feedbackComponent } from './quest22feedback/quest22feedback.component';
+
+import { CharacterselectionComponent } from './characterselection/characterselection.component';
 
 
 const routes: Routes = [
@@ -87,6 +88,10 @@ const routes: Routes = [
   {
     path: 'admin', 
     component: AdminComponent
+  },
+  {
+    path: 'characterselection', 
+    component: CharacterselectionComponent
   },
   {
     path: 'quest11feedback', 

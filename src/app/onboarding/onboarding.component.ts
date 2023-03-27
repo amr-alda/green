@@ -32,7 +32,7 @@ export class OnboardingComponent implements OnInit {
 
     start
       .removeCursor()
-      .type('Hallo Name, mein Name ist Laura Kraft.')
+      .type('Hallo Jannes, mein Name ist Laura Kraft.')
       .rest(1500)
       .queueClearText()
       .type(

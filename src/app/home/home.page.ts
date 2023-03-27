@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  username: string = 'Name';
-  gender: string = 'female';
+  username: string = 'Jannes';
+  gender: string = 'male';
 
   showSettings: boolean = false;
 
