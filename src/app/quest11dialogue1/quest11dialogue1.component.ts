@@ -11,8 +11,6 @@ import Typewriter from 't-writer.js';
 export class Quest11dialogue1Component implements OnInit {
   constructor(private router: Router) {}
 
-  i = 0;
-
   ngOnInit() {
     const target = document.querySelector('.tw');
 
@@ -22,21 +20,15 @@ export class Quest11dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75,
+      typeSpeed: 65,
     });
 
     start
       .removeCursor()
-      .type('Oh Mann, das geht ja gut los.')
+      .type('Oh Mann, das geht ja gut los. Ich war gerade in der Mensa mir einen Kaffee holen.')
       .rest(1500)
       .queueClearText()
-      .type('Ich war gerade in der Mensa mir einen Kaffee holen.')
-      .rest(1500)
-      .queueClearText()
-      .type('Ich hatte mein Büro offengelassen und als ich zurückkam,')
-      .rest(1500)
-      .queueClearText()
-      .type('war plötzlich ein ziemliches Chaos.')
+      .type('Ich hatte mein Büro offengelassen und als ich zurückkam, war plötzlich ein ziemliches Chaos.')
       .rest(1500)
       .queueClearText()
       .type(
@@ -56,25 +48,11 @@ export class Quest11dialogue1Component implements OnInit {
       .start();
   }
 
-  higheri() {
-    this.i++;
-
-    if (this.i == 1) {
-      const target1 = document.querySelector('.tw');
-
-      const writer1 = new Typewriter(target1, {
-        typeColor: 'white',
-        cursorColor: 'white',
-      });
-
-      writer1.clear().start();
-    }
-  }
-
-  writer1() {
-    this.i = 0;
-
-    window.location.reload();
+  reload() {
+    this.router.navigate(['/'])
+  .then(() => {
+    this.router.navigate(['/quest11dialogue1'])
+  });
   }
 
   goToQuest11(): void {

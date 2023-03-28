@@ -11,8 +11,6 @@ import Typewriter from 't-writer.js';
 export class Quest23dialogue1Component implements OnInit {
   constructor(private router: Router) {}
 
-  i = 0;
-
   ngOnInit() {
     const target = document.querySelector('.tw');
 
@@ -22,46 +20,27 @@ export class Quest23dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75,
+      typeSpeed: 65,
     });
 
     start
       .removeCursor()
       .type(
-        'Die Mitarbeiter vom Wissenschaftlichen Dienst des Europäischen Parlamentes haben einen kurzen Text für die'
+        'Die Mitarbeiter vom Wissenschaftlichen Dienst des Europäischen Parlamentes haben einen kurzen Text für die Abgeordneten des Europäischen Parlaments über das zu fördernde Projekt des „Green European Tourism“ erstellt.'
       )
       .rest(1500)
       .queueClearText()
       .type(
-        'Abgeordneten des Europäischen Parlaments über das zu fördernde Projekt des „Green European Tourism“ erstellt.'
-      )
-      .rest(1500)
-      .queueClearText()
-      .type(
-        'Leider enthält der Text noch mehrere Zitierfehler. Würdest du den Text bitte für mich korrigieren.'
+        'Leider enthält der Text noch mehrere Zitierfehler. Würdest du den Text bitte für mich korrigieren?'
       )
       .start();
   }
 
-  higheri() {
-    this.i++;
-
-    if (this.i == 1) {
-      const target1 = document.querySelector('.tw');
-
-      const writer1 = new Typewriter(target1, {
-        typeColor: 'white',
-        cursorColor: 'white',
-      });
-
-      writer1.clear().start();
-    }
-  }
-
-  writer1() {
-    this.i = 0;
-
-    window.location.reload();
+  reload() {
+    this.router.navigate(['/'])
+  .then(() => {
+    this.router.navigate(['/quest23dialogue1'])
+  });
   }
 
   goToQuest11(): void {

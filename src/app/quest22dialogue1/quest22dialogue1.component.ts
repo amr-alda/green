@@ -11,8 +11,6 @@ import Typewriter from 't-writer.js';
 export class Quest22dialogue1Component implements OnInit {
   constructor(private router: Router) {}
 
-  i = 0;
-
   ngOnInit() {
     const target = document.querySelector('.tw');
 
@@ -22,7 +20,7 @@ export class Quest22dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75,
+      typeSpeed: 65,
     });
 
     start
@@ -44,25 +42,11 @@ export class Quest22dialogue1Component implements OnInit {
       .start();
   }
 
-  higheri() {
-    this.i++;
-
-    if (this.i == 1) {
-      const target1 = document.querySelector('.tw');
-
-      const writer1 = new Typewriter(target1, {
-        typeColor: 'white',
-        cursorColor: 'white',
-      });
-
-      writer1.clear().start();
-    }
-  }
-
-  writer1() {
-    this.i = 0;
-
-    window.location.reload();
+  reload() {
+    this.router.navigate(['/'])
+  .then(() => {
+    this.router.navigate(['/quest22dialogue1'])
+  });
   }
 
   goToQuest22(): void {

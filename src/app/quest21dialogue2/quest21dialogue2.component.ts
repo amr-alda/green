@@ -16,8 +16,6 @@ export class Quest21dialogue2Component implements OnInit {
 
   constructor(private router: Router) {}
 
-  i = 0;
-
   ngOnInit() {
     const target = document.querySelector('.tw');
 
@@ -27,7 +25,7 @@ export class Quest21dialogue2Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75,
+      typeSpeed: 65,
     });
 
     start
@@ -44,11 +42,8 @@ export class Quest21dialogue2Component implements OnInit {
       .rest(1500)
       .queueClearText()
       .type(
-        'Auf der Rückseite eines Zettel steht übrigens etwas, was ich aber nicht verstehe.'
+        'Auf der Rückseite eines Zettel steht übrigens etwas, was ich aber nicht verstehe. Ich hefte das am besten mal unsere Pinnwand.'
       )
-      .rest(1500)
-      .queueClearText()
-      .type('Ich hefte das am besten mal unsere Pinnwand.')
       .start();
 
     setTimeout(
@@ -59,25 +54,11 @@ export class Quest21dialogue2Component implements OnInit {
     );
   }
 
-  higheri() {
-    this.i++;
-
-    if (this.i == 1) {
-      const target1 = document.querySelector('.tw');
-
-      const writer1 = new Typewriter(target1, {
-        typeColor: 'white',
-        cursorColor: 'white',
-      });
-
-      writer1.clear().start();
-    }
-  }
-
-  writer1() {
-    this.i = 0;
-
-    window.location.reload();
+  reload() {
+    this.router.navigate(['/'])
+  .then(() => {
+    this.router.navigate(['/quest21dialogue2'])
+  });
   }
 
   goToQuest11(): void {

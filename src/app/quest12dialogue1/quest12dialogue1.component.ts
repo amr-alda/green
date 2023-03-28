@@ -11,8 +11,6 @@ import Typewriter from 't-writer.js';
 export class Quest12dialogue1Component implements OnInit {
   constructor(private router: Router) {}
 
-  i = 0;
-
   ngOnInit() {
     const target = document.querySelector('.tw');
 
@@ -22,7 +20,7 @@ export class Quest12dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75,
+      typeSpeed: 65,
     });
 
     start
@@ -32,39 +30,20 @@ export class Quest12dialogue1Component implements OnInit {
       )
       .rest(1500)
       .queueClearText()
-      .type('Um ihre Komptenzen für diesen Job unter Beweis zu stellen,')
+      .type('Um ihre Komptenzen für diesen Job unter Beweis zu stellen, sollten die Bewerberinnen und Bewerber auch einen kurzen Text zum Thema "Klimawandel und Tourismus" verfassen.')
       .rest(1500)
       .queueClearText()
       .type(
-        'sollten die Bewerberinnen und Bewerber auch einen kurzen Text zum Thema "Klimawandel und Tourismus" verfassen.'
-      )
-      .rest(1500)
-      .queueClearText()
-      .type(
-        'Würdest du bitte die von Marianne Weber, Mike Kramer und Lisa Nowak eingereichten Texte anhand unserer Anforderungskriterien zum wissenschaftlichen Arbeiten prüfen.'
+        'Würdest du bitte die von Marianne Weber, Mike Kramer und Lisa Nowak eingereichten Texte anhand unserer Anforderungskriterien zum wissenschaftlichen Arbeiten prüfen?'
       )
       .start();
   }
 
-  higheri() {
-    this.i++;
-
-    if (this.i == 1) {
-      const target1 = document.querySelector('.tw');
-
-      const writer1 = new Typewriter(target1, {
-        typeColor: 'white',
-        cursorColor: 'white',
-      });
-
-      writer1.clear().start();
-    }
-  }
-
-  writer1() {
-    this.i = 0;
-
-    window.location.reload();
+  reload() {
+    this.router.navigate(['/'])
+  .then(() => {
+    this.router.navigate(['/quest12dialogue1'])
+  });
   }
 
   goToQuest12(): void {

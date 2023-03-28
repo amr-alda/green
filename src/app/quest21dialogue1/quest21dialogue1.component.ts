@@ -11,8 +11,6 @@ import Typewriter from 't-writer.js';
 export class Quest21dialogue1Component implements OnInit {
   constructor(private router: Router) {}
 
-  i = 0;
-
   ngOnInit() {
     const target = document.querySelector('.tw');
 
@@ -22,7 +20,7 @@ export class Quest21dialogue1Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75,
+      typeSpeed: 65,
     });
 
     start
@@ -32,10 +30,7 @@ export class Quest21dialogue1Component implements OnInit {
       )
       .rest(1500)
       .queueClearText()
-      .type('Keine Angst, dieses Mal hatte ich mein Büro abgeschlossen.')
-      .rest(1500)
-      .queueClearText()
-      .type('Dafür wurde ich am Kaffeeautomaten negativ überrascht.')
+      .type('Keine Angst, dieses Mal hatte ich mein Büro abgeschlossen. Dafür wurde ich am Kaffeeautomaten negativ überrascht.')
       .rest(1500)
       .queueClearText()
       .type(
@@ -43,12 +38,7 @@ export class Quest21dialogue1Component implements OnInit {
       )
       .rest(1500)
       .queueClearText()
-      .type('Ich habe sie eingesammelt, um sie zu entsorgen.')
-      .rest(1500)
-      .queueClearText()
-      .type(
-        'Dummerweise sind sie mit meinen eigenen Hinweisen zur Literaturarbeit durcheinandergeraten.'
-      )
+      .type('Ich habe sie eingesammelt, um sie zu entsorgen. Dummerweise sind sie mit meinen eigenen Hinweisen zur Literaturarbeit durcheinandergeraten.')
       .rest(1500)
       .queueClearText()
       .type(
@@ -57,25 +47,11 @@ export class Quest21dialogue1Component implements OnInit {
       .start();
   }
 
-  higheri() {
-    this.i++;
-
-    if (this.i == 1) {
-      const target1 = document.querySelector('.tw');
-
-      const writer1 = new Typewriter(target1, {
-        typeColor: 'white',
-        cursorColor: 'white',
-      });
-
-      writer1.clear().start();
-    }
-  }
-
-  writer1() {
-    this.i = 0;
-
-    window.location.reload();
+  reload() {
+    this.router.navigate(['/'])
+  .then(() => {
+    this.router.navigate(['/quest21dialogue1'])
+  });
   }
 
   goToQuest21(): void {

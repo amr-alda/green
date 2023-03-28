@@ -11,8 +11,6 @@ import Typewriter from 't-writer.js';
 export class Quest12dialogue2Component implements OnInit {
   constructor(private router: Router) {}
 
-  i = 0;
-
   ngOnInit() {
     const target = document.querySelector('.tw');
 
@@ -22,42 +20,25 @@ export class Quest12dialogue2Component implements OnInit {
       loop: false,
       deleteSpeed: 5,
       animateCursor: false,
-      typeSpeed: 75,
+      typeSpeed: 65,
     });
 
     start
       .removeCursor()
-      .type('Hmm...')
-      .rest(1500)
-      .queueClearText()
-      .type('Die Bewerbung von Lisa Nowak kommt mir irgendwie seltsam vor.')
+      .type('Hmm... Die Bewerbung von Lisa Nowak kommt mir irgendwie seltsam vor.')
       .rest(1500)
       .queueClearText()
       .type(
-        'Wieso bewirbt sich jemand auf die Stelle, der so gar keine Ahnung vom wissenschaftlichen Arbeiten hat.'
+        'Wieso bewirbt sich jemand auf die Stelle, der so gar keine Ahnung vom wissenschaftlichen Arbeiten hat?'
       )
       .start();
   }
 
-  higheri() {
-    this.i++;
-
-    if (this.i == 1) {
-      const target1 = document.querySelector('.tw');
-
-      const writer1 = new Typewriter(target1, {
-        typeColor: 'white',
-        cursorColor: 'white',
-      });
-
-      writer1.clear().start();
-    }
-  }
-
-  writer1() {
-    this.i = 0;
-
-    window.location.reload();
+  reload() {
+    this.router.navigate(['/'])
+  .then(() => {
+    this.router.navigate(['/quest12dialogue2'])
+  });
   }
 
   goToModul1(): void {
