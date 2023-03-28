@@ -42,7 +42,7 @@ export class Quest21dialogue2Component implements OnInit {
       .rest(1500)
       .queueClearText()
       .type(
-        'Auf der Rückseite eines Zettel steht übrigens etwas, was ich aber nicht verstehe. Ich hefte das am besten mal unsere Pinnwand.'
+        'Auf der Rückseite eines Zettel steht übrigens etwas, was ich aber nicht verstehe. Ich hefte das am besten mal an unsere Pinnwand.'
       )
       .start();
 
